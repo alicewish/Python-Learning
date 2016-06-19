@@ -11,23 +11,35 @@ path_prefix = '/Users/alicewish/我的坚果云/'  # 文件地址前缀
 input_file_path = path_prefix + input_file_name + '.txt'  # 输入文件的地址
 output_file_path = path_prefix + output_file_name + '.txt'  # 输出文件的地址
 
+
 # ========================函数区开始========================
 # 包含所有要保留的字符的集合
 
 
 def normalize(s):
     """Convert s to a normalized string.  """
-    keep = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u','v','w', 'x', 'y', 'z', ' ', '-', "'"]
+    keep = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
+            'v', 'w', 'x', 'y', 'z', ' ', '-', "'"]
     result = ''
     for c in s.lower():
         if c in keep:
             result += c
             return result
 
+# d.keys()
+# 是一个列表，包含文件中所有不同的单词。
+# len(d.keys())
+# 是文件中不同的单词数。
+# sum(d[k] for k in d)
+# 是d中所有值之和，即文件包含的单词总数（包括重复的单词）。sum是一个Python内置函数，返回序列的总和。字典存储的数据未经排序，因此要获取一个清单，按出现次数从高到低的顺序列出所有单词，需要将字典转换为元组列表，如下所示。
+lst = []
+for k in d:  pair = (d[k], k)
+lst.append(pair)
+#todo
 
-# ========================输处区开始========================
+# ========================输出区开始========================
 
-text = open(input_file_path, 'r').read() #读取文本
+text = open(input_file_path, 'r').read()  # 读取文本
 
 print('长度:', len(text))
 print('行数:', text.count('\n'))

@@ -2,7 +2,7 @@ import requests, time, json
 
 start_time = time.time()
 
-user_name = 'Ednak'
+user_name = '墨问非名'
 html = requests.get('http://api.kanzhihu.com/searchuser/' + user_name)
 
 data = json.loads(html.text)  # 将json字符串转换成python对象
