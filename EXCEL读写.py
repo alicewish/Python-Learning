@@ -27,6 +27,10 @@ print(table.ncols)
 # 获取单元格
 table.cell(0, 0).value
 print(table.cell(0, 0).value)
+table.cell(0, 1).value
+print(table.cell(0, 1).value)
+table.cell(1, 0).value
+print(table.cell(1, 0).value)
 table.cell(1, 1).value
 print(table.cell(1, 1).value)
 
@@ -35,7 +39,10 @@ print(table.cell(1, 1).value)
 workbook = xlwt.Workbook(encoding='utf-8')  # 创建workbook
 worksheet = workbook.add_sheet('My Worksheet')  # 创建表
 worksheet.write(0, 0, label='Row 0, Column 0 Value')  # 往单元格内写入内容
+worksheet.write(0, 1, label='Row 0, Column 1 Value')  # 往单元格内写入内容
+worksheet.write(1, 0, label='Row 1, Column 0 Value')  # 往单元格内写入内容
 worksheet.write(1, 1, label='Row 1, Column 1 Value')  # 往单元格内写入内容
+
 workbook.save(file_path)  # 保存
 
 # 计时模块

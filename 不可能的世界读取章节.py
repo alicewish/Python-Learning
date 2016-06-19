@@ -1,14 +1,16 @@
 import requests, time
 from lxml import html
-#todo
+
 start_time = time.time()
 
-bookID='10077'
-page = requests.get('http://www.8kana.com/book/'+bookID+'.html')
+chapterID = '10469'
+page = requests.get('http://www.8kana.com/read/' + chapterID + '.html')
 tree = html.fromstring(page.text)
-chapter_list = tree.xpath('//a[@class="left"][@target="_blank"]/@title')
-text='\r\n'.join(chapter_list)
+paragraph_list = tree.xpath('//p[@id>0]/text()')
+title = tree.xpath('//h2[@class="readbook_title"]/text()')[0]
+text = ''.join(paragraph_list)
 
+print(title)
 print(text)
 
 # 计时模块
