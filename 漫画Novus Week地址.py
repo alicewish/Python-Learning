@@ -2,9 +2,10 @@ from lxml import html
 import requests, urllib.parse, time, xlwt, xlrd
 
 start_time = time.time()  # 初始时间戳
+now = time.strftime("%Y%m%d", time.localtime())  # 当前日期戳
 # ========================输入区开始========================
 search_term = 'Novus Week'  # 搜索的关键词
-file_name = 'Novus Week地址'  # 文件名
+file_name = 'Novus Week地址-' + now  # 文件名
 
 search_order = '/?field=time_add&sorder=desc'  # 搜索的顺序
 search_domain = 'https://kat.cr/usearch/'  # 搜索的网站地址
