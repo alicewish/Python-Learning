@@ -2,6 +2,15 @@ from lxml import html
 import requests, time
 
 start_time = time.time()  # 初始时间戳
+# ================OS模块================
+# import os
+# data = "hello world"
+# os.system("echo '%s' | pbcopy" % data)
+
+# ================pyperclip模块================
+import pyperclip
+pyperclip.copy('The text to be copied to the clipboard.')
+spam = pyperclip.paste()
 
 # ================运行时间计时================
 run_time = time.time() - start_time
