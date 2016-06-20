@@ -25,7 +25,7 @@ info = ""  # 初始化信息字符串为空
 for i in range(chapter_name_list_length):
     info += chapter_name_list[i] + "\n"
     info += url_prefix + chapter_url_list[i + 1] + "\n"
-# ====================获取新章节列表====================
+# ====================获取最新6章列表====================
 chapter_new_name_list = tree.xpath('//a[@class="left chapter_con_a"][@target="_blank"]/@title')  # 以列表形式存储的新章节名称列表
 # "他不喜欢超级英雄 001 序 他讨厌超级英..."
 chapter_new_url_list = tree.xpath('//a[@class="left chapter_con_a"][@target="_blank"]/@href')  # 以列表形式存储的新章节地址列表
