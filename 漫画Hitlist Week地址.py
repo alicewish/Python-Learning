@@ -46,7 +46,7 @@ print("一共有" + str(page_number) + "页," + str(entry_length) + "项")
 # ==================遍历网页==================
 # ================外循环:读取页面================
 for i in range(page_number):
-    page_start_time = time.time()
+    page_start_time = time.time()  # 页面开始读取时间戳
     thispage = requests.get(search_domain + search_term + '/' + str(i + 1) + search_order)
     tree = html.fromstring(thispage.text)
     dataparams = tree.xpath('//div[@class="none"]/@data-sc-params')

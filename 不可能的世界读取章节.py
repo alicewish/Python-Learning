@@ -9,7 +9,7 @@ chapterID = '106760'  # 章节ID
 url_prefix = 'http://www.8kana.com'  # 网址前缀
 url_book = "/read/"  # 章节前缀
 url_suffix = '.html'  # 网址后缀
-chapter_url = url_prefix + url_book + chapterID + url_suffix  # 完整图书网址
+chapter_url = url_prefix + url_book + chapterID + url_suffix  # 完整图书章节网址
 # ========================执行区开始========================
 page = requests.get(chapter_url)
 tree = html.fromstring(page.text)
