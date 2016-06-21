@@ -1,34 +1,38 @@
-import requests, time
 from lxml import html
+import requests, time
 
 start_time = time.time()  # 初始时间戳
 now = time.strftime("%Y%m%d", time.localtime())  # 当前日期戳
 
 # ========================输入区开始========================
-ID = "1788862154"  # 微博用户ID
-file_name = '微博' + now  # 文件名
+
+file_name = 'DC Comics - Bombshells 004'  # 文件名
 
 path_prefix = '/Users/alicewish/我的坚果云/'  # 文件地址前缀
 txt_file_path = path_prefix + file_name + '.txt'  # TXT文件名
-url_prefix = 'http://sinacn.weibodangan.com//user/'
-full_url = url_prefix + ID
 
-# ========================执行区开始========================
-page = requests.get(full_url)
-tree = html.fromstring(page.text)
-name = tree.xpath('//h3[@class="username"]/text()')[0]
-data = tree.xpath('//td/text()')
-info = (time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), '昵称 ' + name, '好友 ' + data[0], '粉丝 ' + data[1].strip(),
-        '微博 ' + data[2], '\r\n')
+# ================按行读取文本:with open================
+a = open(txt_file_path, "r")
+text_line = []
+while True:
+    line = a.readline()
+    text_line.append(line)
+    print(len(line))
+    print(line)
+    if not line:
+        break
 
-text = '\r\n'.join(info)
-print(text)
+print(len(text_line))
 
-f = open(txt_file_path, 'a')
-try:
-    f.write(text)
-finally:
-    f.close()
+# ================按行读取文本:with open================
+text_readline = []  # 初始化按行存储数据列表
+with open(txt_file_path) as fin:
+    for line in fin:
+        text_readline.append(line)
+
+for i in range(len(text_readline)):
+    print(text_readline[i])
+print(len(text_readline))
 
 # ================运行时间计时================
 run_time = time.time() - start_time
