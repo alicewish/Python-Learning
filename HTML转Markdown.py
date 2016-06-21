@@ -3,7 +3,9 @@ import requests, time, html2text
 
 start_time = time.time()
 
-print(html2text.html2text("<p><strong>Zed's</strong> dead baby, <em>Zed's</em> dead.</p>"))
+html = "<p><strong>Zed's</strong> dead baby, <em>Zed's</em> dead.</p>"
+markdown = html2text.html2text(html)
+print(markdown)
 
 # 计时模块
 run_time = time.time() - start_time

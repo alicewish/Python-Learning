@@ -4,7 +4,7 @@ from lxml import html
 start_time = time.time()  # 初始时间戳
 # ========================输入区开始========================
 
-article_url = "http://icv2.com/articles/markets/view/34698/top-300-comics-actual-may-2016"  # 完整图书章节网址
+article_url = "http://icv2.com/articles/markets/view/33887/top-300-comics-actual-february-2016"  # 完整图书章节网址
 # ========================执行区开始========================
 page = requests.get(article_url)
 tree = html.fromstring(page.text)

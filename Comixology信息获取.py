@@ -23,7 +23,9 @@ description = "".join(raw_description)
 price = tree.xpath('//h5[@class="item-price"]/text()')[0]
 # ====================创作信息====================
 raw_credits = tree.xpath('//div[@class="credits"]/*/text()')
-credits = "|".join(raw_credits)
+credit = "\n".join(raw_credits)
+credits = (credit.replace('\t', '')).replace("\n\n\n","")
+print(len(raw_credits))
 
 # ========================输出区开始========================
 info_list = ("标题: " + title, "价格: " + price, "简介: " + description, "创作信息" + credits)
