@@ -16,10 +16,19 @@ full_url = url_prefix + ID
 # ========================执行区开始========================
 page = requests.get(full_url)
 tree = html.fromstring(page.text)
-name = tree.xpath('//h3[@class="username"]/text()')[0]
+nickname = tree.xpath('//h3[@class="username"]/text()')[0]
 data = tree.xpath('//td/text()')
-info = (time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), '昵称 ' + name, '好友 ' + data[0], '粉丝 ' + data[1].strip(),
-        '微博 ' + data[2], '\r\n')
+friends = data[0]
+fans = data[1].replace(" ", "")
+posts = data[2]
+location = tree.xpath("//div[@class='info'][1]/text()")[0]
+description = tree.xpath("//div[@class='info'][2]/text()")[0]
+days = tree.xpath("//div[@class='hidden-xs hidden-sm']/p[1]/text()")[0]
+started = tree.xpath("//[@class='hidden-xs hidden-sm']/text()")[0]
+info = (
+    time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), '昵称 ' + nickname, '好友 ' + friends, '粉丝 ' + fans,
+    '微博 ' + posts,
+    '位置 ' + location, "简介 " + description, days, started, '\r\n')
 
 text = '\r\n'.join(info)
 print(text)
