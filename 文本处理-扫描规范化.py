@@ -12,26 +12,40 @@ input_file_path = path_prefix + input_file_name + '.txt'  # 输入文件的地�
 output_file_path = path_prefix + output_file_name + '.txt'  # 输出文件的地址
 
 # ================按行读取文本:with open(更好)================
-text_readline = []  # 初始化按行存储数据列表
+text_readline = []  # 初始化按行存储数据列表,不接受结尾换行符
 with open(input_file_path) as fin:
     for line in fin:
-        text_readline.append(line)
-
-# ================处理文本================
-
-new_text_readline = []  # 初始化按行存储数据列表
+        text_readline.append((line).replace('\n', ''))
+print(text_readline)
+# ========================处理文本========================
+# ====================去除空行====================
+filled_text_readline = []  # 初始化按行存储数据列表
+for i in range(len(text_readline)):
+    if text_readline[i] == "":
+        print("空行")
+    else:
+        filled_text_readline.append(text_readline[i])
 
 # ================结尾不为句点则将下一行拼入本行================
-
-for i in range(len(text_readline) - 1):
-    if re.match(r"\?", text_readline[i][-1]):  # 结尾为句点
-        new_text_readline.append(text_readline[i])
+new_text_readline = []  # 初始化按行存储数据列表
+for i in range(len(filled_text_readline) - 1):
+    if text_readline[i] == "":
+        print("空行")
+    elif re.match(r"\.", text_readline[i][-1]):  # 结尾为句点
+        print("匹配:")
+        print(filled_text_readline[i])
+        new_text_readline.append(filled_text_readline[i])
     else:  # 结尾不为句点
-        new_text_readline.append(text_readline[i] + text_readline[i + 1])
+        print("不匹配:")
+        print(filled_text_readline[i])
+        print("转为:")
+        print(filled_text_readline[i] + filled_text_readline[i + 1])
+        new_text_readline.append(filled_text_readline[i] + filled_text_readline[i + 1])
 
 # ================打印文本================
-for i in range(len(text_readline)):
-    print(new_text_readline[i], end="")
+print("打印文本")
+for i in range(len(new_text_readline) - 1):
+    print(new_text_readline[i])
 print(len(new_text_readline))
 
 # ================运行时间计时================

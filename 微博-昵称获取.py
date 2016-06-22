@@ -5,7 +5,7 @@ start_time = time.time()  # 初始时间戳
 now = time.strftime("%Y%m%d", time.localtime())  # 当前日期戳
 # ========================输入区开始========================
 ID = "1788862154"
-ID = "1461874162"
+ID = "2752712907"
 
 page = requests.get('http://sinacn.weibodangan.com//user/' + ID)
 tree = html.fromstring(page.text)
