@@ -24,7 +24,7 @@ posts = data[2]
 location = tree.xpath("//div[@class='info'][1]/text()")[0]
 description = tree.xpath("//div[@class='info'][2]/text()")[0]
 days = tree.xpath("//div[@class='hidden-xs hidden-sm']/p[1]/text()")[0]
-started = tree.xpath("//[@class='hidden-xs hidden-sm']/text()")[0]
+started = tree.xpath("//span[@id='register_time']/text()")[0]
 info = (
     time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), '昵称 ' + nickname, '好友 ' + friends, '粉丝 ' + fans,
     '微博 ' + posts,

@@ -27,6 +27,14 @@ info_list = []  # 初始化信息列表
 for i in range(len(text_readline)):
     entry_start_time = time.time()
     # ========================获取昵称和粉丝数========================
+    nickname = ""
+    friends = ""
+    fans = ""
+    posts = ""
+    location = ""
+    description = ""
+    days = ""
+    started = ""
     try:
         page = requests.get('http://sinacn.weibodangan.com//user/' + text_readline[i])
         tree = html.fromstring(page.text)
@@ -35,16 +43,14 @@ for i in range(len(text_readline)):
         friends = data[0]
         fans = data[1].replace(" ", "")
         posts = data[2]
-        info = nickname + "\t" + friends + "\t" + fans + "\t" + posts
+        location = tree.xpath("//div[@class='info'][1]/text()")[0]
+        description = tree.xpath("//div[@class='info'][2]/text()")[0]
+        alldays = tree.xpath("//div[@class='hidden-xs hidden-sm']/p[1]/text()")[0]
+        days = alldays[7:]
+        started = tree.xpath("//span[@id='register_time']/text()")[0]
     except:
-        nickname = ""
-        friends = ""
-        fans = ""
-        posts = ""
-    nickname_list.append(nickname)
-    friends_list.append(friends)
-    fans_list.append(fans)
-    posts_list.append(posts)
+        pass
+    info = nickname + "\t" + friends + "\t" + fans + "\t" + posts + "\t" + location + "\t" + description + "\t" + days + "\t" + started
     info_list.append(info)
     # ======================操作TXT======================
     # ================写入昵称列表================
