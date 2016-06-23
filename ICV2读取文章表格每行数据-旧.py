@@ -4,26 +4,35 @@ from lxml import html
 start_time = time.time()  # 初始时间戳
 # ========================输入区开始========================
 
-article_url = "http://icv2.com/articles/markets/view/33887/top-300-comics-actual-february-2016"  # 完整图书章节网址
+article_url = "http://icv2.com/articles/comics/view/14743/top-300-comics-actual-march-2009"  # 完整图书章节网址
 # ========================执行区开始========================
 page = requests.get(article_url)
 tree = html.fromstring(page.text)
 # ====================获取本页名称====================
 article_title = tree.xpath("//title/text()")[0]  # 文章名称
 # ====================获取排名====================
-rank = tree.xpath("//tr/td[1]/p/text()")  # 列表形式存储的排名RANK
+rank = tree.xpath("//tr/td[1]/p/span/text()")  # 列表形式存储的排名RANK
 # ====================获取指数====================
-index = tree.xpath("//tr/td[2]/p/text()")  # 列表形式存储的指数INDEX
+index = tree.xpath("//tr/td[2]/p/span/text()")  # 列表形式存储的指数INDEX
 # ====================获取刊名====================
-title = tree.xpath("//tr/td[3]/p/text()")  # 列表形式存储的刊名TITLE
+title = tree.xpath("//tr/td[3]/p/span/text()")  # 列表形式存储的刊名TITLE
 # ====================获取价格====================
-price = tree.xpath("//tr/td[4]/p/text()")  # 列表形式存储的价格PRICE
+price = tree.xpath("//tr/td[4]/p/span/text()")  # 列表形式存储的价格PRICE
 # ====================获取出版商====================
-publisher = tree.xpath("//tr/td[5]/p/text()")  # 列表形式存储的出版商PUBLISHER
+publisher = tree.xpath("//tr/td[5]/p/span/text()")  # 列表形式存储的出版商PUBLISHER
 # ====================获取估算销量====================
-quantity = tree.xpath("//tr/td[6]/p/text()")  # 列表形式存储的估算销量QUANTITY
+quantity = tree.xpath("//tr/td[6]/p/span/text()")  # 列表形式存储的估算销量QUANTITY
+quantity_format = []
+for i in range(len(quantity)):
+    number = (quantity[i].replace(",", "")).strip()
+    quantity_format.append(number)
 
-# info = '\r\n'.join(rank)
+info_list=[]
+for i in range(len(rank)):
+    line=rank[i]+"\t"+index[i]+"\t"+title[i]+"\t"+price[i]+"\t"+publisher[i]+"\t"+quantity_format[i]+"\t"+article_title
+    info_list.append(line)
+
+info = '\r\n'.join(info_list)
 
 print(article_title)
 print(rank[0])
@@ -32,6 +41,8 @@ print(title[0])
 print(price[0])
 print(publisher[0])
 print(quantity[0])
+print(info)
+
 
 
 # ================运行时间计时================

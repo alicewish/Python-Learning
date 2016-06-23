@@ -20,7 +20,5 @@
 
 # ========================重要的库========================
 # html2text
-import cookielib
-import rsa
-import urllib
-import urllib2
+
+# pip install --target=/Users/alicewish/anaconda/lib/python3.5/site-packages/ tweepy
