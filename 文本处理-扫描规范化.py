@@ -22,31 +22,34 @@ print(text_readline)
 filled_text_readline = []  # 初始化按行存储数据列表
 for i in range(len(text_readline)):
     if text_readline[i] == "":
-        print("空行")
+        pass
+        # print("空行")
     else:
         filled_text_readline.append(text_readline[i])
 
-# ================结尾不为句点则将下一行拼入本行================
+# ================结尾不为句点则在句末做标记================
 new_text_readline = []  # 初始化按行存储数据列表
-for i in range(len(filled_text_readline) - 1):
-    if text_readline[i] == "":
+for i in range(len(filled_text_readline)):
+    if filled_text_readline[i] == "":
         print("空行")
-    elif re.match(r"\.", text_readline[i][-1]):  # 结尾为句点
-        print("匹配:")
-        print(filled_text_readline[i])
+    elif re.match(r"[\.?!\"-]", (filled_text_readline[i])[-1]):  # 结尾为句点
+        print((filled_text_readline[i])[-1] + "匹配:", filled_text_readline[i])
         new_text_readline.append(filled_text_readline[i])
     else:  # 结尾不为句点
-        print("不匹配:")
-        print(filled_text_readline[i])
+        print((filled_text_readline[i])[-1] + "不匹配:" + filled_text_readline[i])
         print("转为:")
-        print(filled_text_readline[i] + filled_text_readline[i + 1])
-        new_text_readline.append(filled_text_readline[i] + filled_text_readline[i + 1])
+        print(filled_text_readline[i] + "接")
+        new_text_readline.append(filled_text_readline[i] + "接")
 
-# ================打印文本================
-print("打印文本")
-for i in range(len(new_text_readline) - 1):
-    print(new_text_readline[i])
-print(len(new_text_readline))
+# ================写入文本================
+text = '\r\n'.join(new_text_readline)
+print(text)
+
+f = open(output_file_path, 'w')
+try:
+    f.write(text)
+finally:
+    f.close()
 
 # ================运行时间计时================
 run_time = time.time() - start_time
