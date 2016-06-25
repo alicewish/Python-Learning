@@ -2,9 +2,10 @@ from lxml import html
 import requests, time, html2text
 
 start_time = time.time()  # 初始时间戳
-
+url="http://bbs.jjwxc.net/showmsg.php?board=3&boardpagemsg=1&id=876571"
 html = "<p><strong>Zed's</strong> dead baby, <em>Zed's</em> dead.</p>"
-markdown = html2text.html2text(html)
+page = requests.get(url)
+markdown = html2text.html2text(page.text)
 print(markdown)
 
 # ================运行时间计时================

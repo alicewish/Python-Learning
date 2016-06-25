@@ -1,10 +1,10 @@
 from lxml import html
 import requests, time
-from tkinter import Tk
 
 start_time = time.time()  # 初始时间戳
 
 # ================读取剪贴板================
+from tkinter import Tk
 r = Tk()
 c = r.clipboard_get()
 print(c)

@@ -3,19 +3,25 @@ import requests, time
 
 start_time = time.time()  # 初始时间戳
 now = time.strftime("%Y%m%d", time.localtime())  # 当前日期戳
-# ========================输入区开始========================
-input_file_name = '微博UID'  # 输入文件的名称
-output_file_name = '微博信息批量获取'  # 输出文件的名称
+# # ========================输入区开始========================
+# input_file_name = '微博UID'  # 输入文件的名称
+# output_file_name = '微博信息批量获取'  # 输出文件的名称
+#
+# path_prefix = '/Users/alicewish/我的坚果云/'  # 文件地址前缀
+# input_file_path = path_prefix + input_file_name + '.txt'  # 输入文件的地址
+# output_file_path = path_prefix + output_file_name + '.txt'  # 输出文件的地址
 
-path_prefix = '/Users/alicewish/我的坚果云/'  # 文件地址前缀
-input_file_path = path_prefix + input_file_name + '.txt'  # 输入文件的地址
-output_file_path = path_prefix + output_file_name + '.txt'  # 输出文件的地址
-
-# ================按行读取文本:with open(更好)================
-text_readline = []  # 初始化按行存储数据列表,不接受结尾换行符
-with open(input_file_path) as fin:
-    for line in fin:
-        text_readline.append((line).replace('\n', ''))
+# # ================按行读取文本:with open(更好)================
+# text_readline = []  # 初始化按行存储数据列表,不接受结尾换行符
+# with open(input_file_path) as fin:
+#     for line in fin:
+#         text_readline.append((line).replace('\n', ''))
+# print(text_readline)
+# ================读取剪贴板================
+from tkinter import Tk
+r = Tk()
+read_text = r.clipboard_get()
+text_readline=read_text.splitlines()
 print(text_readline)
 # ========================处理文本========================
 nickname_list = []  # 初始化昵称列表
@@ -43,27 +49,26 @@ for i in range(len(text_readline)):
         friends = data[0]
         fans = data[1].replace(" ", "")
         posts = data[2]
-        location = tree.xpath("//div[@class='info'][1]/text()")[0]
-        description = tree.xpath("//div[@class='info'][2]/text()")[0]
         alldays = tree.xpath("//div[@class='hidden-xs hidden-sm']/p[1]/text()")[0]
         days = alldays[7:]
         started = tree.xpath("//span[@id='register_time']/text()")[0]
+        location = tree.xpath("//div[@class='info'][1]/text()")[0]
+        description = tree.xpath("//div[@class='info'][2]/text()")[0]
     except:
         pass
     info = nickname + "\t" + friends + "\t" + fans + "\t" + posts + "\t" + location + "\t" + description + "\t" + days + "\t" + started
     info_list.append(info)
-    # ======================操作TXT======================
-    # ================写入昵称列表================
-    f = open(output_file_path, 'w')
-    text = '\r\n'.join(info_list)  # 写入文本
-    try:
-        f.write(text)
-    finally:
-        f.close()
     # ================每项时间计时================
     entry_run_time = time.time() - entry_start_time
     entry_print = "耗时:{:.4f}秒".format(entry_run_time)
     print(info_list[i], "\n", entry_print)
+
+# ================写入昵称列表================
+text = '\r\n'.join(info_list)  # 写入文本
+# ================写入剪贴板================
+import pyperclip
+pyperclip.copy(text)
+spam = pyperclip.paste()
 
 # ================运行时间计时================
 run_time = time.time() - start_time

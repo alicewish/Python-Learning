@@ -3,18 +3,10 @@ import requests, time, re
 
 start_time = time.time()  # 初始时间戳
 
-# ========================输入区开始========================
-file_name = '正则表达式字符串读取'  # 文件名
-
-path_prefix = '/Users/alicewish/我的坚果云/'  # 文件地址前缀
-txt_file_path = path_prefix + file_name + '.txt'  # TXT文件名
-
-# ========================执行区开始========================
-# ==================操作TXT==================
-f = open(txt_file_path, 'r')
-read_text = f.read()  # 读取文本内容
-# read_text="thumb150"
-# print(read_text)
+# ================读取剪贴板================
+from tkinter import Tk
+r = Tk()
+read_text = r.clipboard_get()
 
 # 将正则表达式编译成Pattern对象
 # 使用r前缀就不用考虑转义了
@@ -22,15 +14,23 @@ pattern = re.compile(r'http://ww2.sinaimg.cn/large/[^)]*')
 # http://ww2.sinaimg.cn/large/a15b4afegw1f52rdah5gfj21hk1564hc
 # 使用Pattern匹配文本，获得全部匹配结果
 find = pattern.findall(read_text)#列表形式存储的结果
-
-print(find)
+prefix='<img src="'
+suffix='" />'
+info_line=[]
+for i in range(len(find)):
+    full_html=prefix+find[i]+suffix
+    info_line.append(full_html)
+info="\r\n".join(info_line)
+print(info)
 print(len(find))
 
 # if match:
 #     # 使用Match获得分组信息
 #     print(match.group())
-
-
+# ================写入剪贴板================
+import pyperclip
+pyperclip.copy(info)
+spam = pyperclip.paste()
 # ================运行时间计时================
 run_time = time.time() - start_time
 if run_time < 60:  # 两位小数的秒
