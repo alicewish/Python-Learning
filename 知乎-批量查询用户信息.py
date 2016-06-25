@@ -1,6 +1,6 @@
 import requests, time, json
 
-start_time = time.time()
+start_time = time.time()  # 初始时间戳
 
 user_name = '墨问非名'
 html = requests.get('http://api.kanzhihu.com/searchuser/' + user_name)
@@ -68,16 +68,27 @@ info = (now, '知乎昵称 ' + user_name, '回答数 ' + answer, '专栏文章�
         '被关注数排名 ' + followerrank, '收藏数排名 ' + favrank, '', '')
 text = '\r\n'.join(info)
 print(text)
-f = open('/Users/alicewish/我的坚果云/知乎.txt', 'a')
-try:
-    f.write(text)
-finally:
-    f.close()
-# 计时模块
+# f = open('/Users/alicewish/我的坚果云/知乎.txt', 'a')
+# try:
+#     f.write(text)
+# finally:
+#     f.close()
+line = (
+now, user_name, user_hash,answer, post, agree, agreei, agreeiratio, agreeiw, agreeiratiow, follower, followeri, followiratio,
+followeriw, followiratiow, thanks, fav, mostvote, mostvotepercent, mostvote5, mostvote5percent, mostvote,
+mostvotepercent, mostvote10, mostvote10percent, answerrank, agreerank, ratiorank, followerrank, favrank)
+line_text = '\t'.join(line)
+
+# ================写入剪贴板================
+import pyperclip
+
+pyperclip.copy(line_text)
+spam = pyperclip.paste()
+# ================运行时间计时================
 run_time = time.time() - start_time
-if run_time < 60:
-    print("耗时: {:.2f}秒".format(run_time))
-elif run_time < 3600:
-    print("耗时: {:.0f}分{:.0f}秒".format(run_time // 60, run_time % 60))
-else:
-    print("耗时: {:.0f}时{:.0f}分{:.0f}秒".format(run_time // 3600, run_time % 3600 // 60, run_time % 60))
+if run_time < 60:  # 两位小数的秒
+    print("耗时:{:.2f}秒".format(run_time))
+elif run_time < 3600:  # 分秒取整
+    print("耗时:{:.0f}分{:.0f}秒".format(run_time // 60, run_time % 60))
+else:  # 时分秒取整
+    print("耗时:{:.0f}时{:.0f}分{:.0f}秒".format(run_time // 3600, run_time % 3600 // 60, run_time % 60))
