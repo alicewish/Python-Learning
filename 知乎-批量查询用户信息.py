@@ -1,6 +1,12 @@
 import requests, time, json
 
 start_time = time.time()  # 初始时间戳
+# ================读取剪贴板================
+from tkinter import Tk
+r = Tk()
+read_text = r.clipboard_get()
+text_readline=read_text.splitlines()
+print(text_readline)
 
 user_name = '墨问非名'
 html = requests.get('http://api.kanzhihu.com/searchuser/' + user_name)

@@ -19,9 +19,10 @@ now = time.strftime("%Y%m%d", time.localtime())  # 当前日期戳
 # print(text_readline)
 # ================读取剪贴板================
 from tkinter import Tk
+
 r = Tk()
 read_text = r.clipboard_get()
-text_readline=read_text.splitlines()
+text_readline = read_text.splitlines()
 print(text_readline)
 # ========================处理文本========================
 nickname_list = []  # 初始化昵称列表
@@ -56,7 +57,7 @@ for i in range(len(text_readline)):
         description = tree.xpath("//div[@class='info'][2]/text()")[0]
     except:
         pass
-    info = nickname + "\t" + friends + "\t" + fans + "\t" + posts + "\t" + location + "\t" + description + "\t" + days + "\t" + started
+    info = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + "\t" + nickname + "\t" + friends + "\t" + fans + "\t" + posts + "\t" + location + "\t" + description + "\t" + days + "\t" + started
     info_list.append(info)
     # ================每项时间计时================
     entry_run_time = time.time() - entry_start_time
@@ -67,6 +68,7 @@ for i in range(len(text_readline)):
 text = '\r\n'.join(info_list)  # 写入文本
 # ================写入剪贴板================
 import pyperclip
+
 pyperclip.copy(text)
 spam = pyperclip.paste()
 
