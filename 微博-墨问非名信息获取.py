@@ -6,10 +6,7 @@ now = time.strftime("%Y%m%d", time.localtime())  # 当前日期戳
 
 # ========================输入区开始========================
 ID = "1788862154"  # 微博用户ID
-file_name = '微博' + now  # 文件名
 
-path_prefix = '/Users/alicewish/我的坚果云/'  # 文件地址前缀
-txt_file_path = path_prefix + file_name + '.txt'  # TXT文件名
 url_prefix = 'http://sinacn.weibodangan.com//user/'
 full_url = url_prefix + ID
 
@@ -25,19 +22,14 @@ location = tree.xpath("//div[@class='info'][1]/text()")[0]
 description = tree.xpath("//div[@class='info'][2]/text()")[0]
 days = tree.xpath("//div[@class='hidden-xs hidden-sm']/p[1]/text()")[0]
 started = tree.xpath("//span[@id='register_time']/text()")[0]
-info = (
-    time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), '昵称 ' + nickname, '好友 ' + friends, '粉丝 ' + fans,
-    '微博 ' + posts,
-    '位置 ' + location, "简介 " + description, days, started, '\r\n')
+info = (nickname, friends, fans, posts, location, description, time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
 
-text = '\r\n'.join(info)
+text = '\t'.join(info)
 print(text)
-
-f = open(txt_file_path, 'a')
-try:
-    f.write(text)
-finally:
-    f.close()
+# ================写入剪贴板================
+import pyperclip
+pyperclip.copy(text)
+spam = pyperclip.paste()
 
 # ================运行时间计时================
 run_time = time.time() - start_time
