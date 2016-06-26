@@ -22,3 +22,10 @@
 # html2text
 
 # pip install --target=/Users/alicewish/anaconda/lib/python3.5/site-packages/ tweepy
+
+# pip install --target=/Users/alicewish/anaconda/lib/python3.5/site-packages/ jieba
+
+
+# pip install --target=/Users/alicewish/anaconda/lib/python3.5/site-packages/ -U zhihu_oauth
+
+# pip install --target=/Users/alicewish/anaconda/lib/python3.5/site-packages/ --upgrade google-api-python-client
