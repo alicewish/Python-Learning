@@ -73,10 +73,7 @@ print(text)
 #     f.write(text)
 # finally:
 #     f.close()
-line = (
-now, user_name, user_hash,answer, post, agree, agreei, agreeiratio, agreeiw, agreeiratiow, follower, followeri, followiratio,
-followeriw, followiratiow, thanks, fav, mostvote, mostvotepercent, mostvote5, mostvote5percent, mostvote,
-mostvotepercent, mostvote10, mostvote10percent, answerrank, agreerank, ratiorank, followerrank, favrank)
+line = (user_name, user_hash, now, answer, post, agree, agreei, agreeiratio, agreeiw, agreeiratiow, follower, followeri,followiratio,followeriw, followiratiow, thanks, fav, mostvote, mostvotepercent, mostvote5, mostvote5percent, mostvote,mostvotepercent, mostvote10, mostvote10percent, answerrank, agreerank, ratiorank, followerrank, favrank)
 line_text = '\t'.join(line)
 
 # ================写入剪贴板================
