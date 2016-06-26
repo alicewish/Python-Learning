@@ -10,6 +10,7 @@ text_readline = read_text.splitlines()
 print(text_readline)
 
 line = []
+
 for i in range(len(text_readline)):
     entry_start_time = time.time()
     try:
