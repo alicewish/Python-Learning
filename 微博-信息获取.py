@@ -20,9 +20,10 @@ fans = data[1].replace(" ", "")
 posts = data[2]
 location = tree.xpath("//div[@class='info'][1]/text()")[0]
 description = tree.xpath("//div[@class='info'][2]/text()")[0]
-days = tree.xpath("//div[@class='hidden-xs hidden-sm']/p[1]/text()")[0]
+alldays = tree.xpath("//div[@class='hidden-xs hidden-sm']/p[1]/text()")[0]
+days = alldays[7:]
 started = tree.xpath("//span[@id='register_time']/text()")[0]
-info = (nickname, friends, fans, posts, location, description, time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
+info = (nickname, friends, fans, posts, location, description, time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), days)
 
 text = '\t'.join(info)
 print(text)
