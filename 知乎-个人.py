@@ -29,44 +29,32 @@ print('关注专栏数', me.following_column_count)
 print('友善度', me.friendly_score)
 print(me.sina_weibo_name)
 
-gayscript = client.people("gayscript")
-print('用户名', gayscript.name)
-print('签名', gayscript.headline)
-print('个人描述', gayscript.description)
+# ========================查询他人========================
+people = client.people("gu-che-dan")
 
-print('关注话题个数', gayscript.following_topic_count)
-print('关注人数', gayscript.following_count)
-print('粉丝数', gayscript.follower_count)
+print('用户名', people.name)
+print('签名', people.headline)
+print('个人描述', people.description)
+print('关注话题个数', people.following_topic_count)
+print('关注人数', people.following_count)
+print('粉丝数', people.follower_count)
+print('赞同数', people.voteup_count)
+print('感谢数', people.thanked_count)
+print('回答数', people.answer_count)
+print('提问数', people.question_count)
+print('收藏栏数', people.collection_count)
+print('文章数', people.articles_count)
+print('关注专栏数', people.following_column_count)
+print('友善度', people.friendly_score)
+print('关联微博', people.sina_weibo_name)
+# ========================查询问题========================
+question = client.question(22384666)
+print('答案数', question.answer_count)
 
-print('赞同数', gayscript.voteup_count)
-print('感谢数', gayscript.thanked_count)
-
-print('回答数', gayscript.answer_count)
-print('提问数', gayscript.question_count)
-print('收藏栏数', gayscript.collection_count)
-print('文章数', gayscript.articles_count)
-print('关注专栏数', gayscript.following_column_count)
-print('友善度', gayscript.friendly_score)
-print('关联微博', gayscript.sina_weibo_name)
-# ========================查询========================
-
-guchedan = client.people("gu-che-dan")
-
-print('用户名', guchedan.name)
-print('签名', guchedan.headline)
-print('个人描述', guchedan.description)
-print('关注话题个数', guchedan.following_topic_count)
-print('关注人数', guchedan.following_count)
-print('粉丝数', guchedan.follower_count)
-print('赞同数', guchedan.voteup_count)
-print('感谢数', guchedan.thanked_count)
-print('回答数', guchedan.answer_count)
-print('提问数', guchedan.question_count)
-print('收藏栏数', guchedan.collection_count)
-print('文章数', guchedan.articles_count)
-print('关注专栏数', guchedan.following_column_count)
-print('友善度', guchedan.friendly_score)
-print('关联微博', guchedan.sina_weibo_name)
+# ========================查询话题========================
+topic = client.topic(19668865)
+print('关注数', question.follower_count)
+print('关注数', question.follower_count)
 
 # ================运行时间计时================
 run_time = time.time() - start_time
