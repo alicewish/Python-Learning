@@ -18,7 +18,7 @@ prefix='<img src="'
 suffix='" />'
 info_line=[]
 for i in range(len(find)):
-    full_html=prefix+find[i]+suffix
+    full_html=find[i]
     info_line.append(full_html)
 info="\r\n".join(info_line)
 print(info)
