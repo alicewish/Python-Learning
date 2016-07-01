@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="373ecf99-8a13-48a4-b504-b3b0531662d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PushOver通知.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/软件翻译-字符串strings-Glyphs.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/软件翻译-编译文件nib-Alternote.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/软件翻译-编译文件nib-Coda.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/软件翻译-编译文件nib-GitHub Desktop.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/软件翻译-编译文件nib-Glyphs.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/软件翻译-编译文件nib-MacDown.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/软件翻译-编译文件nib-Quiver.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/软件翻译-编译文件nib-Shimo.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/软件翻译-编译文件nib-Typora.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/安装说明.py" afterPath="$PROJECT_DIR$/安装说明.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/软件翻译-编译文件nib-Boson.py" afterPath="$PROJECT_DIR$/软件翻译-编译文件nib-Boson.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/软件翻译-编译文件nib-Coda.py" afterPath="$PROJECT_DIR$/软件翻译-编译文件nib-Coda.py" />
     </list>
     <ignored path="Python-Learning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +19,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Python-Learning$_nib_Coda.coverage" NAME="软件翻译-编译文件nib-Coda Coverage Results" MODIFIED="1467351381270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python-Learning$_nib_Coda.coverage" NAME="软件翻译-编译文件nib-Coda Coverage Results" MODIFIED="1467355893336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$PushOver.coverage" NAME="PushOver通知 Coverage Results" MODIFIED="1467297131038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_nib_TaskPaper.coverage" NAME="软件翻译-编译文件nib-TaskPaper Coverage Results" MODIFIED="1467213476158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_____2_.coverage" NAME="不可能的世界读取列表与全部章节 - 副本 (2) Coverage Results" MODIFIED="1466440967070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -157,8 +145,8 @@
       <file leaf-file-name="软件翻译-编译文件nib-Coda.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/软件翻译-编译文件nib-Coda.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-405">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+            <state relative-caret-position="405">
+              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -1088,8 +1076,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/软件翻译-编译文件nib-Coda.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-405">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        <state relative-caret-position="405">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
           <folding />
         </state>
       </provider>

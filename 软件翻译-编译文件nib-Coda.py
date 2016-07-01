@@ -5,7 +5,7 @@ start_time = time.time()  # 初始时间戳
 
 # ========================输入区开始========================
 file_name = "MainMenu.nib"
-app_name = "Coda"
+app_name = "Quiver"
 file_path_prefix = "/Users/alicewish/Documents/GitHub/Mac-App-Translation/"
 input_file_path = file_path_prefix + app_name + "/en.lproj/" + file_name + ".txt"  # 输入文件的地址
 refer_file_path = "/Users/alicewish/Documents/GitHub/Mac-App-Translation/总词典.txt"  # 词典文件的地址
