@@ -25,6 +25,10 @@
 
 # pip install --target=/Users/alicewish/anaconda/lib/python3.5/site-packages/ jieba
 
+# pip install --target=/Users/alicewish/anaconda/lib/python3.5/site-packages/ python-pushover
+
+# pip install --target=/Users/alicewish/anaconda/ ConfigParser --upgrade
+
 
 # pip install --target=/Users/alicewish/anaconda/lib/python3.5/site-packages/ -U zhihu_oauth
 

@@ -5,9 +5,9 @@ start_time = time.time()  # 初始时间戳
 
 # ========================输入区开始========================
 file_name = "MainMenu.nib"
-app_name = "Boson"
+app_name = "GitHub Desktop"
 file_path_prefix = "/Users/alicewish/Documents/GitHub/Mac-App-Translation/"
-input_file_path = file_path_prefix + app_name + "/Base.lproj/" + file_name + ".txt"  # 输入文件的地址
+input_file_path = file_path_prefix + app_name + "/English.lproj/" + file_name + ".txt"  # 输入文件的地址
 refer_file_path = "/Users/alicewish/Documents/GitHub/Mac-App-Translation/总词典.txt"  # 词典文件的地址
 output_file_path = file_path_prefix + app_name + "/zh_CN.lproj/" + file_name + ".txt"  # 输出文件的地址
 
@@ -69,6 +69,7 @@ try:
 finally:
     f.close()
 
+print(file_path_prefix + app_name + "/zh_CN.lproj")
 # ================运行时间计时================
 run_time = time.time() - start_time
 if run_time < 60:  # 两位小数的秒

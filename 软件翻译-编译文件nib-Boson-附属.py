@@ -4,10 +4,10 @@ import requests, time, re
 start_time = time.time()  # 初始时间戳
 
 # ========================输入区开始========================
-file_name = "MainMenu.nib"
+file_name = "SQToolbarController.nib"
 app_name = "Boson"
 file_path_prefix = "/Users/alicewish/Documents/GitHub/Mac-App-Translation/"
-input_file_path = file_path_prefix + app_name + "/Base.lproj/" + file_name + ".txt"  # 输入文件的地址
+input_file_path = file_path_prefix + app_name + "/" + file_name + ".txt"  # 输入文件的地址
 refer_file_path = "/Users/alicewish/Documents/GitHub/Mac-App-Translation/总词典.txt"  # 词典文件的地址
 output_file_path = file_path_prefix + app_name + "/zh_CN.lproj/" + file_name + ".txt"  # 输出文件的地址
 
@@ -47,13 +47,12 @@ with open(input_file_path) as fin:
                     output_line = "<string>" + Chinese + "</string>"
                 else:
                     f = open(refer_file_path, 'a')
-                    append_line = "\r\n"+ English
+                    append_line = "\r\n" + English
                     try:
                         f.write(append_line)
                     finally:
                         f.close()
         output_readline.append(output_line)
-
 
 # ========================建立输出字典========================
 
