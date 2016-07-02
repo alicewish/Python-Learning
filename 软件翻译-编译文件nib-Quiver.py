@@ -58,10 +58,6 @@ with open(input_file_path) as fin:
                         f.close()
         output_readline.append(output_line)
 
-# ========================建立输出字典========================
-
-# ========================检查缺失键值========================
-
 # ================写入文本================
 text = '\r\n'.join(output_readline)
 print(text)

@@ -5,11 +5,11 @@ start_time = time.time()  # 初始时间戳
 now = time.strftime("%Y%m%d", time.localtime())  # 当前日期戳
 # # ========================输入区开始========================
 # input_file_name = '微博UID'  # 输入文件的名称
-# output_file_name = '微博信息批量获取'  # 输出文件的名称
+output_file_name = '微博信息批量获取'  # 输出文件的名称
 #
-# path_prefix = '/Users/alicewish/我的坚果云/'  # 文件地址前缀
+path_prefix = '/Users/alicewish/我的坚果云/'  # 文件地址前缀
 # input_file_path = path_prefix + input_file_name + '.txt'  # 输入文件的地址
-# output_file_path = path_prefix + output_file_name + '.txt'  # 输出文件的地址
+output_file_path = path_prefix + output_file_name + '.txt'  # 输出文件的地址
 
 # # ================按行读取文本:with open(更好)================
 # text_readline = []  # 初始化按行存储数据列表,不接受结尾换行符
@@ -71,6 +71,12 @@ import pyperclip
 
 pyperclip.copy(text)
 spam = pyperclip.paste()
+
+f = open(output_file_path, 'w')
+try:
+    f.write(text)
+finally:
+    f.close()
 
 # ================运行时间计时================
 run_time = time.time() - start_time

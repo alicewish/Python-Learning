@@ -43,7 +43,7 @@ def make_freq_dict(text):
 
 # ====================计算并显示给定文本文件的统计数据====================
 def print_file_stats(s):
-    """Print statistics for the given file.
+    """打印给定文件的统计数据
     """
     num_chars = len(s)  # 在规范化s 之前计算字符数
     num_lines = s.count('\n')  # 在规范化s 之前计算行数

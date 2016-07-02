@@ -12,10 +12,6 @@ text_readline = []  # 初始化按行存储数据列表,不接受结尾换行符
 with open(txt_file_path) as fin:
     for line in fin:
         text_readline.append((line).replace('\n', ''))
-# print(text_readline)
-
-# for i in range(len(text_readline)):
-#     print(text_readline[i])
 
 my_user_key = text_readline[0]
 my_api_token = text_readline[1]

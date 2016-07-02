@@ -5,7 +5,7 @@ start_time = time.time()  # 初始时间戳
 
 # ========================输入区开始========================
 file_name = "MainMenu.nib"
-app_name = "Quiver"
+app_name = "Coda"
 file_path_prefix = "/Users/alicewish/Documents/GitHub/Mac-App-Translation/"
 input_file_path = file_path_prefix + app_name + "/en.lproj/" + file_name + ".txt"  # 输入文件的地址
 refer_file_path = "/Users/alicewish/Documents/GitHub/Mac-App-Translation/总词典.txt"  # 词典文件的地址
@@ -38,7 +38,7 @@ with open(input_file_path) as fin:
         if "<string>" in input_line and "<key>" not in input_line and ".title" not in input_line:
             English = (input_line.replace("<string>", "")).replace("</string>", "")
             status = False
-            if len(English) > 2 and re.match(r'\b[A-Z][a-z]{2,}[^.]', English) and len(English) < 30:
+            if len(English) > 2 and re.match(r'\b[A-Z][a-z]{2,}[^.]', English) and len(English) < 60:
                 status = True
             if len(English) > 18 and " " not in English:
                 status = False

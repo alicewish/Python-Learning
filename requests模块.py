@@ -2,13 +2,13 @@ import requests, time
 
 start_time = time.time()  # 初始时间戳
 
-r = requests.get("http://xlzd.me/query", params={"name": "xlzd", "lang": "python"})
-print(r.url)
-r = requests.get('http://xlzd.me')
-print(r.encoding)
-print(r.headers)
-print(r.cookies)
-print(r.text)
+page = requests.get("http://xlzd.me/query", params={"name": "xlzd", "lang": "python"})
+print(page.url)
+page = requests.get('http://xlzd.me')
+print(page.encoding)
+print(page.headers)
+print(page.cookies)
+print(page.text)
 
 # ================运行时间计时================
 run_time = time.time() - start_time

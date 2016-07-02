@@ -1,5 +1,4 @@
-from lxml import html
-import requests, time
+import time
 
 start_time = time.time()  # 初始时间戳
 
@@ -9,7 +8,7 @@ from zhihu_oauth.exception import NeedCaptchaException
 file_name = '知乎'  # 文件名
 path_prefix = '/Users/alicewish/我的坚果云/'  # 文件地址前缀
 txt_file_path = path_prefix + file_name + '.txt'  # TXT文件名
-# ================按行读取文本:with open(更好)================
+# ================按行读取文本================
 text_readline = []  # 初始化按行存储数据列表,不接受结尾换行符
 with open(txt_file_path) as fin:
     for line in fin:
@@ -18,9 +17,9 @@ print(text_readline)
 
 for i in range(len(text_readline)):
     print(text_readline[i])
-
-account=text_readline[0]
-passward=text_readline[1]
+# ================读取账号和密码================
+account = text_readline[0]
+passward = text_readline[1]
 
 client = ZhihuClient()
 
