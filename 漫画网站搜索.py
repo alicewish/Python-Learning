@@ -1,44 +1,30 @@
 from lxml import html
 import requests, time
-from urllib.parse import quote
-
-
 
 start_time = time.time()  # 初始时间戳
 now = time.strftime("%Y%m%d", time.localtime())  # 当前日期戳
 # ========================输入区开始========================
+search_comic_name = 'buyilianmen'  # 查询用漫画名
 
-search_comic_name = '"Injustice: Gods Among Us: Year Five (2015-) #20"'  # 查询用漫画名
-
-url_prefix = 'http://www.bing.com/search?q='
-search_part = search_comic_name + " comixology"
-comic_url = (url_prefix + quote(search_part)).replace("%20", "+")  # 完整的查询网址
-print(comic_url)
-
-
-
-global header_info
-header_info = {
-    'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1581.2 Safari/537.36',
-    'Host':'www.zhihu.com',
-    'Origin':'http://www.zhihu.com',
-    'Connection':'keep-alive',
-    'Referer':'http://www.zhihu.com/people/zihaolucky/followers',
-    'Content-Type':'application/x-www-form-urlencoded',
-    }
-#todo
+url_prefix = 'http://manhua.dmzj.com/'
+comic_url = url_prefix + search_comic_name  # 完整的查询网址
 # ========================执行区开始========================
 page = requests.get(comic_url)  # 获取网页信息
 tree = html.fromstring(page.text)  # 构筑查询用树
 # ====================分期====================
-issues_url = tree.xpath('//a[@target="_blank"]/@href')
+issues_url = tree.xpath('//a[@class="content-details"]/@href')
 for i in range(len(issues_url)):
     print(i)
     print(issues_url[i])
 # ========================输出区开始========================
 
-# print(issues_url[85])
-
+# ================写入文本================
+output_file_path = "/Users/alicewish/我的坚果云/分析用网页.htm"
+f = open(output_file_path, 'w')
+try:
+    f.write(page.text)
+finally:
+    f.close()
 # ================运行时间计时================
 run_time = time.time() - start_time
 if run_time < 60:  # 两位小数的秒
