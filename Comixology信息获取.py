@@ -36,8 +36,14 @@ for i in range(len(raw_credits)):
 credit = "\n".join(credit_list)
 print(len(credit))
 
+digital_release_date = ""
+for i in range(len(credit_list)):
+    if credit_list[i] == "Digital Release Date":
+        digital_release_date = credit_list[i + 1]
+
 # ========================输出区开始========================
-info_list = ("标题: " + title, "价格: " + price, "简介: " + description, "创作信息: " + "\n" + credit, "评星: " + review_count)
+info_list = ("标题: " + title, "价格: " + price, "简介: " + description, "创作信息: " + "\n" + credit, "评星: " + review_count,
+             "数字出版日期: " + digital_release_date)
 info = "\r\n".join(info_list)
 print(info)
 

@@ -27,11 +27,8 @@ for i in range(len(all_url)):
             check_set.add(short_link)
 # ========================输出区开始========================
 print(len(issues_url))
-
 text = '\r\n'.join(issues_url)
-
 print(text)
-
 
 # ================写入剪贴板================
 import pyperclip

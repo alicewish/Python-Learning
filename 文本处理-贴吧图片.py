@@ -9,7 +9,7 @@ r = Tk()
 read_text = r.clipboard_get()
 
 # 将正则表达式编译成Pattern对象
-pattern = re.compile(r'http://imgsrc.baidu.com/forum/pic/item/[^"]*')
+pattern = re.compile(r'http://imgsrc.baidu.com/forum/pic/item/[^)]*')
 # 使用Pattern匹配文本，获得全部匹配结果
 find = pattern.findall(read_text)#列表形式存储的结果
 prefix='<img src="'

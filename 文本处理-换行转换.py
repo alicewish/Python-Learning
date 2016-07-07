@@ -9,7 +9,11 @@ from tkinter import Tk
 r = Tk()
 read_text = r.clipboard_get()
 
-out_text=read_text.replace("|","\n")
+if "|" in read_text:
+    out_text=read_text.replace("|","\n")
+else:
+    out_text=read_text.replace("\n","|")
+
 print(out_text)
 # ================写入剪贴板================
 import pyperclip
