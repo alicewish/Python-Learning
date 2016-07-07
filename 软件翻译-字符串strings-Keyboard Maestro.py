@@ -11,61 +11,44 @@ input_file_path = file_path_prefix + app_name + "/English.lproj/" + file_name + 
 refer_file_path = file_path_prefix + app_name + "/zh_CN.lproj/Translation Dict.txt"  # 词典文件的地址
 output_file_path = file_path_prefix + app_name + "/zh_CN.lproj/" + file_name + ".txt"  # 输出文件的地址
 
-# ================按行读取输入文本================
-input_readline = []  # 初始化按行存储数据列表,不接受换行符
-with open(input_file_path) as fin:
-    for line in fin:
-        input_line = (line.replace('\n', '')).replace('\t', '')
-        input_readline.append(input_line)
-
-# ================按行读取参考文本================
-refer_readline = []  # 初始化按行存储数据列表,不接受换行符
+# ================按行读取参考文本并字典化================
+refer_dict = {}  # 创建一个字典
 with open(refer_file_path) as fin:
     for line in fin:
         refer_line = (line.replace('\n', '')).replace('\t', '')
-        refer_readline.append(refer_line)
+        if "|" in refer_line:  # 接受key|value格式
+            split_line = refer_line.split("|")
+            refer_dict[split_line[0]] = split_line[1]
 
-# ========================输入字典化========================
-input_dict = {}  # 创建一个字典
-# 接受key= "value";格式
-for i in range(len(input_readline)):
-    if "=" in input_readline[i]:
-        split_line = input_readline[i].split("=")
-        key = split_line[0]
-        raw_value = split_line[1]
-        split_value = raw_value.split('"')
-        value = split_value[1]
-        input_dict[key] = value
-        print(key, input_dict[key])
-print(len(input_dict))
-# ========================参考字典化========================
-refer_dict = {}  # 创建一个字典
-# 接受key=value格式
-for i in range(len(refer_readline)):
-    if "=" in refer_readline[i]:
-        split_line = refer_readline[i].split("=")
-        key = split_line[0]
-        value = split_line[1]
-        refer_dict[key] = value
-# print(key, refer_dict[key])
-# print(len(refer_dict))
-# ========================建立输出字典========================
-output_dict = input_dict
-for key in refer_dict:
-    output_dict[key] = refer_dict[key]
+# ================按行读取输入文本================
+output_readline = []  # 初始化按行存储数据列表,不接受换行符
+check_set = set()  # 初始化为空集合
+with open(input_file_path) as fin:
+    for line in fin:
+        input_line = (line.replace('\n', '')).replace('\t', '')  # 无视换行和制表符
+        output_line = input_line
+        # 判断格式是否符合 key= "value";
+        if "=" in input_line:
+            split_line = input_line.split("|")
+            English = split_line[0].strip('" ')
+            if English in refer_dict:
+                Chinese = refer_dict[English]
+                output_line = English + '="' + Chinese + '"'
+            elif English in check_set:
+                pass
+            else:  # 如果字典里没有则附在字典结尾
+                check_set.add(English)
+                f = open(refer_file_path, 'a')
+                append_line = "\r\n" + English
+                try:
+                    f.write(append_line)
+                finally:
+                    f.close()
+        output_readline.append(output_line)
 
-output_readline = []
-for key, value in output_dict.items():
-    line = key + '= "' + value + '";'
-    output_readline.append(line)
-    print(line)
-# ========================检查缺失键值========================
-for key in input_dict:
-    if not refer_dict.get(key):
-        print(key, "\r\n", input_dict.get(key))
 # ================写入文本================
 text = '\r\n'.join(output_readline)
-# print(text)
+print(text)
 
 f = open(output_file_path, 'w')
 try:
@@ -73,6 +56,7 @@ try:
 finally:
     f.close()
 
+print(file_path_prefix + app_name + "/zh_CN.lproj")
 # ================运行时间计时================
 run_time = time.time() - start_time
 if run_time < 60:  # 两位小数的秒

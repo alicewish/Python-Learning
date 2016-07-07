@@ -12,6 +12,7 @@ print(text_readline)
 line_list = []
 for i in range(len(text_readline)):
     entry_start_time = time.time()
+    print(i)
     try:
         # ========================函数区开始========================
         html = requests.get('http://api.kanzhihu.com/userdetail2/' + text_readline[i])
@@ -112,6 +113,14 @@ import pyperclip
 
 pyperclip.copy(info)
 spam = pyperclip.paste()
+
+# ================写入TXT================
+txt_file_path = '/Users/alicewish/我的坚果云/批量查询用户信息.txt'  # TXT文件名
+f = open(txt_file_path, 'w')
+try:
+    f.write(info)
+finally:
+    f.close()
 # ================运行时间计时================
 run_time = time.time() - start_time
 if run_time < 60:  # 两位小数的秒

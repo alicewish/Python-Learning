@@ -5,27 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="373ecf99-8a13-48a4-b504-b3b0531662d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/批量获取本周漫画包.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/文件操作-复制、移动.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/文本处理-Markdown转换.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/文本处理-读取微博UID.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/软件翻译-字符串strings-ScreenFlow.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/软件翻译-编译文件nib-GIF Brewery 3.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/文本处理-换行转换.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/文本处理-读取百度云分享地址.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/知乎-查询专栏.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/知乎-查询我的信息.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/知乎-查询收藏夹.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/知乎-查询文章.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/知乎-查询答案.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/知乎-查询评论.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/知乎-查询问题.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/软件翻译-编译文件nib-LICEcap基于English.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/软件翻译-编译文件nib-Snagit4基于Base.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/软件翻译-编译文件nib-SnippetsLab基于Base.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML抓取.py" afterPath="$PROJECT_DIR$/HTML抓取.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology信息获取.py" afterPath="$PROJECT_DIR$/Comixology信息获取.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索.py" afterPath="$PROJECT_DIR$/Comixology搜索.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PushOver通知.py" afterPath="$PROJECT_DIR$/PushOver通知.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requests模块.py" afterPath="$PROJECT_DIR$/requests模块.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/~模板.py" afterPath="$PROJECT_DIR$/~模板.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/当前平台版本信息.py" afterPath="$PROJECT_DIR$/当前平台版本信息.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/微博-信息批量获取.py" afterPath="$PROJECT_DIR$/微博-信息批量获取.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/文本处理-正则表达式匹配.py" afterPath="$PROJECT_DIR$/文本处理-正则表达式匹配.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/文本处理-词频统计.py" afterPath="$PROJECT_DIR$/文本处理-词频统计.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/时间.py" afterPath="$PROJECT_DIR$/时间.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/不可能的世界读取最新章节.py" afterPath="$PROJECT_DIR$/不可能的世界读取最新章节.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/文本处理-偷揉图床.py" afterPath="$PROJECT_DIR$/文本处理-偷揉图床.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/文本处理-扫描规范化.py" afterPath="$PROJECT_DIR$/文本处理-扫描规范化.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/文本处理-贴吧图片.py" afterPath="$PROJECT_DIR$/文本处理-贴吧图片.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/漫画Novus Week地址.py" afterPath="$PROJECT_DIR$/漫画Novus Week地址.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/知乎-个人.py" afterPath="$PROJECT_DIR$/知乎-个人.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/知乎-登录.py" afterPath="$PROJECT_DIR$/知乎-登录.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/软件翻译-编译文件nib-Coda.py" afterPath="$PROJECT_DIR$/软件翻译-编译文件nib-Coda.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/软件翻译-编译文件nib-GitHub Desktop.py" afterPath="$PROJECT_DIR$/软件翻译-编译文件nib-GitHub Desktop.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/软件翻译-编译文件nib-Quiver.py" afterPath="$PROJECT_DIR$/软件翻译-编译文件nib-Quiver.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/知乎-看知乎-批量查询用户Hash.py" afterPath="$PROJECT_DIR$/知乎-看知乎-批量查询用户Hash.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/知乎-看知乎-批量查询用户信息.py" afterPath="$PROJECT_DIR$/知乎-看知乎-批量查询用户信息.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/软件翻译-字符串strings-Keyboard Maestro.py" afterPath="$PROJECT_DIR$/软件翻译-字符串strings-Keyboard Maestro.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/软件翻译-编译文件nib-GIF Brewery 3.py" afterPath="$PROJECT_DIR$/软件翻译-编译文件nib-GIF Brewery 3.py" />
     </list>
     <ignored path="Python-Learning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,30 +52,33 @@
     <SUITE FILE_PATH="coverage/Python-Learning$requests.coverage" NAME="requests模块 Coverage Results" MODIFIED="1467441127877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$Python_docx.coverage" NAME="Python-docx演示 Coverage Results" MODIFIED="1466304410448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_MacApp.coverage" NAME="翻译-MacApp读取 Coverage Results" MODIFIED="1467113041484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python-Learning$__Hash.coverage" NAME="知乎-看知乎-批量查询用户Hash Coverage Results" MODIFIED="1467620477187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$HTMLMarkdown.coverage" NAME="HTML转Markdown Coverage Results" MODIFIED="1466525783623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$ICV2_.coverage" NAME="ICV2读取文章表格每行数据-旧 Coverage Results" MODIFIED="1466650537303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python-Learning$_nib_GIF_Brewery_3.coverage" NAME="软件翻译-编译文件nib-GIF Brewery 3 Coverage Results" MODIFIED="1467482899279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python-Learning$_nib_GIF_Brewery_3.coverage" NAME="软件翻译-编译文件nib-GIF Brewery 3 Coverage Results" MODIFIED="1467510893473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_strings_Glyphs.coverage" NAME="软件翻译-字符串strings-Glyphs Coverage Results" MODIFIED="1467341223197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_nib_Shimo.coverage" NAME="软件翻译-编译文件nib-Shimo Coverage Results" MODIFIED="1467343388908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_nib_Quiver.coverage" NAME="软件翻译-编译文件nib-Quiver Coverage Results" MODIFIED="1467471512830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$IP.coverage" NAME="淘宝的IP查询服务 Coverage Results" MODIFIED="1466320033954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_strings_ScreenFlow.coverage" NAME="软件翻译-字符串strings-ScreenFlow Coverage Results" MODIFIED="1467461243048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python-Learning$TwitterAPI.coverage" NAME="TwitterAPI测试 Coverage Results" MODIFIED="1466609457539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python-Learning$_nib_LICEcapEnglish.coverage" NAME="软件翻译-编译文件nib-LICEcap基于English Coverage Results" MODIFIED="1467725232404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python-Learning$TwitterAPI.coverage" NAME="TwitterAPI测试 Coverage Results" MODIFIED="1467605215804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$EXCEL.coverage" NAME="EXCEL读写 Coverage Results" MODIFIED="1466305768726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python-Learning$__.coverage" NAME="知乎-查询用户信息-新 Coverage Results" MODIFIED="1466921958847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python-Learning$__.coverage" NAME="知乎-看知乎-批量查询用户信息 Coverage Results" MODIFIED="1467622345403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_nib_GitHub_Desktop.coverage" NAME="软件翻译-编译文件nib-GitHub Desktop Coverage Results" MODIFIED="1467297641179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_Markdown.coverage" NAME="文本处理-Markdown转换 Coverage Results" MODIFIED="1467379279885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$Novus_Week.coverage" NAME="漫画Novus Week地址 Coverage Results" MODIFIED="1466343799966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_nib_Typora.coverage" NAME="软件翻译-编译文件nib-Typora Coverage Results" MODIFIED="1467339206366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_nib_Boson.coverage" NAME="软件翻译-编译文件nib-Boson Coverage Results" MODIFIED="1467284546165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$pushover.coverage" NAME="pushover Coverage Results" MODIFIED="1467292009084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/anaconda/lib/python3.5/site-packages" />
+    <SUITE FILE_PATH="coverage/Python-Learning$_nib_SnippetsLab.coverage" NAME="软件翻译-编译文件nib-SnippetsLab Coverage Results" MODIFIED="1467600762596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_nib_Coda.coverage" NAME="软件翻译-编译文件nib-Coda Coverage Results" MODIFIED="1467364592162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$PushOver.coverage" NAME="PushOver通知 Coverage Results" MODIFIED="1467297131038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_nib_TaskPaper.coverage" NAME="软件翻译-编译文件nib-TaskPaper Coverage Results" MODIFIED="1467213476158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_strings_Keyboard_Maestro.coverage" NAME="软件翻译-字符串strings-Keyboard Maestro Coverage Results" MODIFIED="1467205246078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_HTMLMarkdown.coverage" NAME="文本处理-HTML转Markdown Coverage Results" MODIFIED="1466779918180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python-Learning$Comixology.coverage" NAME="Comixology搜索 Coverage Results" MODIFIED="1466674200356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$ComicBingKindle.coverage" NAME="Comic用Bing搜索Kindle Coverage Results" MODIFIED="1466676628859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python-Learning$Comixology.coverage" NAME="Comixology搜索 Coverage Results" MODIFIED="1467631766541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_Hash.coverage" NAME="知乎-批量查询用户Hash Coverage Results" MODIFIED="1466946274873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$DC_Week.coverage" NAME="漫画DC Week地址 Coverage Results" MODIFIED="1466343703988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$Python.coverage" NAME="更新Python库 Coverage Results" MODIFIED="1466321025751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -80,10 +88,11 @@
     <SUITE FILE_PATH="coverage/Python-Learning$Marvel_Week.coverage" NAME="漫画Marvel Week地址 Coverage Results" MODIFIED="1466343785444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_nib_MacDown.coverage" NAME="软件翻译-编译文件nib-MacDown Coverage Results" MODIFIED="1467301764736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$0_Day_Week.coverage" NAME="漫画0-Day Week地址 Coverage Results" MODIFIED="1466343835063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python-Learning$_nib_Snagit4Base.coverage" NAME="软件翻译-编译文件nib-Snagit4基于Base Coverage Results" MODIFIED="1467728363321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_nib_Storyist.coverage" NAME="软件翻译-编译文件nib-Storyist Coverage Results" MODIFIED="1467219823140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python-Learning$_.coverage" NAME="~模板 Coverage Results" MODIFIED="1467476031204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python-Learning$_.coverage" NAME="知乎-查询话题下所有未回答问题 Coverage Results" MODIFIED="1467865204669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_properties.coverage" NAME="软件翻译-属性properties Coverage Results" MODIFIED="1467183652179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python-Learning$.coverage" NAME="不可能的世界读取最新章节 Coverage Results" MODIFIED="1467472952697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python-Learning$.coverage" NAME="漫画地址查询 Coverage Results" MODIFIED="1467826002461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$DOCX.coverage" NAME="DOCX读写 Coverage Results" MODIFIED="1466305039989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_nib_Boson_.coverage" NAME="软件翻译-编译文件nib-Boson-附属 Coverage Results" MODIFIED="1467286133074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_nib_Glyphs.coverage" NAME="软件翻译-编译文件nib-Glyphs Coverage Results" MODIFIED="1467339764643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -106,33 +115,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="时间.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/时间.py">
+      <file leaf-file-name="知乎-查询用户.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/知乎-查询用户.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="批量获取本周漫画包.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/批量获取本周漫画包.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#27#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="软件翻译-字符串strings-Glyphs.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/软件翻译-字符串strings-Glyphs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="71" selection-end-column="47" />
+            <state relative-caret-position="-265">
+              <caret line="28" column="83" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="83" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -140,63 +127,71 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="软件翻译-字符串strings-ScreenFlow.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/软件翻译-字符串strings-ScreenFlow.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="软件翻译-编译文件nib-Quiver.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/软件翻译-编译文件nib-Quiver.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
-              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="软件翻译-编译文件nib-GIF Brewery 3.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/软件翻译-编译文件nib-GIF Brewery 3.py">
+      <file leaf-file-name="知乎-查询问题.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/知乎-查询问题.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="40" column="99" selection-start-line="40" selection-start-column="99" selection-end-line="40" selection-end-column="99" />
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="不可能的世界读取最新章节.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/不可能的世界读取最新章节.py">
+      <file leaf-file-name="知乎-查询话题下所有未回答问题.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/知乎-查询话题下所有未回答问题.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+            <state relative-caret-position="780">
+              <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="~模板.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/~模板.py">
+      <file leaf-file-name="知乎-查询话题下所有精华回答及对应问题.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/知乎-查询话题下所有精华回答及对应问题.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="46" column="76" selection-start-line="46" selection-start-column="76" selection-end-line="46" selection-end-column="76" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="软件翻译-字符串strings-Keyboard Maestro.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/软件翻译-字符串strings-Keyboard Maestro.py">
+      <file leaf-file-name="知乎-查询话题下所有最佳回答者.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/知乎-查询话题下所有最佳回答者.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="1185">
+              <caret line="80" column="6" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="知乎-查询我的所有关注.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/知乎-查询我的所有关注.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-895">
+              <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="知乎-查询我的信息.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/知乎-查询我的信息.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="960">
+              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="知乎-查询我的所有粉丝.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/知乎-查询我的所有粉丝.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="79" column="24" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -204,12 +199,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="用户Nemesis43地址.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/用户Nemesis43地址.py">
+      <file leaf-file-name="知乎-查询评论.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/知乎-查询评论.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="125">
+              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="知乎-查询话题.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/知乎-查询话题.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -222,38 +229,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/知乎-批量查询用户Hash.py" />
-        <option value="$PROJECT_DIR$/知乎-批量查询用户信息.py" />
-        <option value="$PROJECT_DIR$/结巴分词.py" />
-        <option value="$PROJECT_DIR$/文本处理-断行训练.py" />
-        <option value="$PROJECT_DIR$/文本处理-断行.py" />
-        <option value="$PROJECT_DIR$/翻译-MacApp读取.py" />
-        <option value="$PROJECT_DIR$/软件翻译-属性properties-批量.py" />
-        <option value="$PROJECT_DIR$/文本处理-贴吧图片.py" />
-        <option value="$PROJECT_DIR$/软件翻译-属性properties.py" />
-        <option value="$PROJECT_DIR$/软件翻译-字符串strings.py" />
-        <option value="$PROJECT_DIR$/软件翻译-字符串strings-Keyboard Maestro.py" />
-        <option value="$PROJECT_DIR$/DOCX读写.py" />
-        <option value="$PROJECT_DIR$/软件翻译-编译文件nib-TaskPaper.py" />
-        <option value="$PROJECT_DIR$/软件翻译-编译文件nib-Storyist.py" />
-        <option value="$PROJECT_DIR$/软件翻译-编译文件nib-Boson.py" />
-        <option value="$PROJECT_DIR$/软件翻译-编译文件nib-Boson-附属.py" />
-        <option value="$PROJECT_DIR$/安装说明.py" />
-        <option value="$USER_HOME$/anaconda/lib/python3.5/site-packages/pushover.py" />
-        <option value="$PROJECT_DIR$/软件翻译-编译文件nib-Timing-附属.py" />
-        <option value="$PROJECT_DIR$/软件翻译-编译文件nib-MacDown.py" />
-        <option value="$PROJECT_DIR$/软件翻译-编译文件nib-Typora.py" />
-        <option value="$PROJECT_DIR$/软件翻译-编译文件nib-Glyphs.py" />
-        <option value="$PROJECT_DIR$/软件翻译-字符串strings-Glyphs.py" />
-        <option value="$PROJECT_DIR$/软件翻译-编译文件nib-Shimo.py" />
-        <option value="$PROJECT_DIR$/软件翻译-编译文件nib-Alternote.py" />
-        <option value="$PROJECT_DIR$/软件翻译-编译文件nib-Coda.py" />
-        <option value="$PROJECT_DIR$/文件操作-Markdown抽图.py" />
-        <option value="$PROJECT_DIR$/文件操作-Markdown抽取图片行.py" />
-        <option value="$PROJECT_DIR$/文本处理-图片行到绝对地址.py" />
-        <option value="$PROJECT_DIR$/文件操作-移动图片.py" />
-        <option value="$PROJECT_DIR$/文本处理-Markdown抽取图片行.py" />
-        <option value="$PROJECT_DIR$/文本处理-Markdown转换.py" />
         <option value="$PROJECT_DIR$/微博-信息批量获取.py" />
         <option value="$PROJECT_DIR$/文本处理-读取微博UID.py" />
         <option value="$PROJECT_DIR$/文件操作-复制、移动.py" />
@@ -262,10 +237,8 @@
         <option value="$PROJECT_DIR$/文本处理-正则表达式匹配.py" />
         <option value="$PROJECT_DIR$/知乎-登录.py" />
         <option value="$PROJECT_DIR$/HTML抓取.py" />
-        <option value="$PROJECT_DIR$/PushOver通知.py" />
         <option value="$PROJECT_DIR$/requests模块.py" />
         <option value="$PROJECT_DIR$/当前平台版本信息.py" />
-        <option value="$PROJECT_DIR$/知乎-个人.py" />
         <option value="$PROJECT_DIR$/软件翻译-编译文件nib-GitHub Desktop.py" />
         <option value="$PROJECT_DIR$/时间.py" />
         <option value="$PROJECT_DIR$/批量获取本周漫画包.py" />
@@ -273,6 +246,40 @@
         <option value="$PROJECT_DIR$/软件翻译-编译文件nib-Quiver.py" />
         <option value="$PROJECT_DIR$/~模板.py" />
         <option value="$PROJECT_DIR$/软件翻译-编译文件nib-GIF Brewery 3.py" />
+        <option value="$PROJECT_DIR$/软件翻译-编译文件nib-SnippetsLab.py" />
+        <option value="$PROJECT_DIR$/PushOver通知.py" />
+        <option value="$PROJECT_DIR$/软件翻译-编译文件nib-SnippetsLab基于Base.py" />
+        <option value="$PROJECT_DIR$/软件翻译-字符串strings-Keyboard Maestro.py" />
+        <option value="$PROJECT_DIR$/知乎-看知乎-批量查询用户Hash.py" />
+        <option value="$PROJECT_DIR$/漫画Novus Week地址.py" />
+        <option value="$PROJECT_DIR$/知乎-看知乎-批量查询用户信息.py" />
+        <option value="$PROJECT_DIR$/文本处理-扫描规范化.py" />
+        <option value="$PROJECT_DIR$/文本处理-贴吧图片.py" />
+        <option value="$PROJECT_DIR$/文本处理-读取百度云分享地址.py" />
+        <option value="$PROJECT_DIR$/Comixology信息获取.py" />
+        <option value="$PROJECT_DIR$/Comixology搜索.py" />
+        <option value="$PROJECT_DIR$/文本处理-偷揉图床.py" />
+        <option value="$PROJECT_DIR$/软件翻译-编译文件nib-LICEcap基于English.py" />
+        <option value="$PROJECT_DIR$/软件翻译-编译文件nib-Snagit4基于Base.py" />
+        <option value="$PROJECT_DIR$/不可能的世界读取最新章节.py" />
+        <option value="$PROJECT_DIR$/ICV2读取列表.py" />
+        <option value="$PROJECT_DIR$/文本处理-换行转换.py" />
+        <option value="$PROJECT_DIR$/知乎-个人.py" />
+        <option value="$PROJECT_DIR$/知乎-按ID查询某人.py" />
+        <option value="$PROJECT_DIR$/知乎-查询我的信息.py" />
+        <option value="$PROJECT_DIR$/知乎-查询用户.py" />
+        <option value="$PROJECT_DIR$/知乎-查询专栏.py" />
+        <option value="$PROJECT_DIR$/知乎-查询答案.py" />
+        <option value="$PROJECT_DIR$/知乎-查询文章.py" />
+        <option value="$PROJECT_DIR$/知乎-查询收藏夹.py" />
+        <option value="$PROJECT_DIR$/知乎-查询问题.py" />
+        <option value="$PROJECT_DIR$/知乎-查询话题下所有未回答问题.py" />
+        <option value="$PROJECT_DIR$/知乎-查询话题下所有精华回答及对应问题.py" />
+        <option value="$PROJECT_DIR$/知乎-查询话题下所有最佳回答者.py" />
+        <option value="$PROJECT_DIR$/知乎-查询评论.py" />
+        <option value="$PROJECT_DIR$/知乎-查询话题.py" />
+        <option value="$PROJECT_DIR$/知乎-查询我的所有粉丝.py" />
+        <option value="$PROJECT_DIR$/知乎-查询我的所有关注.py" />
       </list>
     </option>
   </component>
@@ -335,7 +342,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -356,13 +363,13 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="FullScreen" value="true" />
@@ -372,8 +379,8 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.软件翻译-编译文件nib-GIF Brewery 3">
-    <configuration default="false" name="软件翻译-字符串strings-ScreenFlow" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.知乎-查询话题下所有未回答问题">
+    <configuration default="false" name="知乎-个人" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -386,12 +393,12 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Python-Learning" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/软件翻译-字符串strings-ScreenFlow.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/知乎-个人.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="软件翻译-编译文件nib-Quiver" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="漫画地址查询" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -404,12 +411,12 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Python-Learning" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/软件翻译-编译文件nib-Quiver.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/漫画地址查询.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="不可能的世界读取最新章节" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="知乎-查询答案" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -422,12 +429,12 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Python-Learning" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/不可能的世界读取最新章节.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/知乎-查询答案.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="~模板" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="知乎-查询问题" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -440,12 +447,12 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Python-Learning" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/~模板.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/知乎-查询问题.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="软件翻译-编译文件nib-GIF Brewery 3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="知乎-查询话题下所有未回答问题" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -458,7 +465,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Python-Learning" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/软件翻译-编译文件nib-GIF Brewery 3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/知乎-查询话题下所有未回答问题.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -672,19 +679,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.软件翻译-字符串strings-ScreenFlow" />
-      <item index="1" class="java.lang.String" itemvalue="Python.软件翻译-编译文件nib-Quiver" />
-      <item index="2" class="java.lang.String" itemvalue="Python.不可能的世界读取最新章节" />
-      <item index="3" class="java.lang.String" itemvalue="Python.~模板" />
-      <item index="4" class="java.lang.String" itemvalue="Python.软件翻译-编译文件nib-GIF Brewery 3" />
+      <item index="0" class="java.lang.String" itemvalue="Python.知乎-个人" />
+      <item index="1" class="java.lang.String" itemvalue="Python.漫画地址查询" />
+      <item index="2" class="java.lang.String" itemvalue="Python.知乎-查询答案" />
+      <item index="3" class="java.lang.String" itemvalue="Python.知乎-查询问题" />
+      <item index="4" class="java.lang.String" itemvalue="Python.知乎-查询话题下所有未回答问题" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.软件翻译-编译文件nib-GIF Brewery 3" />
-        <item index="1" class="java.lang.String" itemvalue="Python.~模板" />
-        <item index="2" class="java.lang.String" itemvalue="Python.不可能的世界读取最新章节" />
-        <item index="3" class="java.lang.String" itemvalue="Python.软件翻译-编译文件nib-Quiver" />
-        <item index="4" class="java.lang.String" itemvalue="Python.软件翻译-字符串strings-ScreenFlow" />
+        <item index="0" class="java.lang.String" itemvalue="Python.知乎-查询话题下所有未回答问题" />
+        <item index="1" class="java.lang.String" itemvalue="Python.知乎-查询问题" />
+        <item index="2" class="java.lang.String" itemvalue="Python.知乎-查询答案" />
+        <item index="3" class="java.lang.String" itemvalue="Python.漫画地址查询" />
+        <item index="4" class="java.lang.String" itemvalue="Python.知乎-个人" />
       </list>
     </recent_temporary>
   </component>
@@ -717,16 +724,16 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3969957" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="468" y="171" width="504" height="558" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="468" y="171" width="504" height="558" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.4914163" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.49427754" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32932693" sideWeight="0.5486409" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32932693" sideWeight="0.5844063" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.48569384" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.42846924" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32932693" sideWeight="0.4513591" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32932693" sideWeight="0.4155937" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -738,7 +745,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.49427754" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.49427754" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -754,302 +761,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Kindle搜索.py">
+    <entry file="file://$PROJECT_DIR$/软件翻译-编译文件nib-MacDown.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/不可能的世界读取列表.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/安装说明.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Xpath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-55">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.1/python_stubs/447054826/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1763">
-          <caret line="339" column="4" selection-start-line="339" selection-start-column="4" selection-end-line="339" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.1/python_stubs/447054826/time.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/文本处理-图片地址到绝对地址.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/文本处理-读取剪贴板.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/文本处理-写入剪贴板.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/文本处理-Markdown抽取图片行.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="19" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/文本处理-正则.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/文本处理-正则表达式匹配.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/文本处理-读取微博UID.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-55">
-          <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/知乎-登录.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/文本处理-HTML转Markdown.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/调试.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EXCEL读写.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML抓取.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ICV2读取文章表格每行数据-新.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-383">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/字典.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PushOver通知.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/淘宝的IP查询服务.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/查询-有道查词.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#21#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/更新Python库.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/日期时间.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/文本处理-贴吧图片.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/微博-昵称获取.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requests模块.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="10" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/当前平台版本信息.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/知乎-个人.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Comixology搜索.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DOCX读写.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/软件翻译-编译文件nib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/软件翻译-编译文件nib-Coda.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-610">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="27" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/软件翻译-编译文件nib-GitHub Desktop.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ICV2读取列表.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ICV2读取列表及表格数据.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1057,122 +777,402 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/知乎-看知乎-查询用户信息-新.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-          <folding />
+        <state relative-caret-position="990">
+          <caret line="66" column="52" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/漫画Novus Week地址.py">
+    <entry file="file://$PROJECT_DIR$/ICV2读取文章表格每行数据-新.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/漫画地址查询.py">
+    <entry file="file://$PROJECT_DIR$/ICV2读取列表及表格数据.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="51" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1133">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/时间.py">
+    <entry file="file://$PROJECT_DIR$/Kat.cr磁力链接.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/用户Nemesis43地址.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="46" selection-start-line="0" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/文本处理-正则表达式匹配.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/文本处理-词频统计.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/文本处理-断行训练.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-460">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/批量获取本周漫画包.py">
+    <entry file="file://$PROJECT_DIR$/文本处理-断行.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="185">
+          <caret line="22" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/软件翻译-字符串strings-Keyboard Maestro.py">
+    <entry file="file://$PROJECT_DIR$/文本处理-扫描规范化.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/文本处理-Markdown抽取图片行.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/软件翻译-字符串strings-Glyphs.py">
+    <entry file="file://$PROJECT_DIR$/文本处理-Markdown转HTML.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="71" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/软件翻译-字符串strings-ScreenFlow.py">
+    <entry file="file://$PROJECT_DIR$/文本处理-读取百度云分享地址.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+        <state relative-caret-position="510">
+          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Comixology信息获取.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="49" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Comixology搜索.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/文本处理-读取微博UID.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/知乎-看知乎-批量查询用户信息.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/知乎-看知乎-批量查询用户Hash.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/文本处理-贴吧图片.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/软件翻译-编译文件nib-SnippetsLab基于Base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/软件翻译-编译文件nib-LICEcap基于English.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/软件翻译-编译文件nib-Snagit4基于Base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/不可能的世界读取最新章节.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#21#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ICV2读取列表.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kindle搜索.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/不可能的世界读取章节.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/安装说明.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/微博-信息批量获取.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#21#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/文本处理-偷揉图床.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/~模板.py">
+    <entry file="file://$PROJECT_DIR$/文本处理-换行转换.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/软件翻译-编译文件nib-Quiver.py">
+    <entry file="file://$PROJECT_DIR$/DOCX读写.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        <state relative-caret-position="-55">
+          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#11#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/磁力链接搜索地址.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1060">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/漫画Novus Week地址.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="99" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/漫画地址查询.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#21#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/知乎-个人.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-908">
+          <caret line="223" column="34" selection-start-line="223" selection-start-column="34" selection-end-line="223" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/知乎-查询专栏.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/知乎-查询答案.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/知乎-查询收藏夹.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/知乎-查询文章.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="26" column="84" selection-start-line="26" selection-start-column="84" selection-end-line="26" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/知乎-查询用户.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-265">
+          <caret line="28" column="83" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="83" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/软件翻译-编译文件nib-GIF Brewery 3.py">
+    <entry file="file://$PROJECT_DIR$/知乎-查询问题.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="40" column="99" selection-start-line="40" selection-start-column="99" selection-end-line="40" selection-end-column="99" />
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/知乎-查询话题下所有精华回答及对应问题.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="46" column="76" selection-start-line="46" selection-start-column="76" selection-end-line="46" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/知乎-查询评论.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/知乎-查询话题.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/知乎-查询话题下所有最佳回答者.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1185">
+          <caret line="80" column="6" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/知乎-查询我的信息.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/知乎-查询话题下所有未回答问题.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/知乎-查询我的所有粉丝.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="79" column="24" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/知乎-查询我的所有关注.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-895">
+          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
           <folding />
         </state>
       </provider>

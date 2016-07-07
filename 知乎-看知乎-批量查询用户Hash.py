@@ -6,11 +6,10 @@ from tkinter import Tk
 
 r = Tk()
 read_text = r.clipboard_get()
-text_readline = read_text.splitlines()
+text_readline = read_text.splitlines()  # 对数据分行
 print(text_readline)
 
 line = []
-
 for i in range(len(text_readline)):
     entry_start_time = time.time()
     try:
@@ -35,6 +34,14 @@ import pyperclip
 
 pyperclip.copy(line_text)
 spam = pyperclip.paste()
+
+# ================写入TXT================
+txt_file_path = '/Users/alicewish/我的坚果云/批量查询用户Hash.txt'  # TXT文件名
+f = open(txt_file_path, 'w')
+try:
+    f.write(line_text)
+finally:
+    f.close()
 # ================运行时间计时================
 run_time = time.time() - start_time
 if run_time < 60:  # 两位小数的秒

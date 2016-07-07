@@ -1,13 +1,14 @@
-from lxml import html
-import requests, time, re
+import time, re
 
 start_time = time.time()  # 初始时间戳
 
 # ========================输入区开始========================
 file_name = "MainMenu.nib"
-app_name = "GIF Brewery 3"
+app_name = "LICEcap"
+language_name = "English"
+
 file_path_prefix = "/Users/alicewish/Documents/GitHub/Mac-App-Translation/"
-input_file_path = file_path_prefix + app_name + "/Base.lproj/" + file_name + ".txt"  # 输入文件的地址
+input_file_path = file_path_prefix + app_name + "/" + language_name + ".lproj/" + file_name + ".txt"  # 输入文件的地址
 refer_file_path = "/Users/alicewish/Documents/GitHub/Mac-App-Translation/总词典.txt"  # 词典文件的地址
 output_file_path = file_path_prefix + app_name + "/zh_CN.lproj/" + file_name + ".txt"  # 输出文件的地址
 
@@ -16,32 +17,33 @@ refer_dict = {}  # 创建一个字典
 with open(refer_file_path) as fin:
     for line in fin:
         refer_line = (line.replace('\n', '')).replace('\t', '')
-        if "|" in refer_line: # 接受key|value格式
+        if "|" in refer_line:  # 接受key|value格式
             split_line = refer_line.split("|")
             refer_dict[split_line[0]] = split_line[1]
+
 # ================按行读取输入文本================
-input_readline = []  # 初始化按行存储数据列表,不接受换行符
-output_readline = []
-check_set = set()
+output_readline = []  # 初始化按行存储数据列表,不接受换行符
+check_set = set()  # 初始化为空集合
 with open(input_file_path) as fin:
     for line in fin:
-        input_line = (line.replace('\n', '')).replace('\t', '')
+        input_line = (line.replace('\n', '')).replace('\t', '')  # 无视换行和制表符
         output_line = input_line
         # 定位到<string>,判断是否英文
         if "<string>" in input_line and "<key>" not in input_line and ".title" not in input_line:
             English = (input_line.replace("<string>", "")).replace("</string>", "")
-            status = False
-            if len(English) > 1 and re.match(r'\b[A-Z][a-z]{2,}[^.]', English) and len(English) < 80:
-                status = True
-            if len(English) > 18 and " " not in English:
-                status = False
-            if status:
+            status_English = False  # 初始化状态为非翻译文本
+            if len(English) > 1 and re.match(r'\b[A-Z][a-z]{2,}[^.]', English) and len(English) < 80:  # 如果首字母大写，说明可翻译
+                status_English = True
+            if len(English) > 18 and " " not in English:  # 如果长词无空格，说明不可翻译
+                status_English = False
+            # 如果是英文则翻译
+            if status_English:
                 if English in refer_dict:
                     Chinese = refer_dict[English]
                     output_line = "<string>" + Chinese + "</string>"
                 elif English in check_set:
                     pass
-                else:
+                else:  # 如果字典里没有则附在字典结尾
                     check_set.add(English)
                     f = open(refer_file_path, 'a')
                     append_line = "\r\n" + English

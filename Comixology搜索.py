@@ -17,9 +17,15 @@ for i in range(len(issues_url)):
     print(i)
     print(issues_url[i])
 # ========================输出区开始========================
-
 print(issues_url[85])
 
+# ================写入文本================
+output_file_path = "/Users/alicewish/我的坚果云/分析用网页.htm"
+f = open(output_file_path, 'w')
+try:
+    f.write(page.text)
+finally:
+    f.close()
 # ================运行时间计时================
 run_time = time.time() - start_time
 if run_time < 60:  # 两位小数的秒

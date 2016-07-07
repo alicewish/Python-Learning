@@ -5,32 +5,30 @@ start_time = time.time()  # 初始时间戳
 
 # ================读取剪贴板================
 from tkinter import Tk
+
 r = Tk()
 read_text = r.clipboard_get()
 
-# 将正则表达式编译成Pattern对象
-# 使用r前缀就不用考虑转义了
+# ================正则匹配================
 pattern = re.compile(r'http://ww2.sinaimg.cn/large/[^)]*')
-# http://ww2.sinaimg.cn/large/a15b4afegw1f52rdah5gfj21hk1564hc
-# 使用Pattern匹配文本，获得全部匹配结果
-find = pattern.findall(read_text)#列表形式存储的结果
-prefix='<img src="'
-suffix='" />'
-info_line=[]
+# 匹配http://ww2.sinaimg.cn/large/a15b4afegw1f52rdah5gfj21hk1564hc
+
+# ================使用Pattern匹配文本，获得全部匹配结果================
+find = pattern.findall(read_text)  # 列表形式存储的结果
+info_line = []
 for i in range(len(find)):
-    full_html=prefix+find[i]+suffix
+    full_html = '<img src="' + find[i] + '" />'
     info_line.append(full_html)
-info="\r\n".join(info_line)
+info = "\r\n".join(info_line)
 print(info)
 print(len(find))
 
-# if match:
-#     # 使用Match获得分组信息
-#     print(match.group())
 # ================写入剪贴板================
 import pyperclip
+
 pyperclip.copy(info)
 spam = pyperclip.paste()
+
 # ================运行时间计时================
 run_time = time.time() - start_time
 if run_time < 60:  # 两位小数的秒

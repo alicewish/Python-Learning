@@ -5,7 +5,7 @@ start_time = time.time()  # 初始时间戳
 now = time.strftime("%Y%m%d", time.localtime())  # 当前日期戳
 # ========================输入区开始========================
 search_term = 'Novus Week'  # 搜索的关键词
-file_name = 'Novus Week地址-' + now  # 文件名
+file_name = search_term + '地址-' + now  # 文件名
 
 search_order = '/?field=time_add&sorder=desc'  # 搜索的顺序
 search_domain = 'https://kat.cr/usearch/'  # 搜索的网站地址
@@ -22,7 +22,6 @@ try:
 finally:
     f.close()
 # ==================操作EXCEL==================
-# data = xlrd.open_workbook(excel_file_path)  # 读取EXCEL
 workbook = xlwt.Workbook(encoding='utf-8')  # 创建workbook
 worksheet = workbook.add_sheet(search_term)  # 创建名为搜索的关键词的表
 worksheet.write(0, 0, label='文件名称')  # 往单元格内写入内容

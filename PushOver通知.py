@@ -1,5 +1,4 @@
-from lxml import html
-import requests, time
+import time
 from pushover import Client
 
 start_time = time.time()  # 初始时间戳
