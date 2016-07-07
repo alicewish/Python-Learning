@@ -11,12 +11,6 @@ path_prefix = '/Users/alicewish/我的坚果云/'  # 文件地址前缀
 # input_file_path = path_prefix + input_file_name + '.txt'  # 输入文件的地址
 output_file_path = path_prefix + output_file_name + '.txt'  # 输出文件的地址
 
-# # ================按行读取文本:with open(更好)================
-# text_readline = []  # 初始化按行存储数据列表,不接受结尾换行符
-# with open(input_file_path) as fin:
-#     for line in fin:
-#         text_readline.append((line).replace('\n', ''))
-# print(text_readline)
 # ================读取剪贴板================
 from tkinter import Tk
 
