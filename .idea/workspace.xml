@@ -5,32 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="373ecf99-8a13-48a4-b504-b3b0531662d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/文本处理-换行转换.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/文本处理-读取百度云分享地址.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/知乎-查询专栏.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/知乎-查询我的信息.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/知乎-查询收藏夹.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/知乎-查询文章.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/知乎-查询答案.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/知乎-查询评论.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/知乎-查询问题.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/软件翻译-编译文件nib-LICEcap基于English.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/软件翻译-编译文件nib-Snagit4基于Base.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/软件翻译-编译文件nib-SnippetsLab基于Base.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology信息获取.py" afterPath="$PROJECT_DIR$/Comixology信息获取.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索.py" afterPath="$PROJECT_DIR$/Comixology搜索.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PushOver通知.py" afterPath="$PROJECT_DIR$/PushOver通知.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/不可能的世界读取最新章节.py" afterPath="$PROJECT_DIR$/不可能的世界读取最新章节.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/文本处理-偷揉图床.py" afterPath="$PROJECT_DIR$/文本处理-偷揉图床.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/文本处理-扫描规范化.py" afterPath="$PROJECT_DIR$/文本处理-扫描规范化.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/文本处理-贴吧图片.py" afterPath="$PROJECT_DIR$/文本处理-贴吧图片.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/漫画Novus Week地址.py" afterPath="$PROJECT_DIR$/漫画Novus Week地址.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/知乎-个人.py" afterPath="$PROJECT_DIR$/知乎-个人.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/知乎-看知乎-批量查询用户Hash.py" afterPath="$PROJECT_DIR$/知乎-看知乎-批量查询用户Hash.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/知乎-看知乎-批量查询用户信息.py" afterPath="$PROJECT_DIR$/知乎-看知乎-批量查询用户信息.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/软件翻译-字符串strings-Keyboard Maestro.py" afterPath="$PROJECT_DIR$/软件翻译-字符串strings-Keyboard Maestro.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/软件翻译-编译文件nib-GIF Brewery 3.py" afterPath="$PROJECT_DIR$/软件翻译-编译文件nib-GIF Brewery 3.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/知乎-查询话题下所有精华回答及对应问题.py" afterPath="$PROJECT_DIR$/知乎-查询话题下所有精华回答及对应问题.py" />
     </list>
     <ignored path="Python-Learning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -90,9 +67,9 @@
     <SUITE FILE_PATH="coverage/Python-Learning$0_Day_Week.coverage" NAME="漫画0-Day Week地址 Coverage Results" MODIFIED="1466343835063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_nib_Snagit4Base.coverage" NAME="软件翻译-编译文件nib-Snagit4基于Base Coverage Results" MODIFIED="1467728363321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_nib_Storyist.coverage" NAME="软件翻译-编译文件nib-Storyist Coverage Results" MODIFIED="1467219823140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python-Learning$_.coverage" NAME="知乎-查询话题下所有未回答问题 Coverage Results" MODIFIED="1467865204669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python-Learning$_.coverage" NAME="知乎-查询话题下所有精华回答及对应问题 Coverage Results" MODIFIED="1467868566045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_properties.coverage" NAME="软件翻译-属性properties Coverage Results" MODIFIED="1467183652179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python-Learning$.coverage" NAME="漫画地址查询 Coverage Results" MODIFIED="1467826002461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python-Learning$.coverage" NAME="不可能的世界读取最新章节 Coverage Results" MODIFIED="1467868147821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$DOCX.coverage" NAME="DOCX读写 Coverage Results" MODIFIED="1466305039989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_nib_Boson_.coverage" NAME="软件翻译-编译文件nib-Boson-附属 Coverage Results" MODIFIED="1467286133074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_nib_Glyphs.coverage" NAME="软件翻译-编译文件nib-Glyphs Coverage Results" MODIFIED="1467339764643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -118,8 +95,8 @@
       <file leaf-file-name="知乎-查询用户.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/知乎-查询用户.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-265">
-              <caret line="28" column="83" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="83" />
+            <state relative-caret-position="285">
+              <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -127,11 +104,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="知乎-查询问题.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/知乎-查询问题.py">
+      <file leaf-file-name="知乎-查询答案.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/知乎-查询答案.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="440">
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="知乎-查询评论.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/知乎-查询评论.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="395">
+              <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="知乎-查询话题.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/知乎-查询话题.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="知乎-查询话题下所有最佳回答者.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/知乎-查询话题下所有最佳回答者.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1185">
+              <caret line="80" column="6" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -147,76 +156,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="知乎-查询话题下所有精华回答及对应问题.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="知乎-查询问题.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/知乎-查询问题.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="知乎-登录.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/知乎-登录.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="知乎-查询话题下所有精华回答及对应问题.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/知乎-查询话题下所有精华回答及对应问题.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="46" column="76" selection-start-line="46" selection-start-column="76" selection-end-line="46" selection-end-column="76" />
+            <state relative-caret-position="360">
+              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="知乎-查询话题下所有最佳回答者.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/知乎-查询话题下所有最佳回答者.py">
+      <file leaf-file-name="知乎-个人.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/知乎-个人.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1185">
-              <caret line="80" column="6" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
+            <state relative-caret-position="3330">
+              <caret line="223" column="34" selection-start-line="223" selection-start-column="34" selection-end-line="223" selection-end-column="34" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="知乎-查询我的所有关注.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/知乎-查询我的所有关注.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-895">
-              <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="知乎-查询我的信息.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/知乎-查询我的信息.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="知乎-查询我的所有粉丝.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/知乎-查询我的所有粉丝.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="79" column="24" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="知乎-查询评论.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/知乎-查询评论.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="知乎-查询话题.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/知乎-查询话题.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -274,12 +249,12 @@
         <option value="$PROJECT_DIR$/知乎-查询收藏夹.py" />
         <option value="$PROJECT_DIR$/知乎-查询问题.py" />
         <option value="$PROJECT_DIR$/知乎-查询话题下所有未回答问题.py" />
-        <option value="$PROJECT_DIR$/知乎-查询话题下所有精华回答及对应问题.py" />
         <option value="$PROJECT_DIR$/知乎-查询话题下所有最佳回答者.py" />
         <option value="$PROJECT_DIR$/知乎-查询评论.py" />
         <option value="$PROJECT_DIR$/知乎-查询话题.py" />
         <option value="$PROJECT_DIR$/知乎-查询我的所有粉丝.py" />
         <option value="$PROJECT_DIR$/知乎-查询我的所有关注.py" />
+        <option value="$PROJECT_DIR$/知乎-查询话题下所有精华回答及对应问题.py" />
       </list>
     </option>
   </component>
@@ -379,43 +354,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.知乎-查询话题下所有未回答问题">
-    <configuration default="false" name="知乎-个人" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python-Learning" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/知乎-个人.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="漫画地址查询" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python-Learning" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/漫画地址查询.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.知乎-查询话题下所有精华回答及对应问题">
     <configuration default="false" name="知乎-查询答案" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -434,24 +373,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="知乎-查询问题" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python-Learning" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/知乎-查询问题.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="知乎-查询话题下所有未回答问题" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -466,6 +387,60 @@
       <module name="Python-Learning" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/知乎-查询话题下所有未回答问题.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="不可能的世界读取最新章节" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Python-Learning" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/不可能的世界读取最新章节.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="知乎-查询用户" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Python-Learning" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/知乎-查询用户.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="知乎-查询话题下所有精华回答及对应问题" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Python-Learning" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/知乎-查询话题下所有精华回答及对应问题.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -679,19 +654,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.知乎-个人" />
-      <item index="1" class="java.lang.String" itemvalue="Python.漫画地址查询" />
-      <item index="2" class="java.lang.String" itemvalue="Python.知乎-查询答案" />
-      <item index="3" class="java.lang.String" itemvalue="Python.知乎-查询问题" />
-      <item index="4" class="java.lang.String" itemvalue="Python.知乎-查询话题下所有未回答问题" />
+      <item index="0" class="java.lang.String" itemvalue="Python.知乎-查询答案" />
+      <item index="1" class="java.lang.String" itemvalue="Python.知乎-查询话题下所有未回答问题" />
+      <item index="2" class="java.lang.String" itemvalue="Python.不可能的世界读取最新章节" />
+      <item index="3" class="java.lang.String" itemvalue="Python.知乎-查询用户" />
+      <item index="4" class="java.lang.String" itemvalue="Python.知乎-查询话题下所有精华回答及对应问题" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.知乎-查询话题下所有未回答问题" />
-        <item index="1" class="java.lang.String" itemvalue="Python.知乎-查询问题" />
-        <item index="2" class="java.lang.String" itemvalue="Python.知乎-查询答案" />
-        <item index="3" class="java.lang.String" itemvalue="Python.漫画地址查询" />
-        <item index="4" class="java.lang.String" itemvalue="Python.知乎-个人" />
+        <item index="0" class="java.lang.String" itemvalue="Python.知乎-查询话题下所有精华回答及对应问题" />
+        <item index="1" class="java.lang.String" itemvalue="Python.知乎-查询答案" />
+        <item index="2" class="java.lang.String" itemvalue="Python.知乎-查询用户" />
+        <item index="3" class="java.lang.String" itemvalue="Python.不可能的世界读取最新章节" />
+        <item index="4" class="java.lang.String" itemvalue="Python.知乎-查询话题下所有未回答问题" />
       </list>
     </recent_temporary>
   </component>
@@ -722,7 +697,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="468" y="171" width="504" height="558" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.4914163" order="6" side_tool="false" content_ui="tabs" />
@@ -733,7 +708,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.48569384" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.42846924" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32932693" sideWeight="0.4155937" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32932693" sideWeight="0.4155937" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -766,13 +741,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/软件翻译-编译文件nib-MacDown.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/知乎-看知乎-查询用户信息-旧.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -939,16 +907,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/不可能的世界读取最新章节.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#21#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ICV2读取列表.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -1051,41 +1009,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/知乎-个人.py">
+    <entry file="file://$PROJECT_DIR$/不可能的世界读取最新章节.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-908">
-          <caret line="223" column="34" selection-start-line="223" selection-start-column="34" selection-end-line="223" selection-end-column="34" />
+        <state relative-caret-position="285">
+          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/知乎-查询专栏.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="215">
           <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/知乎-查询答案.py">
+    <entry file="file://$PROJECT_DIR$/知乎-查询我的信息.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+        <state relative-caret-position="305">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/知乎-查询我的所有关注.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-895">
+          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/知乎-查询我的所有粉丝.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1185">
+          <caret line="79" column="24" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/知乎-查询收藏夹.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
+        <state relative-caret-position="390">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/知乎-查询文章.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
+        <state relative-caret-position="275">
           <caret line="26" column="84" selection-start-line="26" selection-start-column="84" selection-end-line="26" selection-end-column="84" />
           <folding />
         </state>
@@ -1093,34 +1071,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/知乎-查询用户.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-265">
-          <caret line="28" column="83" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="83" />
+        <state relative-caret-position="285">
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/知乎-查询问题.py">
+    <entry file="file://$PROJECT_DIR$/知乎-查询答案.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/知乎-查询话题下所有精华回答及对应问题.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="46" column="76" selection-start-line="46" selection-start-column="76" selection-end-line="46" selection-end-column="76" />
+        <state relative-caret-position="440">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/知乎-查询评论.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+        <state relative-caret-position="395">
+          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1143,14 +1113,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/知乎-查询我的信息.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/知乎-查询话题下所有未回答问题.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
@@ -1159,20 +1121,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/知乎-查询我的所有粉丝.py">
+    <entry file="file://$PROJECT_DIR$/知乎-查询问题.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="79" column="24" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="5">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/知乎-查询我的所有关注.py">
+    <entry file="file://$PROJECT_DIR$/知乎-登录.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-895">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/知乎-个人.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3330">
+          <caret line="223" column="34" selection-start-line="223" selection-start-column="34" selection-end-line="223" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/知乎-查询话题下所有精华回答及对应问题.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
           <folding />
         </state>
       </provider>

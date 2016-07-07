@@ -9,7 +9,7 @@ client = ZhihuClient()
 client.load_token('/Users/alicewish/我的坚果云/token.pkl')
 
 # ==================查询话题下所有精华回答及对应问题==================
-tid = 19550921  # 时间管理
+tid = 19559937  # 留学
 topic = client.topic(tid)
 topic_name = topic.name
 question_line = []
