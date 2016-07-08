@@ -1,5 +1,5 @@
 from lxml import html
-import requests, time
+import requests, time, re
 
 start_time = time.time()  # 初始时间戳
 now = time.strftime("%Y%m%d", time.localtime())  # 当前日期戳
@@ -24,8 +24,9 @@ format_description = description.replace("\n", "|")
 
 # ====================价格====================
 price = tree.xpath('//h5[@class="item-price"]/text()')[0]
-# ====================评星====================
+# ====================评价数====================
 review_count = tree.xpath('//div[@itemprop="reviewCount"]/text()')[0]
+rating_count = review_count.replace("Average Rating (", "").replace("):", "")
 # ====================创作信息====================
 credit_list = []
 raw_credits = tree.xpath('//div[@class="credits"]/*/text()')  # 列表
@@ -42,7 +43,7 @@ for i in range(len(credit_list)):
         digital_release_date = credit_list[i + 1]
 
 # ========================输出区开始========================
-info_list = ("标题: " + title, "价格: " + price, "简介: " + description, "创作信息: " + "\n" + credit, "评星: " + review_count,
+info_list = ("标题: " + title, "价格: " + price, "简介: " + description, "创作信息: " + "\n" + credit, "评星: " + rating_count,
              "数字出版日期: " + digital_release_date)
 info = "\r\n".join(info_list)
 print(info)

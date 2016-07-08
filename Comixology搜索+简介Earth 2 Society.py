@@ -49,13 +49,40 @@ for i in range(len(all_url)):
                     credit_list.append(credit_line)
             credit = "\n".join(credit_list)
             print(len(credit))
-
+            # ====================评价数====================
+            rating_count = ""
+            try:
+                review_count = tree.xpath('//div[@itemprop="reviewCount"]/text()')[0]
+                rating_count = review_count.replace("Average Rating (", "").replace("):", "")
+            except:
+                pass
+            # ====================数字出版日期====================
             digital_release_date = ""
-            for i in range(len(credit_list)):
-                if credit_list[i] == "Digital Release Date":
-                    digital_release_date = credit_list[i + 1]
+            item = "Digital Release Date"
+            if item in credit_list:
+                time_string = credit_list[credit_list.index(item) + 1]
+                time_convert = time.strptime(time_string, "%B %d %Y")
+                digital_release_date = time.strftime("%Y-%m-%d", time_convert) \
+            # ====================实体出版日期====================
+            print_release_date = ""
+            item = "Print Release Date"
+            if item in credit_list:
+                time_string = credit_list[credit_list.index(item) + 1]
+                time_convert = time.strptime(time_string, "%B %d %Y")
+                print_release_date = time.strftime("%Y-%m-%d", time_convert)
+            # ====================页数====================
+            page_count = ""
+            item = "Page Count"
+            if item in credit_list:
+                page_count = (credit_list[credit_list.index(item) + 1]).replace(" Pages", "")
+            # ====================年龄评级====================
+            age_rating = ""
+            item = "Age Rating"
+            if item in credit_list:
+                age_rating = (credit_list[credit_list.index(item) + 1]).replace(" Only", "")
 
-            line_info = [short_link, title, format_description, digital_release_date]
+            line_info = [short_link, title, format_description, digital_release_date, page_count, age_rating,
+                         rating_count]
             this_line = "\t".join(line_info)
             print(this_line)
             all_info.append(this_line)

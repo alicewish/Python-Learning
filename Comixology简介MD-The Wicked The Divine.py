@@ -4,9 +4,9 @@ import requests, time, re
 start_time = time.time()  # 初始时间戳
 now = time.strftime("%Y%m%d", time.localtime())  # 当前日期戳
 # ========================输入区开始========================
-search_comic_name = 'The Wicked The Divine'  # 查询用漫画名
-
-save_comic_name = search_comic_name.replace(":", "")
+search_comic_name = 'The Wicked + The Divine'  # 查询用漫画名
+issue_name_prefix = "The Wicked + The Divine"
+save_comic_name = search_comic_name.replace(":", "").replace("+", "").replace("  ", " ")
 key_title = save_comic_name.replace(" ", "-")
 print(key_title)
 url_prefix = 'https://www.comixology.com/search?search='
@@ -19,7 +19,7 @@ all_url = tree.xpath('//a[@class="content-details"]/@href')
 print(len(all_url))
 
 issues_url = []
-all_info = []
+issues_info = {}
 check_set = set()
 for i in range(len(all_url)):
     entry_start_time = time.time()
@@ -40,47 +40,41 @@ for i in range(len(all_url)):
             raw_description = tree.xpath('//section[@class="item-description"]/text()')  # 列表
             description = "".join(raw_description)
             format_description = description.strip("\n\t").replace("\r\n", "|").replace("\r", "|").replace("\n", "|")
-            # ====================创作信息====================
-            credit_list = []
-            raw_credits = tree.xpath('//div[@class="credits"]/*/text()')  # 列表
-            for i in range(len(raw_credits)):
-                credit_line = raw_credits[i].strip("\t\n")
-                if credit_line != "":
-                    credit_list.append(credit_line)
-            credit = "\n".join(credit_list)
-            print(len(credit))
+            issues_info[title] = format_description  # 写入字典
 
-            digital_release_date = ""
-            for i in range(len(credit_list)):
-                if credit_list[i] == "Digital Release Date":
-                    time_string = credit_list[i + 1]
-                    time_convert = time.strptime(time_string, "%B %d %Y")
-                    digital_release_date = time.strftime("%Y-%m-%d", time_convert)
-
-            line_info = [short_link, title, format_description, digital_release_date]
-            this_line = "\t".join(line_info)
+            line_info = ["### " + title, format_description]
+            this_line = "\r\n".join(line_info)
             print(this_line)
-            all_info.append(this_line)
-            text = '\r\n'.join(all_info)
-            # ================写入TXT================
-            txt_file_path = '/Users/alicewish/我的坚果云/Comixology搜索+简介' + save_comic_name + '.txt'  # TXT文件名
-            f = open(txt_file_path, 'w')
-            try:
-                f.write(text)
-            finally:
-                f.close()
+
             entry_run_time = time.time() - entry_start_time
             print("耗时:{:.2f}秒".format(entry_run_time))
         else:
             check_set.add(short_link)
 
 # ========================输出区开始========================
-print(len(issues_url))
+out_info = []
+for i in range(1, len(issues_url)):
+    key = issue_name_prefix + " #"+str(i)
+    if key in issues_info:
+        try:
+            out_info.append("### " + key)
+            out_info.append(issues_info[key])
+        except:
+            pass
 
+out_text = "\r\n".join(out_info)
+
+# ================写入TXT================
+txt_file_path = '/Users/alicewish/我的坚果云/Comixology简介MD-' + save_comic_name + '.txt'  # TXT文件名
+f = open(txt_file_path, 'w')
+try:
+    f.write(out_text)
+finally:
+    f.close()
 # ================写入剪贴板================
 import pyperclip
 
-pyperclip.copy(text)
+pyperclip.copy(out_text)
 spam = pyperclip.paste()
 
 # ================运行时间计时================
