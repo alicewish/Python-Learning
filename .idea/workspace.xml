@@ -5,47 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="373ecf99-8a13-48a4-b504-b3b0531662d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介All New Wolverine.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介Civil War II.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介Grimm Fairy Tales.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介Henson.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介Injustice Gods Among Us 2013.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介Invincible Iron Man 2015.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介Rebirth.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介Savior.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介Sheriff of Babylon.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介Silk.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介Transformers 2011.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介Transformers More Than Meets the Eye.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介Transformers Robots In Disguise.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介Wayward.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology简介MD-Bombshells.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology简介MD-Injustice Gods Among Us Year Five.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology简介MD-Saga.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology简介MD-Silk.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology简介MD-Wayward.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/字典排序.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Civil War.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Invincible Iron Man.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology信息获取.py" afterPath="$PROJECT_DIR$/Comixology信息获取.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介Bombshells.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介Bombshells.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介Clean Room.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介Clean Room.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介Earth 2 Society.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介Earth 2 Society.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介Gotham Academy.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介Gotham Academy.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介Injustice Gods Among Us Year Five.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介Injustice Gods Among Us Year Five.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介Injustice Gods Among Us Year Four.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介Injustice Gods Among Us Year Four.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介Injustice Gods Among Us Year Three.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介Injustice Gods Among Us Year Three.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介Injustice Gods Among Us Year Two.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介Injustice Gods Among Us Year Two.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介Lucifer.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介Lucifer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介Madame Xanadu.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介Madame Xanadu.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介Saga.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介Saga.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介The Wicked The Divine.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介The Wicked The Divine.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介Tomboy.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介Tomboy.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介Transformers.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介Transformers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology简介MD-Earth 2 Society.py" afterPath="$PROJECT_DIR$/Comixology简介MD-Earth 2 Society.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology简介MD-Gotham Academy.py" afterPath="$PROJECT_DIR$/Comixology简介MD-Gotham Academy.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology简介MD-The Wicked The Divine.py" afterPath="$PROJECT_DIR$/Comixology简介MD-The Wicked The Divine.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介Grimm Fairy Tales.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介Grimm Fairy Tales.py" />
     </list>
     <ignored path="Python-Learning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -117,7 +78,7 @@
     <SUITE FILE_PATH="coverage/Python-Learning$Comixology_Injustice_Gods_Among_Us_Year_Two.coverage" NAME="Comixology搜索+简介Injustice Gods Among Us Year Two Coverage Results" MODIFIED="1468035444394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_HTMLMarkdown.coverage" NAME="文本处理-HTML转Markdown Coverage Results" MODIFIED="1466779918180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$Comixology_Earth_2_Society.coverage" NAME="Comixology搜索+简介Earth 2 Society Coverage Results" MODIFIED="1468035412898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python-Learning$Comixology_Grim_Fairy_Tales.coverage" NAME="Comixology搜索+简介Grim Fairy Tales Coverage Results" MODIFIED="1468040605332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python-Learning$Comixology_Grim_Fairy_Tales.coverage" NAME="Comixology搜索+简介Grim Fairy Tales Coverage Results" MODIFIED="1468042942754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$ComicBingKindle.coverage" NAME="Comic用Bing搜索Kindle Coverage Results" MODIFIED="1466676628859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$Comixology.coverage" NAME="Comixology信息获取 Coverage Results" MODIFIED="1467983893008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$ComixologyMD_Bombshells.coverage" NAME="Comixology简介MD-Bombshells Coverage Results" MODIFIED="1467989978827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -128,7 +89,7 @@
     <SUITE FILE_PATH="coverage/Python-Learning$ComixologyMD_The_Wicked_The_Divine.coverage" NAME="Comixology简介MD-The Wicked The Divine Coverage Results" MODIFIED="1467989852723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$Python.coverage" NAME="更新Python库 Coverage Results" MODIFIED="1466321025751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$Comixology_Injustice_Gods_Among_Us.coverage" NAME="Comixology搜索+简介Injustice Gods Among Us Coverage Results" MODIFIED="1467990934051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python-Learning$Comixology_Clean_Room.coverage" NAME="Comixology搜索+简介Clean Room Coverage Results" MODIFIED="1467990565232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python-Learning$Comixology_Clean_Room.coverage" NAME="Comixology搜索+简介Clean Room Coverage Results" MODIFIED="1468043005709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$Comixology_Injustice_Gods_Among_Us_2013.coverage" NAME="Comixology搜索+简介Injustice Gods Among Us 2013 Coverage Results" MODIFIED="1468035450292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_UID.coverage" NAME="文本处理-读取微博UID Coverage Results" MODIFIED="1467391560501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$Comixology_Madame_Xanadu.coverage" NAME="Comixology搜索+简介Madame Xanadu Coverage Results" MODIFIED="1467991760863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -171,12 +132,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Comixology搜索+简介Savior.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Comixology搜索+简介Savior.py">
+      <file leaf-file-name="Comixology搜索+简介Earth 2 Society.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Comixology搜索+简介Earth 2 Society.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="500">
               <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Comixology搜索+简介Clean Room.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Comixology搜索+简介Clean Room.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -233,11 +208,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Comixology搜索+简介Grimm Fairy Tales.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Comixology搜索+简介Grimm Fairy Tales.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Comixology搜索+简介Grimm Fairy Tales.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1340">
-              <caret line="97" column="12" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="12" />
+            <state relative-caret-position="105">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -260,16 +235,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Comixology搜索+简介Saga.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Comixology搜索+简介Saga.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -307,7 +272,6 @@
         <option value="$PROJECT_DIR$/Comixology搜索+简介Injustice Gods Among Us.py" />
         <option value="$PROJECT_DIR$/Comixology搜索+简介Madame Xanadu.py" />
         <option value="$PROJECT_DIR$/Comixology搜索+简介Tomboy.py" />
-        <option value="$PROJECT_DIR$/Comixology搜索+简介Clean Room.py" />
         <option value="$PROJECT_DIR$/Comixology搜索+简介Bombshells.py" />
         <option value="$PROJECT_DIR$/Comixology搜索+简介Earth 2 Society.py" />
         <option value="$PROJECT_DIR$/Comixology搜索+简介Gotham Academy.py" />
@@ -334,6 +298,7 @@
         <option value="$PROJECT_DIR$/Comixology搜索+简介Grim Fairy Tales.py" />
         <option value="$PROJECT_DIR$/Comixology搜索+简介Sheriff of Babylon.py" />
         <option value="$PROJECT_DIR$/Comixology搜索+简介Grimm Fairy Tales.py" />
+        <option value="$PROJECT_DIR$/Comixology搜索+简介Clean Room.py" />
       </list>
     </option>
   </component>
@@ -433,25 +398,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Comixology搜索+简介Sheriff of Babylon">
-    <configuration default="false" name="Comixology搜索+简介Civil War II" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python-Learning" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Comixology搜索+简介Civil War II.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.Comixology搜索+简介Clean Room">
     <configuration default="false" name="Comixology搜索+简介All New Wolverine" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -520,6 +467,24 @@
       <module name="Python-Learning" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Comixology搜索+简介Sheriff of Babylon.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Comixology搜索+简介Clean Room" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Python-Learning" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Comixology搜索+简介Clean Room.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -733,19 +698,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Comixology搜索+简介Civil War II" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Comixology搜索+简介All New Wolverine" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Comixology搜索+简介Henson" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Comixology搜索+简介Grim Fairy Tales" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Comixology搜索+简介Sheriff of Babylon" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Comixology搜索+简介All New Wolverine" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Comixology搜索+简介Henson" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Comixology搜索+简介Grim Fairy Tales" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Comixology搜索+简介Sheriff of Babylon" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Comixology搜索+简介Clean Room" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Comixology搜索+简介Sheriff of Babylon" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Comixology搜索+简介Clean Room" />
         <item index="1" class="java.lang.String" itemvalue="Python.Comixology搜索+简介Grim Fairy Tales" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Comixology搜索+简介Henson" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Comixology搜索+简介All New Wolverine" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Comixology搜索+简介Civil War II" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Comixology搜索+简介Sheriff of Babylon" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Comixology搜索+简介Henson" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Comixology搜索+简介All New Wolverine" />
       </list>
     </recent_temporary>
   </component>
@@ -787,7 +752,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.48569384" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.42846924" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32932693" sideWeight="0.40271816" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32932693" sideWeight="0.40271816" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -993,26 +958,6 @@
           <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
           <folding>
             <element signature="e#0#21#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Comixology搜索+简介Clean Room.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Comixology搜索+简介Earth 2 Society.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1237,9 +1182,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Comixology搜索+简介Grimm Fairy Tales.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1340">
-          <caret line="97" column="12" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="12" />
+        <state relative-caret-position="105">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Comixology搜索+简介Earth 2 Society.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Comixology搜索+简介Clean Room.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
