@@ -42,6 +42,25 @@ for i in range(len(all_url)):
             raw_description = tree.xpath('//section[@class="item-description"]/text()')  # 列表
             description = "".join(raw_description)
             format_description = description.strip("\n\t").replace("\r\n", "|").replace("\r", "|").replace("\n", "|")
+            # ====================评价数====================
+            rating_count = ""
+            try:
+                review_count = tree.xpath('//div[@itemprop="reviewCount"]/text()')[0]
+                rating_count = review_count.replace("Average Rating (", "").replace("):", "")
+            except:
+                pass
+            # ====================价格====================
+            price = ""
+            try:
+                price = tree.xpath('//h5[@class="item-price"]/text()')[0]
+            except:
+                pass
+            # ====================封面====================
+            cover_image_url = ""
+            try:
+                cover_image_url = tree.xpath('//img[@class="cover"]/@src')[0]
+            except:
+                pass
             # ====================创作信息====================
             credit_list = []
             raw_credits = tree.xpath('//div[@class="credits"]//*/text()')  # 列表
@@ -51,13 +70,6 @@ for i in range(len(all_url)):
                     credit_list.append(credit_line)
             credit = "\n".join(credit_list)
 
-            # ====================评价数====================
-            rating_count = ""
-            try:
-                review_count = tree.xpath('//div[@itemprop="reviewCount"]/text()')[0]
-                rating_count = review_count.replace("Average Rating (", "").replace("):", "")
-            except:
-                pass
             # ====================编剧====================
             writer = ""
             item = "Written by"
@@ -119,7 +131,8 @@ for i in range(len(all_url)):
                 publisher = credit_list[credit_list.index(item) + 1]
             # ====================输出区开始====================
             line_info = [title, short_link, format_description, digital_release_date, page_count, age_rating,
-                         rating_count, publisher, genres, writer, artist, penciller, inker, cover_artist]
+                         rating_count, publisher, genres, writer, artist, penciller, inker, cover_artist,
+                         cover_image_url, price]
             this_line = "\t".join(line_info)  # 行信息合并
             print(this_line)
 

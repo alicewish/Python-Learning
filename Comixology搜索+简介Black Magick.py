@@ -4,7 +4,7 @@ import requests, time, re
 start_time = time.time()  # 初始时间戳
 now = time.strftime("%Y%m%d", time.localtime())  # 当前日期戳
 # ========================输入区开始========================
-search_comic_name = 'Grimm Fairy Tales'  # 查询用漫画名
+search_comic_name = 'Black Magick'  # 查询用漫画名
 
 save_comic_name = search_comic_name.replace(":", "")
 key_title = save_comic_name.replace(" ", "-")
@@ -131,8 +131,8 @@ for i in range(len(all_url)):
                 publisher = credit_list[credit_list.index(item) + 1]
             # ====================输出区开始====================
             line_info = [title, short_link, format_description, digital_release_date, page_count, age_rating,
-                         rating_count, publisher, genres, writer, artist, penciller, inker, cover_artist,
-                         cover_image_url, price]
+                         rating_count, publisher, genres, writer, artist, penciller, inker, cover_artist, price,
+                         cover_image_url]
             this_line = "\t".join(line_info)  # 行信息合并
             print(this_line)
 

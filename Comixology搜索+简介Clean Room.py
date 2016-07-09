@@ -131,8 +131,8 @@ for i in range(len(all_url)):
                 publisher = credit_list[credit_list.index(item) + 1]
             # ====================输出区开始====================
             line_info = [title, short_link, format_description, digital_release_date, page_count, age_rating,
-                         rating_count, publisher, genres, writer, artist, penciller, inker, cover_artist, price,
-                         cover_image_url]
+                         rating_count, publisher, genres, writer, artist, penciller, inker, cover_artist,
+                         cover_image_url, price]
             this_line = "\t".join(line_info)  # 行信息合并
             print(this_line)
 
