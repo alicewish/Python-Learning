@@ -4,7 +4,7 @@ import requests, time, re
 start_time = time.time()  # 初始时间戳
 now = time.strftime("%Y%m%d", time.localtime())  # 当前日期戳
 # ========================输入区开始========================
-search_comic_name = 'The Wicked The Divine'  # 查询用漫画名
+search_comic_name = 'Grimm Fairy Tales'  # 查询用漫画名
 
 save_comic_name = search_comic_name.replace(":", "")
 key_title = save_comic_name.replace(" ", "-")
@@ -95,7 +95,7 @@ for i in range(len(all_url)):
                 time_string = credit_list[credit_list.index(item) + 1]
                 time_convert = time.strptime(time_string, "%B %d %Y")
                 digital_release_date = time.strftime("%Y-%m-%d", time_convert) \
-                    # ====================实体出版日期====================
+            # ====================实体出版日期====================
             print_release_date = ""
             item = "Print Release Date"
             if item in credit_list:

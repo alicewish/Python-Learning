@@ -19,8 +19,9 @@ all_url = tree.xpath('//a[@class="content-details"]/@href')
 print(len(all_url))
 
 issues_url = []
-all_info = []
 check_set = set()
+info_dict = {}
+major_key_list = []
 for i in range(len(all_url)):
     entry_start_time = time.time()
     print(i)
@@ -29,6 +30,7 @@ for i in range(len(all_url)):
         matchs = re.match(r'.*/digital-comic/[^?]*', all_url[i])
         short_link = matchs.group(0)
         if short_link not in check_set:
+            check_set.add(short_link)
             print("获取中……")
             issues_url.append(short_link)
             # ========================执行区开始========================
@@ -42,24 +44,94 @@ for i in range(len(all_url)):
             format_description = description.strip("\n\t").replace("\r\n", "|").replace("\r", "|").replace("\n", "|")
             # ====================创作信息====================
             credit_list = []
-            raw_credits = tree.xpath('//div[@class="credits"]/*/text()')  # 列表
+            raw_credits = tree.xpath('//div[@class="credits"]//*/text()')  # 列表
             for i in range(len(raw_credits)):
                 credit_line = raw_credits[i].strip("\t\n")
-                if credit_line != "":
+                if credit_line != "" and credit_line != "HIDE...":
                     credit_list.append(credit_line)
             credit = "\n".join(credit_list)
-            print(len(credit))
 
+            # ====================评价数====================
+            rating_count = ""
+            try:
+                review_count = tree.xpath('//div[@itemprop="reviewCount"]/text()')[0]
+                rating_count = review_count.replace("Average Rating (", "").replace("):", "")
+            except:
+                pass
+            # ====================编剧====================
+            writer = ""
+            item = "Written by"
+            if item in credit_list:
+                writer = credit_list[credit_list.index(item) + 1]
+            # ====================铅稿====================
+            artist = ""
+            item = "Art by"
+            if item in credit_list:
+                artist = credit_list[credit_list.index(item) + 1]
+            # ====================铅稿====================
+            penciller = ""
+            item = "Pencils"
+            if item in credit_list:
+                penciller = credit_list[credit_list.index(item) + 1]
+            # ====================墨线====================
+            inker = ""
+            item = "Inks"
+            if item in credit_list:
+                inker = credit_list[credit_list.index(item) + 1]
+            # ====================封面====================
+            cover_artist = ""
+            item = "Cover by"
+            if item in credit_list:
+                cover_artist = credit_list[credit_list.index(item) + 1]
+            # ====================类型====================
+            genres = ""
+            item = "Genres"
+            if item in credit_list:
+                genres = credit_list[credit_list.index(item) + 1]
+            # ====================数字出版日期====================
             digital_release_date = ""
-            for i in range(len(credit_list)):
-                if credit_list[i] == "Digital Release Date":
-                    digital_release_date = credit_list[i + 1]
-
-            line_info = [short_link, title, format_description, digital_release_date]
-            this_line = "\t".join(line_info)
+            item = "Digital Release Date"
+            if item in credit_list:
+                time_string = credit_list[credit_list.index(item) + 1]
+                time_convert = time.strptime(time_string, "%B %d %Y")
+                digital_release_date = time.strftime("%Y-%m-%d", time_convert) \
+                    # ====================实体出版日期====================
+            print_release_date = ""
+            item = "Print Release Date"
+            if item in credit_list:
+                time_string = credit_list[credit_list.index(item) + 1]
+                time_convert = time.strptime(time_string, "%B %d %Y")
+                print_release_date = time.strftime("%Y-%m-%d", time_convert)
+            # ====================页数====================
+            page_count = ""
+            item = "Page Count"
+            if item in credit_list:
+                page_count = (credit_list[credit_list.index(item) + 1]).replace(" Pages", "")
+            # ====================年龄评级====================
+            age_rating = ""
+            item = "Age Rating"
+            if item in credit_list:
+                age_rating = (credit_list[credit_list.index(item) + 1]).replace(" Only", "")
+            # ====================出版公司====================
+            publisher = ""
+            item = "Sold by"
+            if item in credit_list:
+                publisher = credit_list[credit_list.index(item) + 1]
+            # ====================输出区开始====================
+            line_info = [title, short_link, format_description, digital_release_date, page_count, age_rating,
+                         rating_count, publisher, genres, writer, artist, penciller, inker, cover_artist]
+            this_line = "\t".join(line_info)  # 行信息合并
             print(this_line)
-            all_info.append(this_line)
-            text = '\r\n'.join(all_info)
+
+            major_key = digital_release_date + title  # "日期+标题"作为主键
+            major_key_list.append(major_key)
+            info_dict[major_key] = this_line
+            major_key_list.sort()  # 主键表排序
+            text_list = []
+            for key in major_key_list:
+                text_list.append(info_dict[key])
+
+            text = "\r\n".join(text_list)
             # ================写入TXT================
             txt_file_path = '/Users/alicewish/我的坚果云/Comixology搜索+简介' + save_comic_name + '.txt'  # TXT文件名
             f = open(txt_file_path, 'w')
@@ -69,17 +141,9 @@ for i in range(len(all_url)):
                 f.close()
             entry_run_time = time.time() - entry_start_time
             print("耗时:{:.2f}秒".format(entry_run_time))
-        else:
-            check_set.add(short_link)
 
 # ========================输出区开始========================
-print(len(issues_url))
-
-# ================写入剪贴板================
-import pyperclip
-
-pyperclip.copy(text)
-spam = pyperclip.paste()
+print("总共" + str(len(issues_url)) + "期")
 
 # ================运行时间计时================
 run_time = time.time() - start_time

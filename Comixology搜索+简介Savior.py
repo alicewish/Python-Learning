@@ -4,7 +4,7 @@ import requests, time, re
 start_time = time.time()  # 初始时间戳
 now = time.strftime("%Y%m%d", time.localtime())  # 当前日期戳
 # ========================输入区开始========================
-search_comic_name = 'The Wicked The Divine'  # 查询用漫画名
+search_comic_name = '/Savior'  # 查询用漫画名
 
 save_comic_name = search_comic_name.replace(":", "")
 key_title = save_comic_name.replace(" ", "-")
@@ -133,7 +133,8 @@ for i in range(len(all_url)):
 
             text = "\r\n".join(text_list)
             # ================写入TXT================
-            txt_file_path = '/Users/alicewish/我的坚果云/Comixology搜索+简介' + save_comic_name + '.txt'  # TXT文件名
+            file_name = 'Comixology搜索+简介' + save_comic_name.replace("/", "") + '.txt'
+            txt_file_path = '/Users/alicewish/我的坚果云/' + file_name  # TXT文件名
             f = open(txt_file_path, 'w')
             try:
                 f.write(text)

@@ -29,10 +29,10 @@ review_count = tree.xpath('//div[@itemprop="reviewCount"]/text()')[0]
 rating_count = review_count.replace("Average Rating (", "").replace("):", "")
 # ====================创作信息====================
 credit_list = []
-raw_credits = tree.xpath('//div[@class="credits"]/*/text()')  # 列表
+raw_credits = tree.xpath('//div[@class="credits"]//*/text()')  # 列表
 for i in range(len(raw_credits)):
     credit_line = raw_credits[i].strip("\t\n")
-    if credit_line != "":
+    if credit_line != "" and credit_line != "HIDE...":
         credit_list.append(credit_line)
 credit = "\n".join(credit_list)
 print(len(credit))
