@@ -6,7 +6,7 @@ now = time.strftime("%Y%m%d", time.localtime())  # 当前日期戳
 
 # ========================输入区开始========================
 bookID = '10077'  # 图书ID
-file_name = '他不喜欢超级英雄-竞天泽-' + now  # 文件名
+file_name = '他不喜欢超级英雄-竞天泽'  # 文件名
 
 path_prefix = '/Users/alicewish/我的坚果云/'  # 文件地址前缀
 txt_file_path = path_prefix + file_name + '.txt'  # TXT文件名
@@ -15,12 +15,19 @@ url_book = "/book/"  # 图书前缀
 url_suffix = '.html'  # 网址后缀
 url_read = "/read/"  # 章节前缀
 book_url = url_prefix + url_book + bookID + url_suffix  # 完整图书网址
+
+# ================按行读取参考文本================
+refer_readline = []  # 初始化按行存储数据列表,不接受换行符
+with open(txt_file_path) as fin:
+    for line in fin:
+        refer_readline.append(line)
+progress = int(refer_readline[0])
+print(progress)
 # ========================执行区开始========================
 page = requests.get(book_url)
 tree = html.fromstring(page.text)
 # ====================获取图书标题====================
 book_title = tree.xpath('//title')[0]  # 图书标题
-
 # ====================获取旧章节列表====================
 chapter_old_name_list = tree.xpath('//a[@class="left"][@target="_blank"]/@title')  # 以列表形式存储的旧章节名称列表(过长会缩略)
 # "他不喜欢超级英雄 001 序 他讨厌超级英..."
@@ -44,28 +51,31 @@ chapter_full_url_list = []  # 初始化章节完整网址列表
 title_list = []  # 初始化章节标题列表
 text_list = []  # 初始化章节内容列表
 
-info = ""  # 初始化信息文本
 for i in range(chapter_name_list_length):
-    chapter_start_time = time.time()  # 章节开始读取时间戳
     chapterID_list.append(chapter_url_list[i][6:len(chapter_url_list[i]) - 5])  # 抽取章节ID
     chapter_full_url_list.append(url_prefix + url_read + chapterID_list[i] + url_suffix)  # 抽取完整图书章节网址
+
+for i in range(progress, chapter_name_list_length):
+    chapter_start_time = time.time()  # 章节开始读取时间戳
+    refer_readline[0] = str(chapter_name_list_length)
     # ========================执行区开始========================
     page = requests.get(chapter_full_url_list[i])
     tree = html.fromstring(page.text)
     # ====================获取标题====================
-    title_list.append(tree.xpath('//h2[@class="readbook_title"]/text()')[0])  # 标题
+    title = tree.xpath('//h2[@class="readbook_title"]/text()')[0]
+    title_list.append(title)  # 标题
+    print(title)
     # ====================获取段落====================
     paragraph_list = tree.xpath('//p[@id>0]/text()')  # 以列表形式存储的段落
-    text_list.append(''.join(paragraph_list))  # 将段落连接成字符串
-    # print(text_list[i])
+    paragraphs = ''.join(paragraph_list)
+    text_list.append(paragraphs)  # 将段落连接成字符串
+    print(paragraphs)
     # ====================构筑文本====================
-    info += title_list[i]
-    info += "\r\n"
-    info += text_list[i]
-    info += "\r\n"
+    refer_readline.append(title)
+    refer_readline.append(paragraphs)
     # ==================操作TXT==================
     f = open(txt_file_path, 'w')
-    text = info  # 写入文本
+    text = "\r\n".join(refer_readline)  # 写入文本
     try:
         f.write(text)
     finally:
