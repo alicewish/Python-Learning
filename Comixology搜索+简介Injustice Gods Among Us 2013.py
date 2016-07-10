@@ -22,6 +22,8 @@ issues_url = []
 check_set = set()
 info_dict = {}
 major_key_list = []
+key_word_list = ["Written by", "Art by", "Pencils", "Inks", "Cover by", "Genres", "Print Release Date",
+                 "Print Release Date", "Page Count", "Age Rating", "Sold by"]
 for i in range(len(all_url)):
     entry_start_time = time.time()
     print(i)
@@ -62,7 +64,11 @@ for i in range(len(all_url)):
             writer = ""
             item = "Written by"
             if item in credit_list:
-                writer = credit_list[credit_list.index(item) + 1]
+                item_index = credit_list.index(item)
+                writer = credit_list[item_index + 1]
+            for j in range(item_index+1, len(credit_list)):
+                if credit_list[j] not in key_word_list:
+                    writer=writer+
             # ====================铅稿====================
             artist = ""
             item = "Art by"
@@ -94,8 +100,8 @@ for i in range(len(all_url)):
             if item in credit_list:
                 time_string = credit_list[credit_list.index(item) + 1]
                 time_convert = time.strptime(time_string, "%B %d %Y")
-                digital_release_date = time.strftime("%Y-%m-%d", time_convert) \
-                    # ====================实体出版日期====================
+                digital_release_date = time.strftime("%Y-%m-%d", time_convert)
+            # ====================实体出版日期====================
             print_release_date = ""
             item = "Print Release Date"
             if item in credit_list:
