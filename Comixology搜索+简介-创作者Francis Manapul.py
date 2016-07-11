@@ -59,32 +59,72 @@ for i in range(len(all_url)):
             writer = ""
             item = "Written by"
             if item in credit_list:
-                writer = credit_list[credit_list.index(item) + 1]
-            # ====================铅稿====================
+                item_index = credit_list.index(item)
+                temp_store = credit_list[item_index + 1]
+                while credit_list[item_index + 2] not in key_word_list:
+                    item_index += 1
+                    temp_store = temp_store + "|" + credit_list[item_index + 1]
+                writer = temp_store
+            # ====================画师====================
             artist = ""
             item = "Art by"
             if item in credit_list:
-                artist = credit_list[credit_list.index(item) + 1]
+                item_index = credit_list.index(item)
+                temp_store = credit_list[item_index + 1]
+                while credit_list[item_index + 2] not in key_word_list:
+                    item_index += 1
+                    temp_store = temp_store + "|" + credit_list[item_index + 1]
+                artist = temp_store
             # ====================铅稿====================
             penciller = ""
             item = "Pencils"
             if item in credit_list:
-                penciller = credit_list[credit_list.index(item) + 1]
+                item_index = credit_list.index(item)
+                temp_store = credit_list[item_index + 1]
+                while credit_list[item_index + 2] not in key_word_list:
+                    item_index += 1
+                    temp_store = temp_store + "|" + credit_list[item_index + 1]
+                penciller = temp_store
             # ====================墨线====================
             inker = ""
             item = "Inks"
             if item in credit_list:
-                inker = credit_list[credit_list.index(item) + 1]
+                item_index = credit_list.index(item)
+                temp_store = credit_list[item_index + 1]
+                while credit_list[item_index + 2] not in key_word_list:
+                    item_index += 1
+                    temp_store = temp_store + "|" + credit_list[item_index + 1]
+                inker = temp_store
+            # ====================上色====================
+            colorist = ""
+            item = "Colored by"
+            if item in credit_list:
+                item_index = credit_list.index(item)
+                temp_store = credit_list[item_index + 1]
+                while credit_list[item_index + 2] not in key_word_list:
+                    item_index += 1
+                    temp_store = temp_store + "|" + credit_list[item_index + 1]
+                colorist = temp_store
             # ====================封面====================
             cover_artist = ""
             item = "Cover by"
             if item in credit_list:
-                cover_artist = credit_list[credit_list.index(item) + 1]
+                item_index = credit_list.index(item)
+                temp_store = credit_list[item_index + 1]
+                while credit_list[item_index + 2] not in key_word_list:
+                    item_index += 1
+                    temp_store = temp_store + "|" + credit_list[item_index + 1]
+                cover_artist = temp_store
             # ====================类型====================
             genres = ""
             item = "Genres"
             if item in credit_list:
-                genres = credit_list[credit_list.index(item) + 1]
+                item_index = credit_list.index(item)
+                temp_store = credit_list[item_index + 1]
+                while credit_list[item_index + 2] not in key_word_list:
+                    item_index += 1
+                    temp_store = temp_store + "|" + credit_list[item_index + 1]
+                genres = temp_store
             # ====================数字出版日期====================
             digital_release_date = ""
             item = "Digital Release Date"
@@ -114,6 +154,7 @@ for i in range(len(all_url)):
             item = "Sold by"
             if item in credit_list:
                 publisher = credit_list[credit_list.index(item) + 1]
+
             if search_creator_name in credit_list:
                 # ====================输出区开始====================
                 line_info = [title, short_link, format_description, digital_release_date, page_count, age_rating,

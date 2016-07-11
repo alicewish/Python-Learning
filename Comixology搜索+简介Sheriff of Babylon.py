@@ -22,6 +22,8 @@ issues_url = []
 check_set = set()
 info_dict = {}
 major_key_list = []
+key_word_list = ["Written by", "Art by", "Pencils", "Inks", "Colored by", "Cover by", "Genres", "Print Release Date",
+                 "Print Release Date", "Page Count", "Age Rating", "Sold by", "About Book"]
 for i in range(len(all_url)):
     entry_start_time = time.time()
     print(i)
@@ -42,25 +44,6 @@ for i in range(len(all_url)):
             raw_description = tree.xpath('//section[@class="item-description"]/text()')  # 列表
             description = "".join(raw_description)
             format_description = description.strip("\n\t").replace("\r\n", "|").replace("\r", "|").replace("\n", "|")
-            # ====================评价数====================
-            rating_count = ""
-            try:
-                review_count = tree.xpath('//div[@itemprop="reviewCount"]/text()')[0]
-                rating_count = review_count.replace("Average Rating (", "").replace("):", "")
-            except:
-                pass
-            # ====================价格====================
-            price = ""
-            try:
-                price = tree.xpath('//h5[@class="item-price"]/text()')[0]
-            except:
-                pass
-            # ====================封面====================
-            cover_image_url = ""
-            try:
-                cover_image_url = tree.xpath('//img[@class="cover"]/@src')[0]
-            except:
-                pass
             # ====================创作信息====================
             credit_list = []
             raw_credits = tree.xpath('//div[@class="credits"]//*/text()')  # 列表
@@ -70,44 +53,91 @@ for i in range(len(all_url)):
                     credit_list.append(credit_line)
             credit = "\n".join(credit_list)
 
+            # ====================评价数====================
+            rating_count = ""
+            try:
+                review_count = tree.xpath('//div[@itemprop="reviewCount"]/text()')[0]
+                rating_count = review_count.replace("Average Rating (", "").replace("):", "")
+            except:
+                pass
             # ====================编剧====================
             writer = ""
             item = "Written by"
             if item in credit_list:
-                writer = credit_list[credit_list.index(item) + 1]
-            # ====================铅稿====================
+                item_index = credit_list.index(item)
+                temp_store = credit_list[item_index + 1]
+                while credit_list[item_index + 2] not in key_word_list:
+                    item_index += 1
+                    temp_store = temp_store + "|" + credit_list[item_index + 1]
+                writer = temp_store
+            # ====================画师====================
             artist = ""
             item = "Art by"
             if item in credit_list:
-                artist = credit_list[credit_list.index(item) + 1]
+                item_index = credit_list.index(item)
+                temp_store = credit_list[item_index + 1]
+                while credit_list[item_index + 2] not in key_word_list:
+                    item_index += 1
+                    temp_store = temp_store + "|" + credit_list[item_index + 1]
+                artist = temp_store
             # ====================铅稿====================
             penciller = ""
             item = "Pencils"
             if item in credit_list:
-                penciller = credit_list[credit_list.index(item) + 1]
+                item_index = credit_list.index(item)
+                temp_store = credit_list[item_index + 1]
+                while credit_list[item_index + 2] not in key_word_list:
+                    item_index += 1
+                    temp_store = temp_store + "|" + credit_list[item_index + 1]
+                penciller = temp_store
             # ====================墨线====================
             inker = ""
             item = "Inks"
             if item in credit_list:
-                inker = credit_list[credit_list.index(item) + 1]
+                item_index = credit_list.index(item)
+                temp_store = credit_list[item_index + 1]
+                while credit_list[item_index + 2] not in key_word_list:
+                    item_index += 1
+                    temp_store = temp_store + "|" + credit_list[item_index + 1]
+                inker = temp_store
+            # ====================上色====================
+            colorist = ""
+            item = "Colored by"
+            if item in credit_list:
+                item_index = credit_list.index(item)
+                temp_store = credit_list[item_index + 1]
+                while credit_list[item_index + 2] not in key_word_list:
+                    item_index += 1
+                    temp_store = temp_store + "|" + credit_list[item_index + 1]
+                colorist = temp_store
             # ====================封面====================
             cover_artist = ""
             item = "Cover by"
             if item in credit_list:
-                cover_artist = credit_list[credit_list.index(item) + 1]
+                item_index = credit_list.index(item)
+                temp_store = credit_list[item_index + 1]
+                while credit_list[item_index + 2] not in key_word_list:
+                    item_index += 1
+                    temp_store = temp_store + "|" + credit_list[item_index + 1]
+                cover_artist = temp_store
             # ====================类型====================
             genres = ""
             item = "Genres"
             if item in credit_list:
-                genres = credit_list[credit_list.index(item) + 1]
+                item_index = credit_list.index(item)
+                temp_store = credit_list[item_index + 1]
+                while credit_list[item_index + 2] not in key_word_list:
+                    item_index += 1
+                    temp_store = temp_store + "|" + credit_list[item_index + 1]
+                genres = temp_store
             # ====================数字出版日期====================
             digital_release_date = ""
             item = "Digital Release Date"
             if item in credit_list:
                 time_string = credit_list[credit_list.index(item) + 1]
                 time_convert = time.strptime(time_string, "%B %d %Y")
-                digital_release_date = time.strftime("%Y-%m-%d", time_convert) \
-                    # ====================实体出版日期====================
+                digital_release_date = time.strftime("%Y-%m-%d", time_convert)
+            # ====================实体出版日期====================
             print_release_date = ""
             item = "Print Release Date"
             if item in credit_list:
@@ -131,8 +161,7 @@ for i in range(len(all_url)):
                 publisher = credit_list[credit_list.index(item) + 1]
             # ====================输出区开始====================
             line_info = [title, short_link, format_description, digital_release_date, page_count, age_rating,
-                         rating_count, publisher, genres, writer, artist, penciller, inker, cover_artist,
-                         cover_image_url, price]
+                         rating_count, publisher, genres, writer, artist, penciller, inker, colorist, cover_artist]
             this_line = "\t".join(line_info)  # 行信息合并
             print(this_line)
 
