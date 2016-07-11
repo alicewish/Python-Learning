@@ -8,8 +8,8 @@ api = twitter.Api(consumer_key=["RrajNOp4TQetAuMLEG1BGGQmC"],
                   access_token_secret=["tgKaiH0S02cR6DkrkTgcAPa4N0WurNy1bK8d1WYI0Ti57"])
 
 users = api.GetFriends()
-
-print([u.screen_name for u in users])
+for u in users:
+    print(u.screen_name)
 
 # ================运行时间计时================
 run_time = time.time() - start_time

@@ -1,12 +1,12 @@
 import time
 
 start_time = time.time()  # 初始时间戳
-import eyeD3
+import eyed3
  
 #----------------------------------------------------------------------
 def getEyeD3Tags(path):
     """"""
-    trackInfo = eyeD3.Mp3AudioFile(path)
+    trackInfo = eyed3.Mp3AudioFile(path)
     tag = trackInfo.getTag()
     tag.link(path)
  

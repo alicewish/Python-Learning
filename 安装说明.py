@@ -29,6 +29,8 @@
 
 # pip install --target=/Users/alicewish/anaconda/lib/python3.5/site-packages/ eyeD3
 
+# pip install --target=/Users/alicewish/anaconda/lib/python3.5/site-packages/ stagger
+
 # pip install --target=/Users/alicewish/anaconda/ ConfigParser --upgrade
 
 
