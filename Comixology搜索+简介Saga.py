@@ -4,9 +4,9 @@ import requests, time, re
 start_time = time.time()  # 初始时间戳
 now = time.strftime("%Y%m%d", time.localtime())  # 当前日期戳
 # ========================输入区开始========================
-search_comic_name = '\Saga'  # 查询用漫画名
+search_comic_name = '/Saga'  # 查询用漫画名
 
-save_comic_name = search_comic_name.replace(":", "")
+save_comic_name = search_comic_name.replace(":", "").replace("/", "")
 key_title = save_comic_name.replace(" ", "-")
 print(key_title)
 url_prefix = 'https://www.comixology.com/search?search='
@@ -22,8 +22,6 @@ issues_url = []
 check_set = set()
 info_dict = {}
 major_key_list = []
-key_word_list = ["Written by", "Art by", "Pencils", "Inks", "Colored by", "Cover by", "Genres", "Print Release Date",
-                 "Print Release Date", "Page Count", "Age Rating", "Sold by", "About Book"]
 for i in range(len(all_url)):
     entry_start_time = time.time()
     print(i)
@@ -38,6 +36,10 @@ for i in range(len(all_url)):
             # ========================执行区开始========================
             page = requests.get(short_link)  # 获取网页信息
             tree = html.fromstring(page.text)  # 构筑查询用树
+            # ====================关键词列表====================
+            key_word_list = ["Written by", "Art by", "Pencils", "Inks", "Colored by", "Cover by", "Genres",
+                             "Digital Release Date", "Print Release Date", "Page Count", "Age Rating", "Sold by",
+                             "About Book"]
             # ====================标题====================
             title = tree.xpath('//h2[@class="title"]/text()')[0]
             # ====================简介====================
@@ -58,6 +60,18 @@ for i in range(len(all_url)):
             try:
                 review_count = tree.xpath('//div[@itemprop="reviewCount"]/text()')[0]
                 rating_count = review_count.replace("Average Rating (", "").replace("):", "")
+            except:
+                pass
+            # ====================价格====================
+            price = ""
+            try:
+                price = tree.xpath('//h5[@class="item-price"]/text()')[0]
+            except:
+                pass
+            # ====================封面====================
+            cover_image_url = ""
+            try:
+                cover_image_url = tree.xpath('//img[@class="cover"]/@src')[0]
             except:
                 pass
             # ====================编剧====================
@@ -110,6 +124,16 @@ for i in range(len(all_url)):
                     item_index += 1
                     temp_store = temp_store + "|" + credit_list[item_index + 1]
                 colorist = temp_store
+            # ====================填字====================
+            letterer = ""
+            item = "Lettered by"
+            if item in credit_list:
+                item_index = credit_list.index(item)
+                temp_store = credit_list[item_index + 1]
+                while credit_list[item_index + 2] not in key_word_list:
+                    item_index += 1
+                    temp_store = temp_store + "|" + credit_list[item_index + 1]
+                letterer = temp_store
             # ====================封面====================
             cover_artist = ""
             item = "Cover by"
@@ -159,9 +183,11 @@ for i in range(len(all_url)):
             item = "Sold by"
             if item in credit_list:
                 publisher = credit_list[credit_list.index(item) + 1]
+
             # ====================输出区开始====================
             line_info = [title, short_link, format_description, digital_release_date, page_count, age_rating,
-                         rating_count, publisher, genres, writer, artist, penciller, inker, colorist, cover_artist]
+                         rating_count, publisher, genres, writer, artist, penciller, inker, colorist, letterer,
+                         cover_artist,cover_image_url, price]
             this_line = "\t".join(line_info)  # 行信息合并
             print(this_line)
 

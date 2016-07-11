@@ -4,7 +4,7 @@ import requests, time, re
 start_time = time.time()  # 初始时间戳
 now = time.strftime("%Y%m%d", time.localtime())  # 当前日期戳
 # ========================输入区开始========================
-search_comic_name = 'Clean Room'  # 查询用漫画名
+search_comic_name = 'Monstress'  # 查询用漫画名
 
 save_comic_name = search_comic_name.replace(":", "")
 key_title = save_comic_name.replace(" ", "-")
@@ -154,6 +154,16 @@ for i in range(len(all_url)):
                     item_index += 1
                     temp_store = temp_store + "|" + credit_list[item_index + 1]
                 genres = temp_store
+            # ====================故事线====================
+            story_arc = ""
+            item = "Story Arc"
+            if item in credit_list:
+                item_index = credit_list.index(item)
+                temp_store = credit_list[item_index + 1]
+                while credit_list[item_index + 2] not in key_word_list:
+                    item_index += 1
+                    temp_store = temp_store + "|" + credit_list[item_index + 1]
+                story_arc = temp_store
             # ====================数字出版日期====================
             digital_release_date = ""
             item = "Digital Release Date"
@@ -186,8 +196,8 @@ for i in range(len(all_url)):
 
             # ====================输出区开始====================
             line_info = [title, short_link, format_description, digital_release_date, page_count, age_rating,
-                         rating_count, publisher, genres, writer, artist, penciller, inker, colorist, letterer,
-                         cover_artist,cover_image_url, price]
+                         rating_count, publisher, genres, story_arc, writer, artist, penciller, inker, colorist,
+                         letterer, cover_artist, cover_image_url, price]
             this_line = "\t".join(line_info)  # 行信息合并
             print(this_line)
 

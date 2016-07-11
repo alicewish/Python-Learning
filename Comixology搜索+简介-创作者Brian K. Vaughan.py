@@ -4,13 +4,10 @@ import requests, time, re
 start_time = time.time()  # 初始时间戳
 now = time.strftime("%Y%m%d", time.localtime())  # 当前日期戳
 # ========================输入区开始========================
-search_comic_name = 'Clean Room'  # 查询用漫画名
+search_creator_name = 'Brian K. Vaughan'  # 查询用漫画名
 
-save_comic_name = search_comic_name.replace(":", "")
-key_title = save_comic_name.replace(" ", "-")
-print(key_title)
 url_prefix = 'https://www.comixology.com/search?search='
-comic_url = url_prefix + search_comic_name  # 完整的查询网址
+comic_url = url_prefix + search_creator_name  # 完整的查询网址
 # ========================执行区开始========================
 page = requests.get(comic_url)  # 获取网页信息
 tree = html.fromstring(page.text)  # 构筑查询用树
@@ -26,9 +23,9 @@ for i in range(len(all_url)):
     entry_start_time = time.time()
     print(i)
     print(all_url[i])
-    if re.match(r'.*/digital-comic/[^?]*', all_url[i]) and key_title in all_url[i]:
+    if re.match(r'.*/digital-comic/[^?]*', all_url[i]):  # 合法漫画页链接
         matchs = re.match(r'.*/digital-comic/[^?]*', all_url[i])
-        short_link = matchs.group(0)
+        short_link = matchs.group(0)  # 提取链接最短形式
         if short_link not in check_set:
             check_set.add(short_link)
             print("获取中……")
@@ -60,18 +57,6 @@ for i in range(len(all_url)):
             try:
                 review_count = tree.xpath('//div[@itemprop="reviewCount"]/text()')[0]
                 rating_count = review_count.replace("Average Rating (", "").replace("):", "")
-            except:
-                pass
-            # ====================价格====================
-            price = ""
-            try:
-                price = tree.xpath('//h5[@class="item-price"]/text()')[0]
-            except:
-                pass
-            # ====================封面====================
-            cover_image_url = ""
-            try:
-                cover_image_url = tree.xpath('//img[@class="cover"]/@src')[0]
             except:
                 pass
             # ====================编剧====================
@@ -184,29 +169,31 @@ for i in range(len(all_url)):
             if item in credit_list:
                 publisher = credit_list[credit_list.index(item) + 1]
 
-            # ====================输出区开始====================
-            line_info = [title, short_link, format_description, digital_release_date, page_count, age_rating,
-                         rating_count, publisher, genres, writer, artist, penciller, inker, colorist, letterer,
-                         cover_artist,cover_image_url, price]
-            this_line = "\t".join(line_info)  # 行信息合并
-            print(this_line)
+            if search_creator_name in credit_list:
+                # ====================输出区开始====================
+                line_info = [title, short_link, format_description, digital_release_date, page_count, age_rating,
+                             rating_count, publisher, genres, writer, artist, penciller, inker, colorist, letterer,
+                             cover_artist]
+                this_line = "\t".join(line_info)  # 行信息合并
+                print(this_line)
 
-            major_key = digital_release_date + title  # "日期+标题"作为主键
-            major_key_list.append(major_key)
-            info_dict[major_key] = this_line
-            major_key_list.sort()  # 主键表排序
-            text_list = []
-            for key in major_key_list:
-                text_list.append(info_dict[key])
+                major_key = digital_release_date + title  # "日期+标题"作为主键
+                major_key_list.append(major_key)
+                info_dict[major_key] = this_line
+                major_key_list.sort()  # 主键表排序
+                text_list = []
+                for key in major_key_list:
+                    text_list.append(info_dict[key])
 
-            text = "\r\n".join(text_list)
-            # ================写入TXT================
-            txt_file_path = '/Users/alicewish/我的坚果云/Comixology搜索+简介' + save_comic_name + '.txt'  # TXT文件名
-            f = open(txt_file_path, 'w')
-            try:
-                f.write(text)
-            finally:
-                f.close()
+                text = "\r\n".join(text_list)
+                # ================写入TXT================
+                file_name = 'Comixology搜索+简介-创作者' + search_creator_name + '.txt'
+                txt_file_path = '/Users/alicewish/我的坚果云/' + file_name  # TXT文件名
+                f = open(txt_file_path, 'w')
+                try:
+                    f.write(text)
+                finally:
+                    f.close()
             entry_run_time = time.time() - entry_start_time
             print("耗时:{:.2f}秒".format(entry_run_time))
 
