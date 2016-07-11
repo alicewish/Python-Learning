@@ -109,6 +109,16 @@ for i in range(len(all_url)):
                     item_index += 1
                     temp_store = temp_store + "|" + credit_list[item_index + 1]
                 colorist = temp_store
+            # ====================填字====================
+            letterer = ""
+            item = "Lettered by"
+            if item in credit_list:
+                item_index = credit_list.index(item)
+                temp_store = credit_list[item_index + 1]
+                while credit_list[item_index + 2] not in key_word_list:
+                    item_index += 1
+                    temp_store = temp_store + "|" + credit_list[item_index + 1]
+                letterer = temp_store
             # ====================封面====================
             cover_artist = ""
             item = "Cover by"
@@ -162,7 +172,8 @@ for i in range(len(all_url)):
             if search_creator_name in credit_list:
                 # ====================输出区开始====================
                 line_info = [title, short_link, format_description, digital_release_date, page_count, age_rating,
-                             rating_count, publisher, genres, writer, artist, penciller, inker, colorist,cover_artist]
+                             rating_count, publisher, genres, writer, artist, penciller, inker, colorist, letterer,
+                             cover_artist]
                 this_line = "\t".join(line_info)  # 行信息合并
                 print(this_line)
 
