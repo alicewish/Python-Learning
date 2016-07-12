@@ -12,28 +12,24 @@ file_name = "[伦理学导论].（美）弗兰克·梯利.扫描版.gdoc"
 file_path = file_dir + file_name
 # ================文件信息================
 is_dir = os.path.isdir(file_path)  # 判断目标是否目录
-if not is_dir:
+extension = os.path.splitext(file_path)[1]  # 拓展名
+extension_list=[".gdoc",".gsheet"]
+if not is_dir and extension in extension_list:
     last_access_time = datetime.datetime.fromtimestamp(os.path.getatime(file_path))  # 最近访问时间
     created_time = datetime.datetime.fromtimestamp(os.path.getctime(file_path))  # 输出文件创建时间
     last_modified_time = datetime.datetime.fromtimestamp(os.path.getmtime(file_path))  # 最近修改时间
     file_size = os.path.getsize(file_path)  # 输出文件大小（字节为单位）
     extension = os.path.splitext(file_path)[1]  # 拓展名
-    line_info = [file_name, str(created_time), str(last_modified_time), str(last_access_time), str(file_size)]
-    line = "\t".join(line_info)
-    # print(line)
-    # print(extension)
-    #
-    # print(file_path)
+
     read_text = open(file_path, 'rb').read()  # 读取文本
-    # print(read_text)
     decoded_text = str(read_text)[2:-1]
-    print(decoded_text)
     data = json.loads(decoded_text)  # 将json字符串转换成python对象
     url = data["url"]
     doc_id = data["doc_id"]
     email = data["email"]
     resource_id = data["resource_id"]
-    info = [url, doc_id, email, resource_id]
+    info = [file_name, str(created_time), str(last_modified_time), str(last_access_time), str(file_size), url, doc_id,
+            email, resource_id]
     line = "\t".join(info)
     print(line)
 # ================运行时间计时================

@@ -5,41 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="373ecf99-8a13-48a4-b504-b3b0531662d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介-创作者Ant Lucia.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介-创作者Brian K. Vaughan.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介-创作者Fiona Staples.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介-创作者Nicola Scott.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介-创作者Peter J. Tomasi.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介-创作者Sana Takeda.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介Arkham Knight.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介Batwoman.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介Dungeons &amp; Dragons.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介Low.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介Monstress.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介Vote Loki.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Google硬盘-单个文件读取信息.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Google硬盘-读取列表信息.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/文件操作-汉化文件夹确认状态.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/文件操作-汉化文件夹重命名.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/文件操作-获取文件夹大小.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/网络操作-监视网页.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介-创作者Brian Buccellato.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介-创作者Brian Buccellato.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介-创作者Dan Mora.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介-创作者Dan Mora.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介-创作者Francis Manapul.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介-创作者Francis Manapul.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介-创作者Mikel Janin.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介-创作者Mikel Janin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介All New Wolverine.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介All New Wolverine.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介Bombshells.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介Bombshells.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介Clean Room.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介Clean Room.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介Earth 2 Society.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介Earth 2 Society.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介Gotham Academy.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介Gotham Academy.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介Invincible Iron Man 2015.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介Invincible Iron Man 2015.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介Saga.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介Saga.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介Sons of the Devil.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介Sons of the Devil.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介Tomboy.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介Tomboy.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介Transformers 2011.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介Transformers 2011.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介Transformers More Than Meets the Eye.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介Transformers More Than Meets the Eye.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology搜索+简介Transformers Robots In Disguise.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介Transformers Robots In Disguise.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Google硬盘-单个文件读取信息.py" afterPath="$PROJECT_DIR$/Google硬盘-单个文件读取信息.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Google硬盘-读取列表信息.py" afterPath="$PROJECT_DIR$/Google硬盘-读取列表信息.py" />
     </list>
     <ignored path="Python-Learning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -118,7 +85,7 @@
     <SUITE FILE_PATH="coverage/Python-Learning$Comixology_2.coverage" NAME="Comixology搜索+简介副本2 Coverage Results" MODIFIED="1467878050263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_.coverage" NAME="文件操作-读取目录 Coverage Results" MODIFIED="1468248666284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$.coverage" NAME="不可能的世界读取最新章节 Coverage Results" MODIFIED="1468245877242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python-Learning$Google_.coverage" NAME="Google硬盘-单个文件读取信息 Coverage Results" MODIFIED="1468251120619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python-Learning$Google_.coverage" NAME="Google硬盘-读取列表信息 Coverage Results" MODIFIED="1468290896288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$DOCX.coverage" NAME="DOCX读写 Coverage Results" MODIFIED="1466305039989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_nib_Boson_.coverage" NAME="软件翻译-编译文件nib-Boson-附属 Coverage Results" MODIFIED="1467286133074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$ComixologyMD_Injustice_Gods_Among_Us_Year_Five.coverage" NAME="Comixology简介MD-Injustice Gods Among Us Year Five Coverage Results" MODIFIED="1467990277374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -211,11 +178,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Google硬盘-读取列表信息.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Google硬盘-读取列表信息.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Google硬盘-读取列表信息.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+            <state relative-caret-position="300">
+              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -224,8 +191,8 @@
       <file leaf-file-name="Google硬盘-单个文件读取信息.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Google硬盘-单个文件读取信息.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-40">
-              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            <state relative-caret-position="140">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="33" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -263,11 +230,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Comixology搜索+简介Vote Loki.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Comixology搜索+简介Vote Loki.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Comixology搜索+简介Vote Loki.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+            <state relative-caret-position="390">
+              <caret line="27" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -359,9 +326,9 @@
         <option value="$PROJECT_DIR$/文件操作-汉化文件夹确认状态.py" />
         <option value="$PROJECT_DIR$/Comixology搜索+简介Invincible Iron Man 2015.py" />
         <option value="$PROJECT_DIR$/网络操作-监视网页.py" />
-        <option value="$PROJECT_DIR$/Google硬盘-读取列表信息.py" />
-        <option value="$PROJECT_DIR$/Google硬盘-单个文件读取信息.py" />
         <option value="$PROJECT_DIR$/Comixology搜索+简介Vote Loki.py" />
+        <option value="$PROJECT_DIR$/Google硬盘-单个文件读取信息.py" />
+        <option value="$PROJECT_DIR$/Google硬盘-读取列表信息.py" />
       </list>
     </option>
   </component>
@@ -461,7 +428,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Comixology搜索+简介Vote Loki">
+  <component name="RunManager" selected="Python.Google硬盘-读取列表信息">
     <configuration default="false" name="Google硬盘-读取列表信息" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -769,9 +736,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Comixology搜索+简介Vote Loki" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Google硬盘-读取列表信息" />
         <item index="1" class="java.lang.String" itemvalue="Python.Google硬盘-单个文件读取信息" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Google硬盘-读取列表信息" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Comixology搜索+简介Vote Loki" />
         <item index="3" class="java.lang.String" itemvalue="Python.文件操作-读取目录" />
         <item index="4" class="java.lang.String" itemvalue="Python.不可能的世界读取最新章节" />
       </list>
@@ -804,9 +771,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35550788" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="468" y="171" width="504" height="558" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35550788" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="468" y="171" width="504" height="558" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.4914163" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.49427754" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1207,22 +1174,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Google硬盘-读取列表信息.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Google硬盘-单个文件读取信息.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-40">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Comixology搜索+简介Injustice Gods Among Us 2013.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-233">
@@ -1243,8 +1194,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Comixology搜索+简介Vote Loki.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        <state relative-caret-position="390">
+          <caret line="27" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Google硬盘-单个文件读取信息.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="33" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Google硬盘-读取列表信息.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
           <folding />
         </state>
       </provider>
