@@ -20,10 +20,17 @@ for file_name in file_list:
         ordinal_num += 1
         print(ordinal_num)
         print(file_name)
-        # ================按规则移动================
+        # ================按规则重命名================
         if ordinal_num > 1 and ordinal_num % 2 == 1:
-            new_file_path = file_dir + "左/" + file_name
-            shutil.move(file_path, new_file_path)  # 移动文件
+            new_file_name="左"+file_name
+            new_file_path = file_dir + new_file_name
+            print(new_file_name)
+            os.rename(file_path, new_file_path)  # 文件或目录都是使用这条命令
+        else:
+            new_file_name = "右" + file_name
+            new_file_path = file_dir + new_file_name
+            print(new_file_name)
+            os.rename(file_path, new_file_path)  # 文件或目录都是使用这条命令
 
 # ================运行时间计时================
 run_time = time.time() - start_time

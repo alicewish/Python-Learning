@@ -1,29 +1,30 @@
-from lxml import html
-import requests, time, re
+import time, re
 
 start_time = time.time()  # 初始时间戳
 
 # ================读取剪贴板================
 from tkinter import Tk
+
 r = Tk()
 read_text = r.clipboard_get()
 
 # 将正则表达式编译成Pattern对象
 pattern = re.compile(r'http://imgsrc.baidu.com/forum/pic/item/[^)]*')
 # 使用Pattern匹配文本，获得全部匹配结果
-find = pattern.findall(read_text)#列表形式存储的结果
-prefix='<img src="'
-suffix='" />'
-info_line=[]
+find = pattern.findall(read_text)  # 列表形式存储的结果
+prefix = '<img src="'
+suffix = '" />'
+info_line = []
 for i in range(len(find)):
-    full_html=find[i]
+    full_html = find[i]
     info_line.append(full_html)
-info="\r\n".join(info_line)
+info = "\r\n".join(info_line)
 print(info)
 print(len(find))
 
 # ================写入剪贴板================
 import pyperclip
+
 pyperclip.copy(info)
 spam = pyperclip.paste()
 # ================运行时间计时================
