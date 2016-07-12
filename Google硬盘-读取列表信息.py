@@ -8,6 +8,7 @@ file_dir = '/Users/alicewish/Google 云端硬盘/'
 file_list = os.listdir(file_dir)  # 获得目录中的内容
 print(file_list)
 
+all_info=[]
 for file_name in file_list:
     file_path = file_dir + file_name
     # ================文件信息================
@@ -33,6 +34,15 @@ for file_name in file_list:
                 email, resource_id]
         line = "\t".join(info)
         print(line)
+
+        all_info.append(line)
+
+        text="\r\n".join(all_info)
+# ================写入剪贴板================
+import pyperclip
+
+pyperclip.copy(text)
+spam = pyperclip.paste()
 # ================运行时间计时================
 run_time = time.time() - start_time
 if run_time < 60:  # 秒(两位小数)
