@@ -5,59 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="373ecf99-8a13-48a4-b504-b3b0531662d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology刊物+简介.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/文件操作-Pictures|删除左右.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/文件操作-Pictures|重命名.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Arkham Knight.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Batwoman.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Black Magick.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Bombshells.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Civil War II.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Clean Room.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Devil.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Dungeons &amp; Dragons.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Earth 2 Society.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Gotham Academy.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Grimm Fairy Tales.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Henson.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Injustice Gods Among Us 2013.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Injustice Gods Among Us Year Five.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Injustice Gods Among Us Year Four.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Injustice Gods Among Us Year Three.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Injustice Gods Among Us Year Two.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Invincible Iron Man 2015.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Low.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Lucifer.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Madame Xanadu.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Monstress.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Rebirth.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Saga.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Savior.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Sheriff of Babylon.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Silk.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Sons of the Devil.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介The Wicked The Divine.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Tomboy.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Transformers 2011.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Transformers More Than Meets the Eye.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Transformers Robots In Disguise.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Transformers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Vote Loki.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介Wayward.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Comixology搜索+简介-刊物.py" afterPath="$PROJECT_DIR$/Comixology刊物.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Comixology搜索+简介-刊物Markdown.py" afterPath="$PROJECT_DIR$/Comixology简介.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Comixology搜索+简介-创作者.py" afterPath="$PROJECT_DIR$/Comixology创作者.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Google硬盘-DOCX重命名.py" afterPath="$PROJECT_DIR$/文件操作-Google硬盘|DOCX重命名.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Google硬盘-单个文件读取信息.py" afterPath="$PROJECT_DIR$/文件操作-Google硬盘|单个文件读取信息.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Google硬盘-批量重命名.py" afterPath="$PROJECT_DIR$/文件操作-Google硬盘|批量重命名.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Google硬盘-读取列表信息.py" afterPath="$PROJECT_DIR$/文件操作-Google硬盘|读取列表信息.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/文件操作-不义联盟裁图重命名.py" afterPath="$PROJECT_DIR$/文件操作-汉化——|第五年.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/文件操作-图源压缩包重命名.py" afterPath="$PROJECT_DIR$/文件操作-汉化——|图源压缩包重命名.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/文件操作-汉化文件夹确认状态.py" afterPath="$PROJECT_DIR$/文件操作-汉化|文件夹确认汉化状态.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/文件操作-汉化文件夹重命名.py" afterPath="$PROJECT_DIR$/文件操作-汉化|文件夹去括号重命名.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/文件操作-获取文件夹大小.py" afterPath="$PROJECT_DIR$/文件操作-汉化|获取文件夹大小.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/文件操作-裁图重命名文件.py" afterPath="$PROJECT_DIR$/文件操作-汉化——|左右.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/文件操作-Pictures|移动.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Comixology刊物+简介.py" afterPath="$PROJECT_DIR$/Comixology刊物+简介.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/文件操作-汉化——|图源压缩包重命名.py" afterPath="$PROJECT_DIR$/文件操作-汉化——|图源压缩包重命名.py" />
     </list>
     <ignored path="Python-Learning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,7 +49,7 @@
     <SUITE FILE_PATH="coverage/Python-Learning$Comixology_Henson.coverage" NAME="Comixology搜索+简介Henson Coverage Results" MODIFIED="1468038313212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$Comixology_Wicked.coverage" NAME="Comixology搜索+简介Wicked Coverage Results" MODIFIED="1467881410379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$EXCEL.coverage" NAME="EXCEL读写 Coverage Results" MODIFIED="1466305768726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python-Learning$__.coverage" NAME="知乎-看知乎-批量查询用户信息 Coverage Results" MODIFIED="1467622345403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python-Learning$__.coverage" NAME="文件操作-汉化——|图源压缩包重命名 Coverage Results" MODIFIED="1468346656367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_nib_GitHub_Desktop.coverage" NAME="软件翻译-编译文件nib-GitHub Desktop Coverage Results" MODIFIED="1467297641179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$Comixology_Transformers.coverage" NAME="Comixology搜索+简介Transformers Coverage Results" MODIFIED="1468035539819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$Comixology__Marguerite_Bennett.coverage" NAME="Comixology搜索+简介-创作者Marguerite Bennett Coverage Results" MODIFIED="1468206275941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -153,7 +104,7 @@
     <SUITE FILE_PATH="coverage/Python-Learning$Comixology_Batwoman.coverage" NAME="Comixology搜索+简介Batwoman Coverage Results" MODIFIED="1468229095806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_MacApp.coverage" NAME="翻译-MacApp读取 Coverage Results" MODIFIED="1467113041484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$Comixology_Injustice_Gods_Among_Us_Year_Four.coverage" NAME="Comixology搜索+简介Injustice Gods Among Us Year Four Coverage Results" MODIFIED="1468205290756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python-Learning$Comixology_.coverage" NAME="Comixology刊物+简介 Coverage Results" MODIFIED="1468343636683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python-Learning$Comixology_.coverage" NAME="Comixology刊物+简介 Coverage Results" MODIFIED="1468346472820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$Comixology_Silk.coverage" NAME="Comixology搜索+简介Silk Coverage Results" MODIFIED="1467991552327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$Comixology_Injustice_Gods_Among_Us_Year_Five.coverage" NAME="Comixology搜索+简介Injustice Gods Among Us Year Five Coverage Results" MODIFIED="1468205296913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$ICV2_.coverage" NAME="ICV2读取文章表格每行数据-旧 Coverage Results" MODIFIED="1466650537303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -166,7 +117,7 @@
     <SUITE FILE_PATH="coverage/Python-Learning$MP3_ID3.coverage" NAME="MP3-读取ID3 Coverage Results" MODIFIED="1468210114010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$Comixology_Invincible_Iron_Man.coverage" NAME="Comixology搜索+简介Invincible Iron Man Coverage Results" MODIFIED="1468035456529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$Comixology__Dan_Mora.coverage" NAME="Comixology搜索+简介-创作者Dan Mora Coverage Results" MODIFIED="1468227750987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python-Learning$_Pictures_.coverage" NAME="文件操作-Pictures|重命名 Coverage Results" MODIFIED="1468341988170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python-Learning$_Pictures_.coverage" NAME="文件操作-Pictures|移动 Coverage Results" MODIFIED="1468347032999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$Comixology__Stephanie_Hans.coverage" NAME="Comixology搜索+简介-创作者Stephanie Hans Coverage Results" MODIFIED="1468205151682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$Comixology___Jim_Zub.coverage" NAME="Comixology搜索+简介-创作者-Jim Zub Coverage Results" MODIFIED="1468125664242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python-Learning$_Markdown.coverage" NAME="文本处理-Markdown转换 Coverage Results" MODIFIED="1467379279885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -235,8 +186,8 @@
       <file leaf-file-name="文件操作-汉化——|图源压缩包重命名.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/文件操作-汉化——|图源压缩包重命名.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+            <state relative-caret-position="350">
+              <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -245,18 +196,8 @@
       <file leaf-file-name="文件操作-汉化——|第五年.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/文件操作-汉化——|第五年.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="32" column="64" selection-start-line="28" selection-start-column="12" selection-end-line="32" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="文件操作-读取目录.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/文件操作-读取目录.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+            <state relative-caret-position="225">
+              <caret line="18" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -292,6 +233,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="文件操作-Pictures|移动.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/文件操作-Pictures|移动.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="99" selection-start-line="19" selection-start-column="99" selection-end-line="19" selection-end-column="99" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="文本处理-贴吧图片.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/文本处理-贴吧图片.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -302,11 +253,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Comixology刊物+简介.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Comixology刊物+简介.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Comixology刊物+简介.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+            <state relative-caret-position="150">
+              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -330,8 +281,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Comixology搜索+简介-创作者Brian Buccellato.py" />
-        <option value="$PROJECT_DIR$/Comixology搜索+简介Clean Room.py" />
         <option value="$PROJECT_DIR$/Comixology搜索+简介Sons of the Devil.py" />
         <option value="$PROJECT_DIR$/Comixology搜索+简介Saga.py" />
         <option value="$PROJECT_DIR$/Comixology搜索+简介-创作者Brian K. Vaughan.py" />
@@ -379,8 +328,10 @@
         <option value="$PROJECT_DIR$/Comixology简介.py" />
         <option value="$PROJECT_DIR$/文件操作-汉化——|第五年.py" />
         <option value="$PROJECT_DIR$/文件操作-Pictures|重命名.py" />
-        <option value="$PROJECT_DIR$/Comixology刊物+简介.py" />
         <option value="$PROJECT_DIR$/Comixology创作者.py" />
+        <option value="$PROJECT_DIR$/Comixology刊物+简介.py" />
+        <option value="$PROJECT_DIR$/文件操作-汉化——|图源压缩包重命名.py" />
+        <option value="$PROJECT_DIR$/文件操作-Pictures|移动.py" />
       </list>
     </option>
   </component>
@@ -480,7 +431,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Comixology刊物+简介">
+  <component name="RunManager" selected="Python.文件操作-Pictures|移动">
     <configuration default="false" name="Comixology搜索+简介-创作者" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -517,42 +468,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="文件操作-Pictures|重命名" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python-Learning" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/文件操作-Pictures|删除左右.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="文件操作-Pictures|重命名 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python-Learning" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/文件操作-Pictures|重命名.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="文本处理-贴吧图片" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -567,6 +482,42 @@
       <module name="Python-Learning" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/文本处理-贴吧图片.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="文件操作-汉化——|图源压缩包重命名" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Python-Learning" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/文件操作-汉化——|图源压缩包重命名.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="文件操作-Pictures|移动" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Python-Learning" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/文件操作-Pictures|移动.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -782,17 +733,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.Comixology搜索+简介-创作者" />
       <item index="1" class="java.lang.String" itemvalue="Python.Comixology刊物+简介" />
-      <item index="2" class="java.lang.String" itemvalue="Python.文件操作-Pictures|重命名" />
-      <item index="3" class="java.lang.String" itemvalue="Python.文件操作-Pictures|重命名 (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Python.文本处理-贴吧图片" />
+      <item index="2" class="java.lang.String" itemvalue="Python.文本处理-贴吧图片" />
+      <item index="3" class="java.lang.String" itemvalue="Python.文件操作-汉化——|图源压缩包重命名" />
+      <item index="4" class="java.lang.String" itemvalue="Python.文件操作-Pictures|移动" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Comixology刊物+简介" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Comixology搜索+简介-创作者" />
-        <item index="2" class="java.lang.String" itemvalue="Python.文本处理-贴吧图片" />
-        <item index="3" class="java.lang.String" itemvalue="Python.文件操作-Pictures|重命名 (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.文件操作-Pictures|重命名" />
+        <item index="0" class="java.lang.String" itemvalue="Python.文件操作-Pictures|移动" />
+        <item index="1" class="java.lang.String" itemvalue="Python.文件操作-汉化——|图源压缩包重命名" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Comixology刊物+简介" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Comixology搜索+简介-创作者" />
+        <item index="4" class="java.lang.String" itemvalue="Python.文本处理-贴吧图片" />
       </list>
     </recent_temporary>
   </component>
@@ -867,13 +818,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Comixology搜索+简介Transformers Robots In Disguise.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="233" column="0" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Comixology搜索+简介Tomboy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3480">
@@ -1212,42 +1156,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/文件操作-汉化——|图源压缩包重命名.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/文件操作-汉化——|左右.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/文件操作-Pictures|删除左右.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/文件操作-汉化——|第五年.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="32" column="64" selection-start-line="28" selection-start-column="12" selection-end-line="32" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/文件操作-Pictures|重命名.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -1270,8 +1182,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Comixology刊物+简介.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        <state relative-caret-position="150">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/文件操作-汉化——|第五年.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/文件操作-汉化——|图源压缩包重命名.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/文件操作-汉化——|左右.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/文件操作-Pictures|重命名.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/文件操作-Pictures|移动.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="99" selection-start-line="19" selection-start-column="99" selection-end-line="19" selection-end-column="99" />
           <folding />
         </state>
       </provider>

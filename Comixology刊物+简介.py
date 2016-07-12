@@ -18,7 +18,7 @@ for i in range(len(text_readline)):
     print(search_comic_name)
 
     save_comic_name = search_comic_name.replace(":", "").replace("/", "").replace("&", "").replace("  ", " ")
-    key_title = save_comic_name.replace(" ", "-")
+    key_title = search_comic_name.replace(" ", "-")
     print(key_title)
     url_prefix = 'https://www.comixology.com/search?search='
     comic_url = url_prefix + search_comic_name  # 完整的查询网址
@@ -235,7 +235,7 @@ for i in range(len(text_readline)):
                 alter_line = "\r\n".join(alter_line_info)  # 行信息合并
                 print(alter_line)
 
-                alter_info_dict[major_key] = this_line
+                alter_info_dict[major_key] = alter_line
                 major_key_list.sort()  # 主键表排序
                 alter_text_list = []
                 for key in major_key_list:
@@ -255,8 +255,8 @@ for i in range(len(text_readline)):
 
     # ========================输出区开始========================
     print("总共" + str(len(issues_url)) + "期")
-    new_text_readline.remove(search_comic_name)
-    output_text="\r\n".join(new_text_readline)
+    new_text_readline.remove(search_comic_name)  # 从总表中删除刚才读取完的创作者
+    output_text = "\r\n".join(new_text_readline)
     # ================写入TXT================
     f = open(read_txt_file_path, 'w')
     try:

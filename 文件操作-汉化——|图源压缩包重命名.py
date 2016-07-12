@@ -20,9 +20,10 @@ for file_name in file_list:
     line_info = [file_name, str(created_time), str(last_modified_time), str(last_access_time), str(file_size)]
     line = "\t".join(line_info)
 
-    if "Injustice- Gods Among Us - Year Five (2015-) 0" in file_name and "-000" in file_name and extension == ".zip":
-        new_file_name = file_name.replace("- Gods Among Us - Year Five (2015-)", " - Gods Among Us- Year Five").replace(
-            "-000", " (2016) (digital) (Alicewish)")
+    if "Injustice- Gods Among Us - Year Five (2015-) 0" in file_name and extension == ".zip":
+        issue_number = 30
+        new_file_name = "Injustice - Gods Among Us- Year Five 0" + str(issue_number).zfill(
+            2) + " (2016) (digital) (Alicewish).zip"
 
         new_file_path = file_dir + new_file_name
         print(new_file_name)
