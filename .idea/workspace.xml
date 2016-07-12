@@ -5,32 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="373ecf99-8a13-48a4-b504-b3b0531662d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Comixology搜索+简介-刊物Markdown.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/文件操作-不义联盟裁图重命名.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/文件操作-图源压缩包重命名.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介-创作者Ant Lucia.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介-创作者Brian Buccellato.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介-创作者Brian K. Vaughan.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介-创作者Bruno Redondo.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介-创作者Dan Mora.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介-创作者Fiona Staples.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介-创作者Francis Manapul.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介-创作者Grant Morrison.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介-创作者M. Goodwin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介-创作者Marguerite Bennett.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介-创作者Mikel Janin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介-创作者Stephanie Hans.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介-创作者Tom Taylor.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介-编剧Brian Buccellato.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介-编剧Jim Zub.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介-编剧Marguerite Bennett.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介-编剧Nick Spencer.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology搜索+简介-编剧Tom Taylor.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Comixology搜索+简介-创作者Nicola Scott.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介-创作者.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Comixology搜索+简介-创作者Sana Takeda.py" afterPath="$PROJECT_DIR$/Comixology搜索+简介-刊物.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/汉化-移动文件.py" afterPath="$PROJECT_DIR$/文件操作-裁图重命名文件.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/文本处理-贴吧图片.py" afterPath="$PROJECT_DIR$/文本处理-贴吧图片.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology简介MD-Earth 2 Society.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology简介MD-Gotham Academy.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology简介MD-Injustice Gods Among Us Year Five.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology简介MD-Saga.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology简介MD-Silk.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology简介MD-The Wicked The Divine.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Comixology简介MD-Wayward.py" afterPath="" />
     </list>
     <ignored path="Python-Learning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -193,26 +174,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Google硬盘-单个文件读取信息.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Google硬盘-单个文件读取信息.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="33" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="文件操作-不义联盟裁图重命名.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/文件操作-不义联盟裁图重命名.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="10" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Comixology搜索+简介-创作者.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Comixology搜索+简介-创作者.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -255,7 +216,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Comixology搜索+简介-刊物Markdown.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Comixology搜索+简介-刊物Markdown.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Comixology搜索+简介-刊物Markdown.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
@@ -265,11 +226,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Comixology简介MD-Saga.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Comixology简介MD-Saga.py">
+      <file leaf-file-name="Comixology简介MD-Bombshells.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Comixology简介MD-Bombshells.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="120" column="12" selection-start-line="120" selection-start-column="12" selection-end-line="121" selection-end-column="55" />
+            <state relative-caret-position="-1883">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -800,9 +761,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36051503" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="468" y="171" width="504" height="558" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36051503" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="468" y="171" width="504" height="558" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.4914163" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.49427754" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -844,20 +805,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Comixology搜索+简介-创作者Mikel Janin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Comixology搜索+简介-创作者Nicola Scott.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="232" column="0" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Comixology搜索+简介Bombshells.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
@@ -1237,9 +1184,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
           <caret line="120" column="12" selection-start-line="120" selection-start-column="12" selection-end-line="121" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1248,6 +1193,24 @@
         <state relative-caret-position="360">
           <caret line="225" column="24" selection-start-line="225" selection-start-column="24" selection-end-line="225" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Comixology简介MD-Wayward.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1883">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Comixology简介MD-Bombshells.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1883">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
