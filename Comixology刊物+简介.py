@@ -3,13 +3,14 @@ import requests, time, re
 
 start_time = time.time()  # 初始时间戳
 now = time.strftime("%Y%m%d", time.localtime())  # 当前日期戳
-txt_file_path = "/Users/alicewish/我的坚果云/刊物列表.txt"
+read_txt_file_path = "/Users/alicewish/我的坚果云/刊物列表.txt"
 # ==============按行读取文本==============
 text_readline = []  # 初始化按行存储数据列表
-with open(txt_file_path) as fin:
+with open(read_txt_file_path) as fin:
     for line in fin:
         this_line = line.replace('\n', '')
         text_readline.append(this_line)
+new_text_readline = text_readline
 
 for i in range(len(text_readline)):
     # ========================输入区开始========================
@@ -31,6 +32,7 @@ for i in range(len(text_readline)):
     issues_url = []
     check_set = set()
     info_dict = {}
+    alter_info_dict = {}
     major_key_list = []
     for i in range(len(all_url)):
         entry_start_time = time.time()
@@ -55,7 +57,8 @@ for i in range(len(text_readline)):
                 # ====================简介====================
                 raw_description = tree.xpath('//section[@class="item-description"]/text()')  # 列表
                 description = "".join(raw_description)
-                format_description = description.strip("\n\t").replace("\r\n", "|").replace("\r", "|").replace("\n", "|")
+                format_description = description.strip("\n\t").replace("\r\n", "|").replace("\r", "|").replace("\n",
+                                                                                                               "|")
                 # ====================创作信息====================
                 credit_list = []
                 raw_credits = tree.xpath('//div[@class="credits"]//*/text()')  # 列表
@@ -221,17 +224,45 @@ for i in range(len(text_readline)):
 
                 text = "\r\n".join(text_list)
                 # ================写入TXT================
-                txt_file_path = '/Users/alicewish/我的坚果云/Comixology搜索+简介-刊物' + save_comic_name + '.txt'  # TXT文件名
+                txt_file_path = '/Users/alicewish/我的坚果云/Comixology刊物' + save_comic_name + '.txt'  # TXT文件名
                 f = open(txt_file_path, 'w')
                 try:
                     f.write(text)
                 finally:
                     f.close()
+                # ====================次级输出区开始====================
+                alter_line_info = ["### " + title, format_description]
+                alter_line = "\r\n".join(alter_line_info)  # 行信息合并
+                print(alter_line)
+
+                alter_info_dict[major_key] = this_line
+                major_key_list.sort()  # 主键表排序
+                alter_text_list = []
+                for key in major_key_list:
+                    alter_text_list.append(alter_info_dict[key])
+
+                alter_text = "\r\n".join(alter_text_list)
+                # ================写入TXT================
+                alter_txt_file_path = '/Users/alicewish/我的坚果云/Comixology简介' + save_comic_name + '.txt'  # TXT文件名
+                f = open(alter_txt_file_path, 'w')
+                try:
+                    f.write(alter_text)
+                finally:
+                    f.close()
+
                 entry_run_time = time.time() - entry_start_time
                 print("耗时:{:.2f}秒".format(entry_run_time))
 
     # ========================输出区开始========================
     print("总共" + str(len(issues_url)) + "期")
+    new_text_readline.remove(search_comic_name)
+    output_text="\r\n".join(new_text_readline)
+    # ================写入TXT================
+    f = open(read_txt_file_path, 'w')
+    try:
+        f.write(output_text)
+    finally:
+        f.close()
 
 # ================运行时间计时================
 run_time = time.time() - start_time
