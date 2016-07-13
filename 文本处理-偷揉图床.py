@@ -23,6 +23,7 @@ info = "\r\n".join(info_line)
 print(info)
 print(len(find))
 
+
 # ================写入剪贴板================
 import pyperclip
 
