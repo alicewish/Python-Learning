@@ -8,13 +8,13 @@ file_dir = '/Users/alicewish/Google 云端硬盘/'
 file_list = os.listdir(file_dir)  # 获得目录中的内容
 print(file_list)
 
-all_info=[]
+all_info = []
 for file_name in file_list:
     file_path = file_dir + file_name
     # ================文件信息================
     is_dir = os.path.isdir(file_path)  # 判断目标是否目录
     extension = os.path.splitext(file_path)[1]  # 拓展名
-    extension_list = [".gdoc", ".gsheet"]
+    extension_list = [".gdoc", ".gsheet", ".gscript"]
     if not is_dir and extension in extension_list:
         last_access_time = datetime.datetime.fromtimestamp(os.path.getatime(file_path))  # 最近访问时间
         created_time = datetime.datetime.fromtimestamp(os.path.getctime(file_path))  # 输出文件创建时间
@@ -37,7 +37,7 @@ for file_name in file_list:
 
         all_info.append(line)
 
-        text="\r\n".join(all_info)
+        text = "\r\n".join(all_info)
 # ================写入剪贴板================
 import pyperclip
 

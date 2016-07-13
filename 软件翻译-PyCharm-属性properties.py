@@ -1,70 +1,55 @@
-from lxml import html
-import requests, time, re
+import time, os
 
 start_time = time.time()  # 初始时间戳
 
-name_list_file_path = "/Users/alicewish/我的坚果云/PyCharm.txt"  # 输入文件的地址
+refer_file_dir = '/Users/alicewish/Documents/GitHub/Mac-App-Translation/PyCharm/PyCharm-zh_CN-4.5.3/zh_CN/'
+en_file_dir = '/Users/alicewish/Documents/GitHub/Mac-App-Translation/PyCharm/resources_en/messages/'
+cn_file_dir = '/Users/alicewish/Documents/GitHub/Mac-App-Translation/PyCharm/resources_cn/messages/'
+untranslated_file_path = "/Users/alicewish/我的坚果云/PyCharm待翻译.txt"
 
-# ================按行读取文件名文本================
-name_list_readline = []  # 初始化按行存储数据列表,不接受换行符
-with open(name_list_file_path) as fin:
-    for line in fin:
-        name_list_readline.append((line).replace('\n', ''))
-
-for n in range(len(name_list_readline)):
-    # ========================输入区开始========================
-    file_name = name_list_readline[n]
-    input_file_path = "/Users/alicewish/Documents/GitHub/Mac-App-Translation/PyCharm-Win/resources_en/messages/" + file_name  # 输入文件的地址
-    refer_file_path = "/Users/alicewish/Documents/GitHub/Mac-App-Translation/PyCharm-Win/PyCharm-zh_CN-4.5.3/zh_CN/" + file_name  # 词典文件的地址
-    output_file_path = "/Users/alicewish/Documents/GitHub/Mac-App-Translation/PyCharm-Win/resources_cn/messages/" + file_name  # 输出文件的地址
-
-    # ================按行读取输入文本================
-    input_readline = []  # 初始化按行存储数据列表,不接受换行符
-    with open(input_file_path) as fin:
-        for line in fin:
-            input_readline.append((line).replace('\n', ''))
-
-    # ================按行读取参考文本================
-    refer_readline = []  # 初始化按行存储数据列表,不接受换行符
+# ================按行读取参考文本并字典化================
+refer_dict = {}  # 创建一个字典
+refer_file_list = os.listdir(refer_file_dir)  # 获得目录中的内容
+for file_name in refer_file_list:
+    refer_file_path = refer_file_dir + file_name
     with open(refer_file_path) as fin:
         for line in fin:
-            refer_readline.append((line).replace('\n', ''))
+            refer_line = (line.replace('\n', '')).replace('\t', '')
+            if "=" in refer_line:  # 接受key=value格式
+                split_line = refer_line.split("=")
+                refer_dict[split_line[0]] = split_line[1]
 
-    # ========================输入字典化========================
-    input_dict = {}  # 创建一个字典
-    for i in range(len(input_readline)):
-        if "=" in input_readline[i]:
-            split_line = input_readline[i].split("=")
-            key = split_line[0]
-            value = split_line[1]
-            input_dict[key] = value
-    # print(key, input_dict[key])
-    # print(len(input_dict))
-    # ========================参考字典化========================
-    refer_dict = {}  # 创建一个字典
-    for i in range(len(refer_readline)):
-        if "=" in refer_readline[i]:
-            split_line = refer_readline[i].split("=")
-            key = split_line[0]
-            value = split_line[1]
-            refer_dict[key] = value
-    # print(key, refer_dict[key])
-    # print(len(refer_dict))
-    # ========================建立输出字典========================
-    output_dict = input_dict
-    for key in refer_dict:
-        output_dict[key] = refer_dict[key]
-
-    output_readline = []
-    for key, value in output_dict.items():
-        line = key + "=" + value
-        output_readline.append(line)
-        # print(line)
+# ================英转中================
+en_file_list = os.listdir(en_file_dir)  # 获得目录中的内容
+for file_name in en_file_list:
+    en_file_path = en_file_dir + file_name
+    en_readline = []
+    cn_readline = []
+    with open(en_file_path) as fin:
+        for line in fin:
+            en_line = (line.replace('\n', '')).replace('\t', '')
+            en_readline.append(en_line)
+            if "=" in en_line:  # 接受key=value格式
+                split_line = en_line.split("=")
+                key = split_line[0]
+                value = split_line[1]
+                if key in refer_dict:
+                    value = refer_dict[key]
+                else:
+                    # ================写入文本================
+                    f = open(untranslated_file_path, 'a')
+                    try:
+                        f.write(en_line + "\r\n")
+                    finally:
+                        f.close()
+                cn_line = key + "=" + value
+                cn_readline.append(cn_line)
+    cn_file_path = cn_file_dir + file_name
     # ================写入文本================
-    text = '\r\n'.join(output_readline)
+    text = '\r\n'.join(cn_readline)
     print(text)
 
-    f = open(output_file_path, 'w')
+    f = open(cn_file_path, 'w')
     try:
         f.write(text)
     finally:
