@@ -1,15 +1,31 @@
-from lxml import html
-import requests, time, re
+import time, os
 
 start_time = time.time()  # 初始时间戳
 
-name_list_file_path = "/Users/alicewish/我的坚果云/PyCharm.txt"  # 输入文件的地址
+# ================按行读取参考文本并字典化================
+refer_dict = {}  # 创建一个字典
+refer_file_dir = '/Users/alicewish/Documents/GitHub/Mac-App-Translation/PyCharm/PyCharm-zh_CN-4.5.3/zh_CN/'
+refer_file_list = os.listdir(refer_file_dir)  # 获得目录中的内容
+for file_name in refer_file_list:
+    file_path = refer_file_dir + file_name
+    with open(file_path) as fin:
+        for line in fin:
+            refer_line = (line.replace('\n', '')).replace('\t', '')
+            if "=" in refer_line:  # 接受key=value格式
+                split_line = refer_line.split("=")
+                refer_dict[split_line[0]] = split_line[1]
 
-# ================按行读取文件名文本================
-name_list_readline = []  # 初始化按行存储数据列表,不接受换行符
-with open(name_list_file_path) as fin:
-    for line in fin:
-        name_list_readline.append((line).replace('\n', ''))
+en_file_dir = '/Users/alicewish/Documents/GitHub/Mac-App-Translation/PyCharm/resources_en/messages/'
+en_file_list = os.listdir(en_file_dir)  # 获得目录中的内容
+for file_name in en_file_list:
+    file_path = en_file_dir + file_name
+    en_readline=[]
+
+
+
+
+
+
 
 for n in range(len(name_list_readline)):
     # ========================输入区开始========================
