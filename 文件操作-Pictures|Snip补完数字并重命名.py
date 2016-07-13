@@ -1,14 +1,12 @@
 import time, os, datetime, re, json, shutil
 
 start_time = time.time()  # 初始时间戳
-print(start_time)
+
+name_prefix = "【2号地球：会社】【03】【慰藉】【SLOMO&蓝披头士】"
 
 file_dir = '/Users/alicewish/Pictures/'
-
 file_list = os.listdir(file_dir)  # 获得目录中的内容
 print(file_list)
-
-all_info = []
 
 for file_name in file_list:
     file_path = file_dir + file_name
@@ -43,8 +41,7 @@ for file_name in file_list:
         print(ordinal_num)
         print(file_name)
         # ================按规则重命名================
-        prefix = "【生肉】【不义联盟-第五年】【30】【承诺】"
-        new_file_name = prefix+alphabet[ordinal_num]
+        new_file_name = name_prefix+alphabet[ordinal_num]
         new_file_path = file_dir + new_file_name
         print(new_file_name)
         # ================按规则重命名================

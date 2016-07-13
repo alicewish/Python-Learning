@@ -66,6 +66,7 @@ import pyperclip
 pyperclip.copy(text)
 spam = pyperclip.paste()
 
+# ================写入文本文档================
 f = open(output_file_path, 'w')
 try:
     f.write(text)
