@@ -2,7 +2,7 @@ import time, os
 
 start_time = time.time()  # 初始时间戳
 
-name = "WebStorm"
+name = "PyCharm-Win"
 en_file_dir = '/Users/alicewish/Documents/GitHub/Mac-App-Translation/' + name + '/resources_en/messages/'
 cn_file_dir = '/Users/alicewish/Documents/GitHub/Mac-App-Translation/' + name + '/resources_cn/messages/'
 untranslated_file_path = '/Users/alicewish/我的坚果云/' + name + '待翻译.txt'
@@ -10,17 +10,6 @@ untranslated_file_path = '/Users/alicewish/我的坚果云/' + name + '待翻译
 # ================按行读取参考文本并字典化================
 refer_dict = {}  # 创建一个字典
 refer_file_dir = '/Users/alicewish/Documents/GitHub/Mac-App-Translation/' + name + '/PyCharm-zh_CN-4.5.3/zh_CN/'
-refer_file_list = os.listdir(refer_file_dir)  # 获得目录中的内容
-for file_name in refer_file_list:
-    refer_file_path = refer_file_dir + file_name
-    with open(refer_file_path) as fin:
-        for line in fin:
-            refer_line = (line.replace('\n', '')).replace('\t', '')
-            if "=" in refer_line:  # 接受key=value格式
-                split_line = refer_line.split("=")
-                refer_dict[split_line[0]] = split_line[1]
-
-refer_file_dir = '/Users/alicewish/Documents/GitHub/Mac-App-Translation/' + name + '/WebStorm9汉化版/zh_CN/'
 refer_file_list = os.listdir(refer_file_dir)  # 获得目录中的内容
 for file_name in refer_file_list:
     refer_file_path = refer_file_dir + file_name

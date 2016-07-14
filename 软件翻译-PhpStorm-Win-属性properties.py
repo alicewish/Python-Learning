@@ -2,7 +2,7 @@ import time, os
 
 start_time = time.time()  # 初始时间戳
 
-name = "WebStorm"
+name = "PhpStorm-Win"
 en_file_dir = '/Users/alicewish/Documents/GitHub/Mac-App-Translation/' + name + '/resources_en/messages/'
 cn_file_dir = '/Users/alicewish/Documents/GitHub/Mac-App-Translation/' + name + '/resources_cn/messages/'
 untranslated_file_path = '/Users/alicewish/我的坚果云/' + name + '待翻译.txt'
