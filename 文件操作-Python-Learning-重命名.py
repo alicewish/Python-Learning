@@ -1,22 +1,31 @@
-import time, os, datetime, re, json
+import time, os, datetime, re
 
 start_time = time.time()  # 初始时间戳
 print(start_time)
 
-file_dir = '/Users/alicewish/Google 云端硬盘/'
+file_dir = '/Users/alicewish/PycharmProjects/Python-Learning/'
 
-file_list = os.listdir(file_dir)  # 获得目录中的内容
+file_list = os.listdir(file_dir) # 获得目录中的内容
 print(file_list)
 
-all_info = []
 for file_name in file_list:
     file_path = file_dir + file_name
     # ================文件信息================
+
     is_dir = os.path.isdir(file_path)  # 判断目标是否目录
+
+    last_access_time = datetime.datetime.fromtimestamp(os.path.getatime(file_path))  # 最近访问时间
+    created_time = datetime.datetime.fromtimestamp(os.path.getctime(file_path))  # 输出文件创建时间
+    last_modified_time = datetime.datetime.fromtimestamp(os.path.getmtime(file_path))  # 最近修改时间
+    file_size = os.path.getsize(file_path)  # 输出文件大小（字节为单位）
     extension = os.path.splitext(file_path)[1]  # 拓展名
-    extension_list = [".gdoc", ".gsheet"]
-    if not is_dir and extension in extension_list:
-        new_file_name = file_name.replace("全新全异无敌铁人", "全新全异无敌铁人00")
+    line_info = [file_name, str(created_time), str(last_modified_time), str(last_access_time), str(file_size)]
+    line = "\t".join(line_info)
+    print(line)
+    print(extension)
+
+    if ".py.py" in file_name and not is_dir:
+        new_file_name = file_name.replace("|","-").replace(".py.py",".py")
         new_file_path = file_dir + new_file_name
         print(new_file_name)
         # ================按规则重命名================

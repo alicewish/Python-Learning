@@ -14,9 +14,9 @@ for file_name in file_list:
     # ================文件信息================
     is_dir = os.path.isdir(file_path)  # 判断目标是否目录
     extension = os.path.splitext(file_path)[1]  # 拓展名
-    extension_list = [".gdoc"]
-    if not is_dir and extension in extension_list and ".doc" in file_name:
-        new_file_name = file_name.replace(".docx", "").replace(".doc", "")
+    extension_list = [".gdoc", ".gsheet"]
+    if not is_dir and extension in extension_list:
+        new_file_name = file_name.replace("nullC0met", "彗星")
         new_file_path = file_dir + new_file_name
         print(new_file_name)
         # ================按规则重命名================

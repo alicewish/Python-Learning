@@ -1,4 +1,6 @@
 # encoding:utf8
+# https://github.com/trytofix/hexo_weibo_image/blob/master/weibo_util.py
+__author__ = 'brianyang'
 
 import re
 import json
