@@ -2,6 +2,8 @@ import time, os
 
 start_time = time.time()  # 初始时间戳
 
+# ================注意修改路径为对应目录================
+
 name = "PyCharm-Win"
 en_file_dir = '/Users/alicewish/Documents/GitHub/Mac-App-Translation/' + name + '/resources_en/messages/'
 cn_file_dir = '/Users/alicewish/Documents/GitHub/Mac-App-Translation/' + name + '/resources_cn/messages/'
