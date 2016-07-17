@@ -5,10 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="373ecf99-8a13-48a4-b504-b3b0531662d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/~文本处理~读取并序号转图片.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/~文本处理~输入序号.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/文本处理-正则替换.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/软件翻译-PyCharm-Win-属性properties.py" afterPath="$PROJECT_DIR$/软件翻译-PyCharm-Win-属性properties.py" />
     </list>
     <ignored path="Python-Learning.iws" />
@@ -215,8 +211,8 @@
       <file leaf-file-name="软件翻译-PyCharm-Win-属性properties.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/软件翻译-PyCharm-Win-属性properties.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+            <state relative-caret-position="75">
+              <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -1180,8 +1176,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/软件翻译-PyCharm-Win-属性properties.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        <state relative-caret-position="75">
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
           <folding />
         </state>
       </provider>
