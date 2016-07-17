@@ -29,9 +29,8 @@ for file_name in file_list:
         doc_id = data["doc_id"]
         email = data["email"]
         resource_id = data["resource_id"]
-        info = [file_name, str(created_time), str(last_modified_time), str(last_access_time), str(file_size), url,
-                doc_id,
-                email, resource_id]
+        info = [file_name, doc_id, str(created_time), str(last_modified_time), str(last_access_time), str(file_size),
+                url, email, resource_id]
         line = "\t".join(info)
         print(line)
 
