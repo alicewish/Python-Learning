@@ -2,48 +2,59 @@ import time, json
 from collections import OrderedDict
 
 start_time = time.time()  # 初始时间戳
-input_file_path = "/Users/alicewish/我的坚果云/图床表.txt"
+input_file_path = "/Users/alicewish/我的坚果云/图床表HTML.txt"
+output_file_path = '/Users/alicewish/我的坚果云/图床表Markdown.txt'  # TXT文件名
 
 # ================按行读取参考文本并字典化================
 input_dict = {}  # 创建一个字典
+title_list = []
 with open(input_file_path) as fin:
     for line in fin:
         input_line = (line.replace('\n', ''))
         if "【" in input_line:
-            source_name = input_line
-            # input_dict[source_name] = {}
+            title_name = input_line
+            title_list.append(title_name)
+            input_dict[title_name] = {}
         elif "\t" in input_line:  # 接受key value格式
             split_line = input_line.split("\t")
             key = split_line[0].zfill(2)
-            value = split_line[1]
-            if '<img src="' in value:
-                value = value.replace('<img src="', '![](').replace('" />', ')')
-            print(source_name, key, value)
-            input_dict[source_name][key] = value
-            input_dict[source_name] = OrderedDict(input_dict[source_name])
+            markdown_value = split_line[1]
+            if '<img src="' in markdown_value:
+                markdown_value = markdown_value.replace('<img src="', '![](').replace('" />', ')')
+            input_dict[title_name][key] = markdown_value
+            input_dict[title_name] = OrderedDict(input_dict[title_name])
+
 input_dict = OrderedDict(input_dict)
-
 print(input_dict)
-line_list = []
-for key, value in input_dict.items():
-    line_list.append(key)
-    print(key)
-    for k, v in value.items():
-        line_list.append(k + "\t" + v)
-
-info = "\r\n".join(line_list)
-# print(info)
 
 # ================写入TXT================
-txt_file_path = '/Users/alicewish/我的坚果云/图床表.txt'  # TXT文件名
-f = open(txt_file_path, 'w')
+markdown_line_list = []
+html_line_list = []
+title_list.sort()
+for title_name in title_list:
+    markdown_line_list.append(title_name)
+    html_line_list.append(title_name)
+    for k, v in input_dict[title_name].items():
+        markdown_line_list.append(k + "\t" + v)
+        html_value = v.replace('![](', '<img src="').replace(')', '" />')
+        html_line_list.append(k + "\t" + html_value)
+
+info = "\r\n".join(markdown_line_list)
+f = open(output_file_path, 'w')
 try:
     f.write(info)
 finally:
     f.close()
 
-f = open('/Users/alicewish/我的坚果云/图床表JSON.txt', 'w')
-json.dump(input_dict, f)
+info = "\r\n".join(html_line_list)
+f = open(input_file_path, 'w')
+try:
+    f.write(info)
+finally:
+    f.close()
+
+# f = open('/Users/alicewish/我的坚果云/图床表JSON.txt', 'w')
+# json.dump(input_dict, f)
 # ================运行时间计时================
 run_time = time.time() - start_time
 if run_time < 60:  # 秒(两位小数)

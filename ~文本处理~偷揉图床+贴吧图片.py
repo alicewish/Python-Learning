@@ -10,9 +10,9 @@ r = Tk()
 read_text = r.clipboard_get()
 
 info_line = []
-if "http://ww2.sinaimg.cn/large/" in read_text:
+if "sinaimg.cn/large/" in read_text:
     # ================正则匹配================
-    pattern = re.compile(r'http://ww2.sinaimg.cn/large/[^)]*')
+    pattern = re.compile(r'http://ww[0-9].sinaimg.cn/large/[^)"]*')
     # 匹配http://ww2.sinaimg.cn/large/a15b4afegw1f52rdah5gfj21hk1564hc
     # ================使用Pattern匹配文本，获得全部匹配结果================
     find = pattern.findall(read_text)  # 列表形式存储的结果
