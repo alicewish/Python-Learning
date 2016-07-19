@@ -21,7 +21,7 @@ for file_name in file_list:
     line = "\t".join(line_info)
 
     if "Injustice- Gods Among Us - Year Five (2015-) 0" in file_name and extension == ".zip":
-        issue_number = 30
+        issue_number = 31
         new_file_name = "Injustice - Gods Among Us- Year Five 0" + str(issue_number).zfill(
             2) + " (2016) (digital) (Alicewish).zip"
 

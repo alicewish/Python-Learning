@@ -12,7 +12,7 @@ with open(txt_file_path) as fin:
 
 file_dir = '/Volumes/Mack/汉化/——/'
 
-issue_number = 30
+issue_number = 31
 prefix = "Injustice- Gods Among Us - Year Five (2015-) 0"
 
 zip_name = "Injustice - Gods Among Us- Year Five 0" + str(issue_number).zfill(2) + " (2016) (digital) (Alicewish).zip"
