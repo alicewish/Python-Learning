@@ -3,8 +3,8 @@ from os.path import join, getsize
 
 start_time = time.time()  # 初始时间戳
 
-file_dir = '/Users/alicewish/Dropbox/'
-
+file_dir = '/Users/alicewish/Dropbox'
+output_file_path="/Users/alicewish/我的坚果云/文件夹大小.txt"
 
 # ================获取文件夹大小================
 def GetFolderSize(path):
@@ -23,7 +23,7 @@ print(file_list)
 
 all_info = []
 for file_name in file_list:
-    file_path = file_dir + file_name
+    file_path = os.path.join(file_dir, file_name)
     # ================文件信息================
     is_dir = os.path.isdir(file_path)  # 判断目标是否目录
     if is_dir:
@@ -60,6 +60,12 @@ import pyperclip
 pyperclip.copy(text)
 spam = pyperclip.paste()
 
+# ================写入TXT================
+f = open(output_file_path, 'w')
+try:
+    f.write(text)
+finally:
+    f.close()
 # ================运行时间计时================
 run_time = time.time() - start_time
 if run_time < 60:  # 秒(两位小数)

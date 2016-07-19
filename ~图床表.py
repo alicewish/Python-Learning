@@ -2,16 +2,17 @@ import time, json
 from collections import OrderedDict
 
 start_time = time.time()  # 初始时间戳
-input_file_path = "/Users/alicewish/我的坚果云/图床表HTML.txt"
-output_file_path = '/Users/alicewish/我的坚果云/图床表Markdown.txt'  # TXT文件名
+refer_file_path = "/Users/alicewish/我的坚果云/图床表.txt"
+html_file_path = '/Users/alicewish/我的坚果云/图床表HTML.txt'  # TXT文件名
+markdown_file_path = '/Users/alicewish/我的坚果云/图床表Markdown.txt'  # TXT文件名
 
 # ================按行读取参考文本并字典化================
 input_dict = {}  # 创建一个字典
 title_list = []
-with open(input_file_path) as fin:
+with open(refer_file_path) as fin:
     for line in fin:
         input_line = (line.replace('\n', ''))
-        if "【" in input_line:
+        if "【" in input_line: #标题
             title_name = input_line
             title_list.append(title_name)
             input_dict[title_name] = {}
@@ -40,14 +41,14 @@ for title_name in title_list:
         html_line_list.append(k + "\t" + html_value)
 
 info = "\r\n".join(markdown_line_list)
-f = open(output_file_path, 'w')
+f = open(markdown_file_path, 'w')
 try:
     f.write(info)
 finally:
     f.close()
 
 info = "\r\n".join(html_line_list)
-f = open(input_file_path, 'w')
+f = open(html_file_path, 'w')
 try:
     f.write(info)
 finally:
