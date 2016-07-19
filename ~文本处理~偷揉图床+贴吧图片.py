@@ -9,6 +9,8 @@ from tkinter import Tk
 r = Tk()
 read_text = r.clipboard_get()
 
+check_set = set()  # 初始化为空集合
+
 info_line = []
 if "sinaimg.cn/large/" in read_text:
     # ================正则匹配================
@@ -18,7 +20,11 @@ if "sinaimg.cn/large/" in read_text:
     find = pattern.findall(read_text)  # 列表形式存储的结果
     for i in range(len(find)):
         full_html = '<img src="' + find[i] + '" />'
-        info_line.append(full_html)
+        if full_html in check_set:
+            pass
+        else:
+            check_set.add(full_html)
+            info_line.append(full_html)
 
 elif "http://imgsrc.baidu.com/forum/pic/item/" in read_text:
     # ================正则匹配================
@@ -30,7 +36,7 @@ elif "http://imgsrc.baidu.com/forum/pic/item/" in read_text:
 
 info = "\r\n".join(info_line)
 print(info)
-print(len(find))
+print(len(info_line))
 # ================写入剪贴板================
 import pyperclip
 

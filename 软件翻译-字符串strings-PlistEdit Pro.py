@@ -22,6 +22,7 @@ with open(refer_file_path) as fin:
             refer_dict[key] = value
 
 # ================英转中================
+check_set=set()
 en_file_list = os.listdir(en_file_dir)  # 获得目录中的内容
 for file_name in en_file_list:
     en_file_path = en_file_dir + file_name
@@ -29,35 +30,45 @@ for file_name in en_file_list:
     if extension == ".strings":
         en_readline = []
         cn_readline = []
-        with open(en_file_path) as fin:
-            for line in fin:
-                en_line = (line.replace('\n', '')).replace('\t', '')
-                en_readline.append(en_line)
-                if "=" in en_line and "*" not in en_line:  # 接受key=value格式
-                    split_line = en_line.split("=")
-                    key = split_line[0].strip('"; ')
-                    value = split_line[1].strip('"; ')
-                    if value in refer_dict:
-                        value = refer_dict[value]
-                    else:
-                        # ================写入文本================
-                        f = open(untranslated_file_path, 'a')
-                        try:
-                            f.write(value + "\r\n")
-                        finally:
-                            f.close()
-                    cn_line = '"' + key + '" = "' + value + '";'
-                    cn_readline.append(cn_line)
-    cn_file_path = cn_file_dir + file_name
-    # ================写入文本================
-    text = '\r\n'.join(cn_readline)
-    print(text)
+        # read_text = open(en_file_path, 'rb').read()  # 读取文本
+        # decoded_text = str(read_text)[2:-1]
+        # print(decoded_text)
+        try:
+            with open(en_file_path) as fin:
+                for line in fin:
+                    en_line = (line.replace('\n', '')).replace('\t', '')
+                    en_readline.append(en_line)
+                    if "=" in en_line and "*" not in en_line:  # 接受key=value格式
+                        split_line = en_line.split("=")
+                        key = split_line[0].strip('"; ')
+                        value = split_line[1].strip('"; ')
+                        if value in refer_dict:
+                            value = refer_dict[value]
+                        else:
+                            if value in check_set:
+                                pass
+                            else:
+                                check_set.add(value)
+                                # ================写入文本================
+                                f = open(untranslated_file_path, 'a')
+                                try:
+                                    f.write(value + "\r\n")
+                                finally:
+                                    f.close()
+                        cn_line = '"' + key + '" = "' + value + '";'
+                        cn_readline.append(cn_line)
+        except:
+            pass
+        cn_file_path = cn_file_dir + file_name
+        # ================写入文本================
+        text = '\r\n'.join(cn_readline)
+        print(text)
 
-    f = open(cn_file_path, 'w')
-    try:
-        f.write(text)
-    finally:
-        f.close()
+        f = open(cn_file_path, 'w')
+        try:
+            f.write(text)
+        finally:
+            f.close()
 
 # ================运行时间计时================
 run_time = time.time() - start_time
