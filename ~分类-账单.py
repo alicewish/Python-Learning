@@ -7,12 +7,43 @@ refer_dict = {}  # 创建一个字典
 refer_file_path = "/Users/alicewish/我的坚果云/账单分类词典.txt"
 with open(refer_file_path) as fin:
     for line in fin:
-        refer_line = (line.replace('\n', '')).replace('\t', '')
+        refer_line = (line.replace('\n', ''))
         if "\t" in refer_line:  # 接受key value格式
             split_line = refer_line.split("\t")
             refer_dict[split_line[0]] = split_line[1]
 
 
+# ================读取剪贴板================
+from tkinter import Tk
+
+r = Tk()
+read_text = r.clipboard_get()
+text_readline = read_text.splitlines()
+print(text_readline)
+print(len(text_readline))
+
+line_list = []
+for i in range(len(text_readline)):
+    entry_start_time = time.time()
+    print(i)
+    line_text=""
+    for key in refer_dict:
+        if key in text_readline[i]:
+            line_text=refer_dict[key]
+    print(line_text)
+    line_list.append(line_text)
+    # ================每项时间计时================
+    entry_run_time = time.time() - entry_start_time
+    entry_print = "耗时:{:.4f}秒".format(entry_run_time)
+    print(entry_print)
+
+info = "\r\n".join(line_list)
+# print(info)
+# ================写入剪贴板================
+import pyperclip
+
+pyperclip.copy(info)
+spam = pyperclip.paste()
 
 # ================运行时间计时================
 run_time = time.time() - start_time
