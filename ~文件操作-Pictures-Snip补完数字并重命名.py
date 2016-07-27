@@ -41,7 +41,7 @@ for file_name in file_list:
         print(ordinal_num)
         print(file_name)
         # ================按规则重命名================
-        new_file_name = name_prefix+alphabet[ordinal_num]
+        new_file_name = name_prefix+alphabet[ordinal_num]+".jpg"
         new_file_path = file_dir + new_file_name
         print(new_file_name)
         # ================按规则重命名================
