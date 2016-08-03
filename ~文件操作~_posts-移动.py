@@ -10,16 +10,22 @@ print(file_list)
 
 for file_name in file_list:
     file_path = file_dir + file_name
-    read_text = open(file_path, 'r').read()
-    output_text = read_text.replace("\n", "\r\n")
-    f = open(file_path, 'w')
-    try:
-        f.write(output_text)
-    finally:
-        f.close()
-    new_file_path = new_file_dir + file_name
-    shutil.move(file_path, new_file_path)  # 文件或目录都是使用这条命令
-os.rmdir(file_dir)  # 只能删除空目录
+    is_dir = os.path.isdir(file_path)  # 判断目标是否目录
+    extension = os.path.splitext(file_path)[1]  # 拓展名
+    if extension == ".md":
+        read_text = open(file_path, 'r').read()
+        output_text = read_text.replace("\n", "\r\n")
+        f = open(file_path, 'w')
+        try:
+            f.write(output_text)
+        finally:
+            f.close()
+        new_file_path = new_file_dir + file_name
+        shutil.move(file_path, new_file_path)  # 文件或目录都是使用这条命令
+try:
+    os.rmdir(file_dir)  # 只能删除空目录
+except:
+    pass
 
 # ================运行时间计时================
 run_time = time.time() - start_time

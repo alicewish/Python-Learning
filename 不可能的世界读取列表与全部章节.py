@@ -72,7 +72,7 @@ for i in range(chapter_name_list_length):
         f.close()
     # ================每章节时间计时================
     chapter_run_time = time.time() - chapter_start_time
-    chapter_print = "第" + str(i + 1) + "页读取完毕," + "耗时:{:.4f}秒".format(chapter_run_time)
+    chapter_print = "第" + str(i + 1) + "章节读取完毕," + "耗时:{:.4f}秒".format(chapter_run_time)
     print(chapter_print)
 
 print(book_title)

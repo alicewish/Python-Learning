@@ -5,7 +5,7 @@ start_time = time.time()  # 初始时间戳
 now = time.strftime("%Y%m%d", time.localtime())  # 当前日期戳
 
 # ========================输入区开始========================
-search_comic_name = "Heart In A Box"  # 查询用漫画名
+search_comic_name = "Bombshells"  # 查询用漫画名
 print(search_comic_name)
 
 save_comic_name = search_comic_name.replace(":", "").replace("/", "").replace("&", "").replace("  ", " ")
