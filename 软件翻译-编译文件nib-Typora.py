@@ -4,7 +4,7 @@ import requests, time, re
 start_time = time.time()  # 初始时间戳
 
 # ========================输入区开始========================
-file_name = "MainMenu.nib"
+file_name = "Document.nib"
 app_name = "Typora"
 file_path_prefix = "/Users/alicewish/Documents/GitHub/Mac-App-Translation/"
 input_file_path = file_path_prefix + app_name + "/Base.lproj/" + file_name + ".txt"  # 输入文件的地址

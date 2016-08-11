@@ -1,5 +1,4 @@
-from lxml import html
-import requests, time, re
+import time, re
 
 start_time = time.time()  # 初始时间戳
 
