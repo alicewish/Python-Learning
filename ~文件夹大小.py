@@ -3,7 +3,7 @@ from os.path import join, getsize
 
 start_time = time.time()  # 初始时间戳
 
-file_dir = '/Users/alicewish/Dropbox'
+file_dir = '/Users/alicewish/Documents/Tencent Files/782841300/Image'
 output_file_path="/Users/alicewish/我的坚果云/文件夹大小.txt"
 
 # ================获取文件夹大小================
