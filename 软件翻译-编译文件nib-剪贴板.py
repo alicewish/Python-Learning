@@ -34,7 +34,7 @@ for i in range(len(text_readline)):
     input_line = (line.replace('\n', '')).replace('\t', '')  # 无视换行和制表符
     output_line = input_line
     # 定位到<string>,判断是否英文
-    if "<string>" in input_line and "<key>" not in input_line and ".title" not in input_line:
+    if "<string>" in input_line and "</string>" in input_line and "<key>" not in input_line and ".title" not in input_line:
         English = (input_line.replace("<string>", "")).replace("</string>", "")
         status_English = False  # 初始化状态为非翻译文本
         if len(English) > 1 and re.match(r'\b[A-Z][a-z]{1,}[^.]', English) and len(English) < 80:  # 如果首字母大写，说明可翻译

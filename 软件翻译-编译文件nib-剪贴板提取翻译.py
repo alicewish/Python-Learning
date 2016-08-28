@@ -12,14 +12,20 @@ text_readline = read_text.splitlines()
 # ================按行读取输入文本================
 output_readline = []  # 初始化按行存储数据列表,不接受换行符
 
+
 for i in range(len(text_readline)):
+    status = True
     line = text_readline[i]
     input_line = (line.replace('\n', '')).replace('\t', '')  # 无视换行和制表符
     # 定位到<string>,判断是否英文
     if "<string>" in input_line and "<key>" not in input_line and "{" not in input_line and "=" not in input_line:
         string_content = (input_line.replace("<string>", "")).replace("</string>", "")
         print(string_content)
-        if string_content[0:2] != "NS":
+        if string_content[0:2] == "NS" or string_content[0:2] == "KB":
+            status = False
+        if string_content[0:7] == "value: " or string_content[0:7] == "values.":
+            status = False
+        if status:
             output_readline.append(string_content)
 
 text = '\r\n'.join(output_readline)
@@ -29,6 +35,7 @@ import pyperclip
 pyperclip.copy(text)
 spam = pyperclip.paste()
 
+print(len(output_readline))
 # ================运行时间计时================
 run_time = time.time() - start_time
 if run_time < 60:  # 两位小数的秒

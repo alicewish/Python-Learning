@@ -5,7 +5,6 @@ start_time = time.time()  # 初始时间戳
 # ========================输入区开始========================
 refer_file_path = "/Users/alicewish/Documents/GitHub/Mac-App-Translation/总词典.txt"  # 词典文件的地址
 
-
 # ================按行读取参考文本并字典化================
 refer_dict = {}  # 创建一个字典
 with open(refer_file_path) as fin:
@@ -44,7 +43,7 @@ for i in range(len(text_readline)):
             translated_check_set.add(Chinese)
             count = count + 1
         elif English in untranslated_check_set:
-            pass
+            output_line = '"' + English + '" = "' + English + '";'  #
         else:  # 如果字典里没有则附在字典结尾
             untranslated_check_set.add(English)
             f = open(refer_file_path, 'a')
@@ -53,6 +52,7 @@ for i in range(len(text_readline)):
                 f.write(append_line)
             finally:
                 f.close()
+            output_line = '"' + English + '" = "' + English + '";'  #
     output_readline.append(output_line)
 
 # ================写入文本================
