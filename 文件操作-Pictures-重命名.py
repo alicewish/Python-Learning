@@ -3,6 +3,8 @@ import time, os, datetime, re, json, shutil
 start_time = time.time()  # 初始时间戳
 print(start_time)
 
+issue_number = 36
+
 file_dir = '/Users/alicewish/Pictures/'
 
 file_list = os.listdir(file_dir)  # 获得目录中的内容
@@ -20,7 +22,6 @@ for file_name in file_list:
         print(ordinal_num)
         print(file_name)
         # ================按规则重命名================
-        issue_number = 34
         prefix = "Injustice- Gods Among Us - Year Five (2015-) 0"
         new_file_name = prefix + str(issue_number).zfill(2) + "-0" + str(ordinal_num).zfill(2) + ".jpg"
         new_file_path = file_dir + new_file_name

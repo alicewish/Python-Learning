@@ -35,7 +35,7 @@ for i in range(len(input_readline)):
         raw_key = split_line[0]
         raw_value = split_line[1]
         key = raw_key.strip('" ')
-        value = raw_value.strip('" ')
+        value = raw_value.strip('"; ')
         if key in refer_dict:
             value = refer_dict[key]
         elif key in check_set:
@@ -48,17 +48,21 @@ for i in range(len(input_readline)):
                 f.write(append_line)
             finally:
                 f.close()
-        input_readline[i] = raw_key + '= "' + value + '"'
+        input_readline[i] = raw_key + '= "' + value + '";'
 
 # ================写入文本================
 text = '\r\n'.join(input_readline)
+print(text)
 
-f = open(output_file_path, 'w')
-try:
-    f.write(text)
-finally:
-    f.close()
-
+# f = open(output_file_path, 'w')
+# try:
+#     f.write(text)
+# finally:
+#     f.close()
+# ================写入剪贴板================
+import pyperclip
+pyperclip.copy(text)
+spam = pyperclip.paste()
 # ================运行时间计时================
 run_time = time.time() - start_time
 if run_time < 60:  # 两位小数的秒

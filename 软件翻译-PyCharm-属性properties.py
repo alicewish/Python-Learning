@@ -20,17 +20,6 @@ for file_name in refer_file_list:
                 split_line = refer_line.split("=")
                 refer_dict[split_line[0]] = split_line[1]
 
-refer_file_dir = '/Users/alicewish/Documents/GitHub/Mac-App-Translation/' + name + '/WebStorm9汉化版/zh_CN/'
-refer_file_list = os.listdir(refer_file_dir)  # 获得目录中的内容
-for file_name in refer_file_list:
-    refer_file_path = refer_file_dir + file_name
-    with open(refer_file_path) as fin:
-        for line in fin:
-            refer_line = (line.replace('\n', '')).replace('\t', '')
-            if "=" in refer_line:  # 接受key=value格式
-                split_line = refer_line.split("=")
-                refer_dict[split_line[0]] = split_line[1]
-
 # ================英转中================
 en_file_list = os.listdir(en_file_dir)  # 获得目录中的内容
 for file_name in en_file_list:
