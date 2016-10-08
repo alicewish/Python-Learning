@@ -1,4 +1,4 @@
-import time, re
+import time, jieba, re
 
 start_time = time.time()  # 初始时间戳
 
@@ -60,7 +60,7 @@ for i in range(0, len(process_readline)):
         store_entry = "\t".join(character_number_list)
         entry_info = [str(i), "断行行数", str(line_number), "总字数", str(character_count).zfill(2), "分配", store_entry]
         entry_info_line = "\t".join(entry_info)
-        print(entry_info_line)
+        # print(entry_info_line)
 
         info_detail = [str(line_number)] + [str(character_count).zfill(2)] + character_number_list
         info_line = "\t".join(info_detail)
@@ -76,13 +76,14 @@ for i in range(0, len(process_readline)):
                 scenario_count_dict[scenario] = 1
 
     else:
-        print(i, len(text_readline[i]), text_readline[i])
+        pass
+        # print(i, len(text_readline[i]), text_readline[i])
 
 all_info = "\r\n".join(info_list)
 # ================由频次排序================
 for scenario in scenario_list:
     scenario_line_list = scenario.split("\t")
-    scenario_count = str(1000-scenario_count_dict[scenario]).zfill(3)
+    scenario_count = str(1000 - scenario_count_dict[scenario]).zfill(3)
     scenario_line_list.insert(1, scenario_count)
     scenario_line_full = '-'.join(scenario_line_list)
     scenario_list_full.append(scenario_line_full)
@@ -93,10 +94,117 @@ scenario_list_full.sort()
 print(scenario_list_full)
 # print(scenario_count_dict)
 
-# ================pyperclip模块================
+# ========================输入区开始========================
+dict_file_path = '/Users/alicewish/我的坚果云/userdict.txt'  # 自定义词典路径
+
+# ================读取剪贴板================
+from tkinter import Tk
+
+r = Tk()
+read_text = r.clipboard_get()
+text_readline = read_text.splitlines()
+# print(text_readline)
+
+# ================按行读取文本:with open(更好)================
+status_readline = []  # 状态列表
+cut_readline = []  # 分词列表
+output_readline = []  # 输出列表
+
+jieba.load_userdict(dict_file_path)
+
+for i in range(len(text_readline)):
+    line = text_readline[i]
+    line = line.replace('……', '…')
+    print(line)
+    print(len(line))
+
+    if line == "":
+        status = 0  # 空行
+    elif len(line) == 2 and re.match(r'[0-9][0-9]', line):
+        status = -1  # 页码
+    else:
+        status = 1  # 待分词
+    status_readline.append(status)
+    if status == 1:
+        # ================结巴分词================
+        string_list = []
+        seg_list = jieba.cut(line)  # 默认是精确模式
+        for word in seg_list:
+            string_list.append(word)
+        print(string_list)
+
+        start_status = False
+        for i in range(len(scenario_list_full)):
+            scenario_line_full = scenario_list_full[i]
+            if scenario_line_full[0:2] == str(len(line)).zfill(2):
+                if start_status:
+                    end_i = i
+                else:
+                    start_i = i
+                    start_status = True
+                    end_i = i
+        # ================进行切分================
+        current_i = start_i
+
+        cut_right = False
+        while current_i <= end_i and not cut_right:
+            current_cut = scenario_list_full[current_i]
+            current_cut_list = current_cut[7:].split("-")  # 列表存储的切分方案
+            # ================进行分词判断================
+            line_can_cut_list = []
+
+            for i in range(len(line)):
+                line_can_cut_list.append(0)
+
+            j = 0
+            for string in string_list:
+                j = j + len(string)
+                # print(j)
+                line_can_cut_list[j - 1] = 1
+
+            for i in range(len(line)):
+                if line[i] in ',.?!，。…？！”·-':
+                    line_can_cut_list[i - 1] = 0
+                elif line[i] in '“':
+                    line_can_cut_list[i] = 0
+                elif line[i] in '中的地得了吗吧' and line_can_cut_list[i - 1]==1 and line_can_cut_list[i]==1:
+                    line_can_cut_list[i - 1] = 0
+
+            print(line_can_cut_list)
+            print(current_cut_list)
+
+            # ================判断方案正确与否================
+
+            sum = 0
+            cut_right = True
+            for i in range(len(current_cut_list)):
+                last_sum=sum
+                sum = sum + int(current_cut_list[i])
+                print(line_can_cut_list[sum - 1])
+                print(line[last_sum:sum])
+
+                if line_can_cut_list[sum - 1] == 0:
+                    cut_right = False
+            print(cut_right)
+            if not cut_right:
+                current_i += 1
+        if cut_right:
+            sum = 0
+            for i in range(len(current_cut_list)):
+                last_sum=sum
+                sum = sum + int(current_cut_list[i])
+                output_readline.append(line[last_sum:sum])
+        else:
+            output_readline.append(line)
+    else:
+        output_readline.append(line)
+
+# ================写入剪贴板================
+text = '\r\n'.join(output_readline)
+
 import pyperclip
 
-pyperclip.copy(all_info)
+pyperclip.copy(text)
 spam = pyperclip.paste()
 # ================运行时间计时================
 run_time = time.time() - start_time

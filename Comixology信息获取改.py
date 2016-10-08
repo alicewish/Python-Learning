@@ -19,7 +19,7 @@ key_word_list = ["Written by", "Art by", "Pencils", "Inks", "Cover by", "Genres"
 page = requests.get(short_link)  # 获取网页信息
 tree = html.fromstring(page.text)  # 构筑查询用树
 # ====================标题====================
-title = tree.xpath('//h2[@class="title"]/text()')[0]
+title = tree.xpath('//h1[@class="title"]/text()')[0]
 # ====================简介====================
 raw_description = tree.xpath('//section[@class="item-description"]/text()')  # 列表
 description = "".join(raw_description)

@@ -1,10 +1,16 @@
-import requests, time
+import requests, time, os
 from lxml import html
 
 start_time = time.time()  # 初始时间戳
 # ========================输入区开始========================
+article_url = "http://icv2.com/articles/markets/view/33887/top-300-comics-actual-february-2016"  # 网址
 
-article_url = "http://icv2.com/articles/markets/view/33887/top-300-comics-actual-february-2016"  # 完整图书章节网址
+now_date = time.strftime("%Y%m%d", time.localtime())  # 当前日期戳
+
+dropbox_path = '/Users/alicewish/Dropbox'
+
+output_readline = []
+
 # ========================执行区开始========================
 page = requests.get(article_url)
 tree = html.fromstring(page.text)
@@ -27,24 +33,38 @@ for i in range(len(quantity)):
     number = (quantity[i].replace(",", "")).strip()
     quantity_format.append(number)
 
-info_list=[]
+info_list = []
 for i in range(len(rank)):
-    line=rank[i]+"\t"+index[i]+"\t"+title[i]+"\t"+price[i]+"\t"+publisher[i]+"\t"+quantity_format[i]+"\t"+article_title
+    line = rank[i] + "\t" + index[i] + "\t" + title[i] + "\t" + price[i] + "\t" + publisher[i] + "\t" + quantity_format[
+        i] + "\t" + article_title
     info_list.append(line)
+    output_line_in_list = [rank[i], index[i], title[i], price[i], publisher[i], quantity_format[i], article_title]
+    output_line = ",".join(output_line_in_list)
+    output_readline.append(output_line)
 
 info = '\r\n'.join(info_list)
 
 print(article_title)
-print(rank[0])
-print(index[0])
-print(title[0])
-print(price[0])
-print(publisher[0])
-print(quantity[0])
+# print(rank[0])
+# print(index[0])
+# print(title[0])
+# print(price[0])
+# print(publisher[0])
+# print(quantity[0])
 print(info)
 
+text = '\r\n'.join(output_readline)
 
+# ================写入CSV================
 
+output_file_name = article_title.replace("ICv2: ", "") + '.csv'
+
+output_file_path = os.path.join(dropbox_path, output_file_name)
+f = open(output_file_path, 'w')
+try:
+    f.write(text)
+finally:
+    f.close()
 # ================运行时间计时================
 run_time = time.time() - start_time
 if run_time < 60:  # 两位小数的秒

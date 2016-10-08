@@ -22,8 +22,8 @@ for i in range(len(text_readline)):
     input_line = (line.replace('\n', '')).replace('\t', '')  # 无视换行和制表符
     if "=" in input_line and "*" not in input_line:  # 接受key=value格式
         split_line = input_line.split("=")
-        English = split_line[0].strip('"; ')
-        value = split_line[1].strip('"; ')
+        English = (split_line[0].strip('; '))[1:-1]
+        value = (split_line[1].strip('; '))[1:-1]
         output_line = English + "\t" + value
         output_readline.append(output_line)
 

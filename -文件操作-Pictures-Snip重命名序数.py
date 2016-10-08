@@ -1,9 +1,7 @@
-import time, os, datetime, re, json, shutil
+import time, os
 
 start_time = time.time()  # 初始时间戳
 print(start_time)
-
-issue_number = 1
 
 file_dir = '/Users/alicewish/Pictures/'
 
@@ -12,18 +10,19 @@ print(file_list)
 
 all_info = []
 ordinal_num = 0
+# alphabet = "ABCDEFGHI"
 for file_name in file_list:
     file_path = file_dir + file_name
     # ================文件信息================
     is_dir = os.path.isdir(file_path)  # 判断目标是否目录
     extension = os.path.splitext(file_path)[1]  # 拓展名
     extension_list = [".jpg"]
-    if not is_dir and extension in extension_list and "拷贝" in file_name:
+    if not is_dir and extension in extension_list and "拷贝" in file_name and "Snip" in file_name:
         print(ordinal_num)
         print(file_name)
         # ================按规则重命名================
-        prefix = "Injustice - Gods Among Us- Ground Zero (2016-) 0"
-        new_file_name = prefix + str(issue_number).zfill(2) + "-0" + str(ordinal_num).zfill(2) + ".jpg"
+        prefix = "0-Day Week of 2016.09.21"
+        new_file_name = prefix + "-" + str(ordinal_num + 1).zfill(2) + ".jpg"
         new_file_path = file_dir + new_file_name
         print(new_file_name)
         # ================按规则重命名================

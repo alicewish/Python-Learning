@@ -5,7 +5,7 @@ start_time = time.time()  # 初始时间戳
 now = time.strftime("%Y%m%d", time.localtime())  # 当前日期戳
 
 # ========================输入区开始========================
-search_comic_name = "Bombshells"  # 查询用漫画名
+search_comic_name = "Transformers"  # 查询用漫画名
 print(search_comic_name)
 
 save_comic_name = search_comic_name.replace(":", "").replace("/", "").replace("&", "").replace("  ", " ")
@@ -44,7 +44,7 @@ for i in range(len(all_url)):
                              "Digital Release Date", "Print Release Date", "Page Count", "Age Rating", "Sold by",
                              "About Book"]
             # ====================标题====================
-            title = tree.xpath('//h2[@class="title"]/text()')[0]
+            title = tree.xpath('//h1[@class="title"]/text()')[0]
             # ====================简介====================
             raw_description = tree.xpath('//section[@class="item-description"]/text()')  # 列表
             description = "".join(raw_description)

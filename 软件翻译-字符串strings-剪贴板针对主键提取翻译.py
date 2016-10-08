@@ -36,17 +36,19 @@ for i in range(len(text_readline)):
     output_line = input_line
     if "=" in input_line and "*" not in input_line:  # 接受key=value格式
         split_line = input_line.split("=")
-        English = split_line[0].strip('; ').strip('"')
+        primary_key = split_line[0].strip('; ').strip('"')
         value = split_line[1].strip('; ').strip('"')
+        split_line = text_readline[i-1].split('"')
+        English=split_line[3]
         if English in refer_dict:
             Chinese = refer_dict[English]
-            output_line = '"' + English + '" = "' + Chinese + '";'
+            output_line = '"' + primary_key + '" = "' + Chinese + '";'
             translated_check_set.add(Chinese)
             count = count + 1
             English_and_Chinese = str(i + 1) + "\t" + English + "\t" + Chinese
             translated_readline.append(English_and_Chinese)
         elif English in untranslated_check_set:
-            output_line = '"' + English + '" = "' + English + '";'  #
+            output_line = '"' + primary_key + '" = "' + English + '";'  #
         else:  # 如果字典里没有则附在字典结尾
             untranslated_check_set.add(English)
             f = open(refer_file_path, 'a')
@@ -55,11 +57,11 @@ for i in range(len(text_readline)):
                 f.write(append_line)
             finally:
                 f.close()
-            output_line = '"' + English + '" = "' + English + '";'  #
+            output_line = '"' + primary_key + '" = "' + English + '";'  #
 
     output_readline.append(output_line)
 
-# ================打印文本================
+# ================写入文本================
 text = '\r\n'.join(output_readline)
 translated_text = '\r\n'.join(translated_readline)
 

@@ -1,22 +1,14 @@
-from lxml import html
-import requests, time, re
+
+import  time,  MyDef
 
 start_time = time.time()  # 初始时间戳
 now = time.strftime("%Y%m%d", time.localtime())  # 当前日期戳
-read_txt_file_path = "/Users/alicewish/我的坚果云/刊物列表.txt"
-# ==============按行读取文本==============
-text_readline = []  # 初始化按行存储数据列表
-with open(read_txt_file_path) as fin:
-    for line in fin:
-        this_line = line.replace('\n', '')
-        text_readline.append(this_line)
-new_text_readline = text_readline
 
-for i in range(len(text_readline)):
+
+def ComixIssue(search_comic_name="Transformers"):
+    from lxml import html
+    import requests, time, re
     # ========================输入区开始========================
-    search_comic_name = text_readline[i]  # 查询用漫画名
-    print(search_comic_name)
-
     save_comic_name = search_comic_name.replace(":", "").replace("/", "").replace("&", "").replace("  ", " ")
     key_title = search_comic_name.replace(" ", "-")
     print(key_title)
@@ -29,8 +21,8 @@ for i in range(len(text_readline)):
     all_url = tree.xpath('//a[@class="content-details"]/@href')
     print(len(all_url))
 
-    issues_url = []
-    check_set = set()
+    issues_url = []  # 每期网址
+    check_set = set()  # 重复检查
     info_dict = {}
     alter_info_dict = {}
     major_key_list = []
@@ -39,9 +31,9 @@ for i in range(len(text_readline)):
         print(i)
         print(all_url[i])
         if re.match(r'.*/digital-comic/[^?]*', all_url[i]) and key_title in all_url[i]:
-            matchs = re.match(r'.*/digital-comic/[^?]*', all_url[i])
-            short_link = matchs.group(0)
-            if short_link not in check_set:
+            matches = re.match(r'.*/digital-comic/[^?]*', all_url[i])
+            short_link = matches.group(0)
+            if short_link not in check_set:  # 尚未读取过
                 check_set.add(short_link)
                 print("获取中……")
                 issues_url.append(short_link)
@@ -57,8 +49,8 @@ for i in range(len(text_readline)):
                 # ====================简介====================
                 raw_description = tree.xpath('//section[@class="item-description"]/text()')  # 列表
                 description = "".join(raw_description)
-                format_description = description.strip("\n\t").replace("\r\n", "|").replace("\r", "|").replace("\n",
-                                                                                                               "|")
+                formatted_description = description.strip("\n\t").replace("\r\n", "|")
+                formatted_description = formatted_description.replace("\r", "|").replace("\n", "|")
                 # ====================创作信息====================
                 credit_list = []
                 raw_credits = tree.xpath('//div[@class="credits"]//*/text()')  # 列表
@@ -208,30 +200,29 @@ for i in range(len(text_readline)):
                     publisher = credit_list[credit_list.index(item) + 1]
 
                 # ====================输出区开始====================
-                line_info = [title, short_link, format_description, digital_release_date, page_count, age_rating,
-                             rating_count, publisher, genres, story_arc, writer, artist, penciller, inker, colorist,
-                             letterer, cover_artist, cover_image_url, price]
+                line_info = [title, digital_release_date, print_release_date, price,
+                             page_count, age_rating, rating_count, publisher, genres, story_arc, writer, artist,
+                             penciller, inker, colorist, letterer, cover_artist, short_link, cover_image_url,
+                             formatted_description]
                 this_line = "\t".join(line_info)  # 行信息合并
                 print(this_line)
 
                 major_key = digital_release_date + title  # "日期+标题"作为主键
                 major_key_list.append(major_key)
-                info_dict[major_key] = this_line
+                info_dict[major_key] = line_info
                 major_key_list.sort()  # 主键表排序
                 text_list = []
                 for key in major_key_list:
                     text_list.append(info_dict[key])
 
-                text = "\r\n".join(text_list)
                 # ================写入TXT================
-                txt_file_path = '/Users/alicewish/我的坚果云/Comixology刊物' + save_comic_name + '.txt'  # TXT文件名
-                f = open(txt_file_path, 'w')
-                try:
-                    f.write(text)
-                finally:
-                    f.close()
+                txt_file_path = '/Users/alicewish/Dropbox/Comixology刊物' + save_comic_name + '.csv'  # TXT文件名
+                head_info = ["标题", "数字出版日期", "实体出版日期", "价格", "页数", "分级", "评价数", "出版商", "类型", "故事线", "编剧", "画师", "铅笔稿",
+                             "墨线", "上色师", "填字员", "封面画师", "短链", "封面图地址", "简介"]
+                MyDef.StoreCSV(text_list, txt_file_path,head_info)
+
                 # ====================次级输出区开始====================
-                alter_line_info = ["### " + title, format_description]
+                alter_line_info = ["### " + title, formatted_description]
                 alter_line = "\r\n".join(alter_line_info)  # 行信息合并
                 print(alter_line)
 
@@ -255,20 +246,7 @@ for i in range(len(text_readline)):
 
     # ========================输出区开始========================
     print("总共" + str(len(issues_url)) + "期")
-    new_text_readline.remove(search_comic_name)  # 从总表中删除刚才读取完的创作者
-    output_text = "\r\n".join(new_text_readline)
-    # ================写入TXT================
-    f = open(read_txt_file_path, 'w')
-    try:
-        f.write(output_text)
-    finally:
-        f.close()
 
-# ================运行时间计时================
-run_time = time.time() - start_time
-if run_time < 60:  # 两位小数的秒
-    print("耗时:{:.2f}秒".format(run_time))
-elif run_time < 3600:  # 分秒取整
-    print("耗时:{:.0f}分{:.0f}秒".format(run_time // 60, run_time % 60))
-else:  # 时分秒取整
-    print("耗时:{:.0f}时{:.0f}分{:.0f}秒".format(run_time // 3600, run_time % 3600 // 60, run_time % 60))
+
+ComixIssue(search_comic_name="Tomboy")
+print("总耗时:", MyDef.RunTime(start_time))
